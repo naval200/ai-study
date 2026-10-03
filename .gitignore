@@ -1,0 +1,15 @@
+private.md
+.DS_Store
+.env*
+# Python / ML
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+data/
+*.pt
+*.safetensors
+*.gguf
+wandb/
+# Rust
+target/
