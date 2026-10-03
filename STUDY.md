@@ -14,6 +14,7 @@ post_formats: linkedin, x, instagram-carousel, youtube-community
 checkpoints: 30, 60, 90
 goal_cooldown_days: 7
 max_swaps_per_week: 2
+progress_js: progress.js
 ---
 
 # AI Study Plan
