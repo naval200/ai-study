@@ -26,7 +26,7 @@ Get hired as a remote LLM / AI engineer by building four measured, public portfo
 ## Learner profile
 
 - Senior product engineer. Strong in Next.js / TypeScript, learning Python ML tooling and Rust.
-- Hardware: M1 MacBook (RAM: _fill in_ — 8 GB → 1–3B models locally, 16 GB → 7–8B at 4-bit).
+- Hardware: M1 MacBook, 16 GB RAM → 7–8B models at 4-bit run locally.
 - Depth I want by default: **explain** (I can explain it without notes). Concepts on the exit test need **apply**.
 
 ## Daily run-sheet (IST)

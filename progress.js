@@ -1,17 +1,17 @@
 window.STUDY_PROGRESS = {
- "generated": "2026-10-03",
+ "generated": "2026-10-04",
  "timezone": "Asia/Kolkata",
  "curriculum": "AI Study Plan — Days 1–30",
  "start": "2026-10-05",
  "end": "2026-11-03",
- "dayNum": -1,
+ "dayNum": 0,
  "totalDays": 30,
  "pace": "⚪ Not started",
  "paceKind": "not-started",
- "streak": 0,
+ "streak": 1,
  "missedRun": 0,
  "overall": {
-  "done": 0,
+  "done": 4,
   "total": 149
  },
  "exit": {
@@ -137,12 +137,12 @@ window.STUDY_PROGRESS = {
    "title": "Setup (weekend before Day 1, ~3 hrs)",
    "type": "setup",
    "hours": 0,
-   "status": "upcoming",
+   "status": "today",
    "file": "days/day00.md",
    "log": {
-    "done": "",
-    "blocked": "",
-    "next": ""
+    "done": "uv env (Python 3.11.9, torch 2.14.1) with MPS True; Ollama 0.35.1 + qwen2.5:3b answers; Docker 20.10 running; RAM is 16 GB.",
+    "blocked": "repo not pushed to GitHub yet; accounts and spend caps still to do (by hand).",
+    "next": "open Karpathy's micrograd video and create projects/w1-gpt/micrograd/."
    },
    "items": [
     {
@@ -156,14 +156,14 @@ window.STUDY_PROGRESS = {
      "text": "**Python:** Python 3.11+ via uv, then PyTorch with MPS. Check `torch.backends.mps.is_available()`.",
      "label": "Python",
      "section": "Plan",
-     "state": "todo",
+     "state": "done",
      "optional": false
     },
     {
      "text": "**Tools:** Ollama and Docker Desktop (for Qdrant in Week 3).",
      "label": "Tools",
      "section": "Plan",
-     "state": "todo",
+     "state": "done",
      "optional": false
     },
     {
@@ -184,14 +184,14 @@ window.STUDY_PROGRESS = {
      "text": "**RAM check:** find out the M1's RAM and write it into STUDY.md.",
      "label": "RAM check",
      "section": "Plan",
-     "state": "todo",
+     "state": "done",
      "optional": false
     },
     {
      "text": "`torch.backends.mps.is_available()` is True and `ollama run` answers a prompt.",
      "label": "Done when",
      "section": "Done when",
-     "state": "todo",
+     "state": "done",
      "optional": false
     }
    ]

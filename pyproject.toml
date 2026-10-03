@@ -1,0 +1,12 @@
+[project]
+name = "ai-study"
+version = "0.1.0"
+description = "Code for the 30-day LLM engineering plan (projects/)"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "torch",
+  "numpy",
+  "matplotlib",
+  "jupyter",
+  "tqdm",
+]
