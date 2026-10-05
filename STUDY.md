@@ -15,6 +15,9 @@ checkpoints: 30, 60, 90
 goal_cooldown_days: 7
 max_swaps_per_week: 2
 progress_js: progress.js
+sync: auto           # auto | ask | off — save and publish after each log
+remote: origin
+pages_url: https://naval200.github.io/ai-study/
 ---
 
 # AI Study Plan

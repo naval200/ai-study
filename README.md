@@ -24,4 +24,6 @@ npm run dashboard  # regenerate DASHBOARD.md + progress.js
 npm run page       # view the progress page locally
 ```
 
-Other shortcuts: `npm run doctor` (check setup) · `npm run today` · `npm run status` · `npm run setup -- --update` (refresh the skill) · `npm run reset` (reset only) · `npm run py -- <file>` · `npm run sync`
+Want your own online progress page like mine? Run `npm run online`. Claude walks you through a free GitHub account, sign-in and GitHub Pages, one step at a time — no git knowledge needed. After that, every `/study-coach log` saves and publishes on its own (`sync: auto` in `STUDY.md`). `npm run save` publishes by hand. Guide: [Go online](https://naval200.github.io/study-coach/online.html).
+
+Other shortcuts: `npm run doctor` (check setup) · `npm run today` · `npm run status` · `npm run save` (publish now) · `npm run online` (set up the web page) · `npm run setup -- --update` (refresh the skill) · `npm run reset` (reset only) · `npm run py -- <file>` · `npm run sync`

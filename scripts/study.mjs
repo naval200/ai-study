@@ -76,6 +76,8 @@ function doctor() {
     ["STUDY.md present (run `npm run plan`, then `npm run init`)", existsSync(join(root, "STUDY.md"))],
     ["index.html present", existsSync(join(root, "index.html"))],
     ["progress.js generated (run `npm run dashboard`)", existsSync(join(root, "progress.js"))],
+    ["git remote set (run `npm run online`)", tryRun("git", ["-C", root, "remote", "get-url", "origin"])],
+    ["GitHub CLI installed (needed for `npm run online`)", tryRun("gh", ["--version"])],
   ];
   for (const [name, ok] of checks) log(`${ok ? "✓" : "✗"} ${name}`);
   process.exitCode = checks.slice(0, 5).every(([, ok]) => ok) ? 0 : 1;
