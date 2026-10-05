@@ -10,4 +10,15 @@
 
 Run with the [study-coach](https://github.com/naval200/study-coach) Claude Code skill.
 
-Shortcuts: `npm run page` (progress page) · `npm run status` · `npm run dashboard` · `npm run coach` · `npm run py -- <file>` · `npm run sync`
+## Start your own
+
+Fork or clone this repo, then:
+
+```bash
+npm run fresh      # wipes my plan/progress (backed up to .backup/), restores the blank index.html, installs the study-coach skill
+npm run init       # opens Claude Code: /study-coach init — turn your own curriculum into a workspace
+npm run dashboard  # regenerate DASHBOARD.md + progress.js
+npm run page       # view the progress page locally
+```
+
+Other shortcuts: `npm run doctor` (check setup) · `npm run today` · `npm run status` · `npm run setup -- --update` (refresh the skill) · `npm run reset` (reset only) · `npm run py -- <file>` · `npm run sync`

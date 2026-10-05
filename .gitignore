@@ -13,3 +13,4 @@ data/
 wandb/
 # Rust
 target/
+.backup/
