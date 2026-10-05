@@ -10,6 +10,7 @@ import { fileURLToPath } from "node:url";
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const SKILL_REPO = "https://github.com/naval200/study-coach.git";
 const SKILL_DIR = join(root, ".claude", "skills", "study-coach");
+const AGENTS_DIR = join(root, ".claude", "agents");
 const args = process.argv.slice(3);
 const yes = args.includes("--yes") || args.includes("-y");
 
@@ -31,10 +32,14 @@ function setup() {
     rmSync(SKILL_DIR, { recursive: true, force: true });
     mkdirSync(dirname(SKILL_DIR), { recursive: true });
     cpSync(join(tmp, "skills", "study-coach"), SKILL_DIR, { recursive: true });
+    if (existsSync(join(tmp, "agents"))) {
+      mkdirSync(AGENTS_DIR, { recursive: true });
+      cpSync(join(tmp, "agents"), AGENTS_DIR, { recursive: true });
+    }
   } finally {
     rmSync(tmp, { recursive: true, force: true });
   }
-  log("Installed skill → .claude/skills/study-coach");
+  log("Installed skill → .claude/skills/study-coach and agents → .claude/agents");
 }
 
 async function reset() {
@@ -68,12 +73,13 @@ function doctor() {
     ["git installed", tryRun("git", ["--version"])],
     ["claude CLI installed", tryRun("claude", ["--version"])],
     ["study-coach skill installed", existsSync(join(SKILL_DIR, "SKILL.md"))],
+    ["study-coach agents installed", existsSync(join(AGENTS_DIR, "planner.md"))],
     ["STUDY.md present (run `npm run init`)", existsSync(join(root, "STUDY.md"))],
     ["index.html present", existsSync(join(root, "index.html"))],
     ["progress.js generated (run `npm run dashboard`)", existsSync(join(root, "progress.js"))],
   ];
   for (const [name, ok] of checks) log(`${ok ? "✓" : "✗"} ${name}`);
-  process.exitCode = checks.slice(0, 4).every(([, ok]) => ok) ? 0 : 1;
+  process.exitCode = checks.slice(0, 5).every(([, ok]) => ok) ? 0 : 1;
 }
 
 function tryRun(cmd, a) {

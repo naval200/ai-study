@@ -17,7 +17,7 @@ Run with the [study-coach](https://github.com/naval200/study-coach) Claude Code 
 Fork or clone this repo, then:
 
 ```bash
-npm run fresh      # wipes my plan/progress (backed up to .backup/), restores the blank index.html, installs the study-coach skill
+npm run fresh      # wipes my plan/progress (backed up to .backup/), restores the blank index.html, installs the study-coach skill and its agents (planner, examiner, reviewer, publisher)
 npm run init       # opens Claude Code: /study-coach init — turn your own curriculum into a workspace
 npm run dashboard  # regenerate DASHBOARD.md + progress.js
 npm run page       # view the progress page locally
