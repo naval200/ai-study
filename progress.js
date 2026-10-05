@@ -1,13 +1,13 @@
 window.STUDY_PROGRESS = {
- "generated": "2026-10-04",
+ "generated": "2026-10-05",
  "timezone": "Asia/Kolkata",
  "curriculum": "AI Study Plan — Days 1–30",
  "start": "2026-10-05",
  "end": "2026-11-03",
- "dayNum": 0,
+ "dayNum": 1,
  "totalDays": 30,
- "pace": "⚪ Not started",
- "paceKind": "not-started",
+ "pace": "🔴 Behind — 3 item(s) owed across 1 day(s)",
+ "paceKind": "behind",
  "streak": 1,
  "missedRun": 0,
  "overall": {
@@ -137,7 +137,7 @@ window.STUDY_PROGRESS = {
    "title": "Setup (weekend before Day 1, ~3 hrs)",
    "type": "setup",
    "hours": 0,
-   "status": "today",
+   "status": "partial",
    "file": "days/day00.md",
    "log": {
     "done": "uv env (Python 3.11.9, torch 2.14.1) with MPS True; Ollama 0.35.1 + qwen2.5:3b answers; Docker 20.10 running; RAM is 16 GB.",
@@ -204,7 +204,7 @@ window.STUDY_PROGRESS = {
    "title": "Backprop from scratch",
    "type": "core",
    "hours": 0,
-   "status": "upcoming",
+   "status": "today",
    "file": "days/day01.md",
    "log": {
     "done": "",

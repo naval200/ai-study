@@ -9,3 +9,5 @@
 - **Writing:** [posts/](posts/) · plan changes: [curriculum/changes.md](curriculum/changes.md)
 
 Run with the [study-coach](https://github.com/naval200/study-coach) Claude Code skill.
+
+Shortcuts: `npm run page` (progress page) · `npm run status` · `npm run dashboard` · `npm run coach` · `npm run py -- <file>` · `npm run sync`

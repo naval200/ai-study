@@ -1,0 +1,13 @@
+{
+  "name": "ai-study",
+  "private": true,
+  "description": "Shortcuts for the 30-day LLM engineering plan",
+  "scripts": {
+    "page": "(sleep 1 && open http://localhost:8000) & python3 -m http.server 8000",
+    "dashboard": "node \"$HOME/study-coach/skills/study-coach/scripts/dashboard.mjs\" .",
+    "status": "node \"$HOME/study-coach/skills/study-coach/scripts/dashboard.mjs\" . --brief",
+    "coach": "claude",
+    "py": "uv run python",
+    "sync": "uv sync"
+  }
+}
