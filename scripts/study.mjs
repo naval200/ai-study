@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Helpers for starting a fresh study workspace: setup | reset | fresh | doctor
 import { execFileSync } from "node:child_process";
-import { cpSync, existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { cpSync, existsSync, mkdirSync, mkdtempSync, readdirSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { dirname, join, resolve } from "node:path";
 import { createInterface } from "node:readline/promises";
@@ -9,7 +9,8 @@ import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const SKILL_REPO = "https://github.com/naval200/study-coach.git";
-const SKILL_DIR = join(root, ".claude", "skills", "study-coach");
+const SKILLS_DIR = join(root, ".claude", "skills");
+const SKILL_DIR = join(SKILLS_DIR, "study-coach");
 const args = process.argv.slice(3);
 const yes = args.includes("--yes") || args.includes("-y");
 
@@ -28,13 +29,16 @@ function setup() {
   try {
     log(`Fetching ${SKILL_REPO} ...`);
     execFileSync("git", ["clone", "--depth", "1", "--quiet", SKILL_REPO, tmp], { stdio: "inherit" });
-    rmSync(SKILL_DIR, { recursive: true, force: true });
-    mkdirSync(dirname(SKILL_DIR), { recursive: true });
-    cpSync(join(tmp, "skills", "study-coach"), SKILL_DIR, { recursive: true });
+    for (const name of readdirSync(join(tmp, "skills"))) {
+      const dest = join(SKILLS_DIR, name);
+      rmSync(dest, { recursive: true, force: true });
+      mkdirSync(SKILLS_DIR, { recursive: true });
+      cpSync(join(tmp, "skills", name), dest, { recursive: true });
+    }
   } finally {
     rmSync(tmp, { recursive: true, force: true });
   }
-  log("Installed skill → .claude/skills/study-coach");
+  log("Installed skills → .claude/skills/ (study-coach, study-planner)");
 }
 
 async function reset() {
@@ -68,12 +72,13 @@ function doctor() {
     ["git installed", tryRun("git", ["--version"])],
     ["claude CLI installed", tryRun("claude", ["--version"])],
     ["study-coach skill installed", existsSync(join(SKILL_DIR, "SKILL.md"))],
-    ["STUDY.md present (run `npm run init`)", existsSync(join(root, "STUDY.md"))],
+    ["study-planner skill installed", existsSync(join(SKILLS_DIR, "study-planner", "SKILL.md"))],
+    ["STUDY.md present (run `npm run plan`, then `npm run init`)", existsSync(join(root, "STUDY.md"))],
     ["index.html present", existsSync(join(root, "index.html"))],
     ["progress.js generated (run `npm run dashboard`)", existsSync(join(root, "progress.js"))],
   ];
   for (const [name, ok] of checks) log(`${ok ? "✓" : "✗"} ${name}`);
-  process.exitCode = checks.slice(0, 4).every(([, ok]) => ok) ? 0 : 1;
+  process.exitCode = checks.slice(0, 5).every(([, ok]) => ok) ? 0 : 1;
 }
 
 function tryRun(cmd, a) {
@@ -83,6 +88,6 @@ function tryRun(cmd, a) {
 const cmd = process.argv[2];
 if (cmd === "setup") setup();
 else if (cmd === "reset") await reset();
-else if (cmd === "fresh") { await reset(); setup(); log("\nNext: `npm run init` — then `npm run dashboard` and `npm run page`."); }
+else if (cmd === "fresh") { await reset(); setup(); log("\nNext: `npm run plan` (no plan yet) or `npm run init` (have one) — then `npm run dashboard` and `npm run page`."); }
 else if (cmd === "doctor") doctor();
 else { log("usage: study.mjs setup [--update] | reset [--yes] | fresh [--yes] | doctor"); process.exit(1); }
