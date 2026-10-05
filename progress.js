@@ -8,10 +8,10 @@ window.STUDY_PROGRESS = {
  "totalDays": 30,
  "pace": "🔴 Behind — 3 item(s) owed across 1 day(s)",
  "paceKind": "behind",
- "streak": 1,
+ "streak": 2,
  "missedRun": 0,
  "overall": {
-  "done": 4,
+  "done": 5,
   "total": 149
  },
  "exit": {
@@ -88,7 +88,7 @@ window.STUDY_PROGRESS = {
   {
    "file": "courses/karpathy-zero-to-hero.md",
    "title": "Karpathy — Neural Networks: Zero to Hero",
-   "done": 0,
+   "done": 1,
    "total": 4,
    "unit": "parts"
   },
@@ -207,16 +207,16 @@ window.STUDY_PROGRESS = {
    "status": "today",
    "file": "days/day01.md",
    "log": {
-    "done": "",
-    "blocked": "",
-    "next": ""
+    "done": "Learn — micrograd video; worked through it on paper.",
+    "blocked": "nothing yet; Build (code + training run) still in progress.",
+    "next": "finish micrograd in projects/w1-gpt/micrograd/ if not done tonight."
    },
    "items": [
     {
      "text": "**Learn:** Karpathy, building micrograd (2h25m). Code along; don't just watch.",
      "label": "Learn",
      "section": "Plan",
-     "state": "todo",
+     "state": "done",
      "optional": false
     },
     {

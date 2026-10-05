@@ -5,9 +5,9 @@
 ## Where you are
 
 - **Day 1 of 30** · Mon 2026-10-05 · Week 1: Backprop from scratch
-- **Overall:** █░░░░░░░░░░░░░░░░░░░ 3% (4/149 required items)
+- **Overall:** █░░░░░░░░░░░░░░░░░░░ 3% (5/149 required items)
 - **Pace:** 🔴 **Behind** — 3 item(s) owed across 1 day(s)
-- **Streak:** 1 day(s) logged in a row
+- **Streak:** 2 day(s) logged in a row
 - **Exit test:** 0/9 (pass ≥ 7)
 
 ## Today
@@ -16,7 +16,7 @@
 
 Start with (from Day 0's log): _open Karpathy's micrograd video and create projects/w1-gpt/micrograd/._
 
-- [ ] **Learn:** Karpathy, building micrograd (2h25m). Code along; don't just watch.
+- [x] **Learn:** Karpathy, building micrograd (2h25m). Code along; don't just watch.
 - [ ] **Build:** w1-gpt/micrograd/ — a Value class with autograd, then a tiny MLP trained on a toy dataset.
 - [ ] **Rust:** rustlings 71–75; Comprehensive Rust Day 1 morning.
 - [ ] **Post:** "Backprop in 60 seconds: the chain rule, with code."
@@ -32,7 +32,7 @@ Start with (from Day 0's log): _open Karpathy's micrograd video and create proje
 
 | Week | Days done | Logged | Items | Hours (target 30-35) | Posts | Commits |
 |---|---|---|---|---|---|---|
-| 1 | 0/7 | 0 | 0/34 | 0 | 0 | 0 |
+| 1 | 0/7 | 1 | 1/34 | 0 | 0 | 1 |
 | 2 | 0/7 | 0 | 0/34 | 0 | 0 | – |
 | 3 | 0/7 | 0 | 0/33 | 0 | 0 | – |
 | 4 | 0/9 | 0 | 0/41 | 0 | 0 | – |
@@ -50,7 +50,7 @@ Start with (from Day 0's log): _open Karpathy's micrograd video and create proje
 ## Courses & books
 
 - `░░░░░░░░░░░░` Comprehensive Rust (Google) — 0/11 parts
-- `░░░░░░░░░░░░` Karpathy — Neural Networks: Zero to Hero — 0/4 parts
+- `███░░░░░░░░░` Karpathy — Neural Networks: Zero to Hero — 1/4 parts
 - `█████████░░░` rustlings — 70/96 exercises
 - `░░░░░░░░░░░░` Build a Reasoning Model (From Scratch) (Raschka) — 0/4 chapters
 - `░░░░░░░░░░░░` Build a Large Language Model (From Scratch) (Raschka) — 0/4 chapters
@@ -59,6 +59,7 @@ Start with (from Day 0's log): _open Karpathy's micrograd video and create proje
 
 ## Recent log
 
+- **Day 1** (2026-10-05) — done: Learn — micrograd video; worked through it on paper. · blocked: nothing yet; Build (code + training run) still in progress.
 - **Day 0** (2026-10-04) — done: uv env (Python 3.11.9, torch 2.14.1) with MPS True; Ollama 0.35.1 + qwen2.5:3b answers; Docker 20.10 running; RAM is 16 GB. · blocked: repo not pushed to GitHub yet; accounts and spend caps still to do (by hand).
 
 ## Plan changes
