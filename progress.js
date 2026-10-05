@@ -11,7 +11,7 @@ window.STUDY_PROGRESS = {
  "streak": 2,
  "missedRun": 0,
  "overall": {
-  "done": 5,
+  "done": 9,
   "total": 149
  },
  "exit": {
@@ -81,7 +81,7 @@ window.STUDY_PROGRESS = {
   {
    "file": "courses/comprehensive-rust.md",
    "title": "Comprehensive Rust (Google)",
-   "done": 0,
+   "done": 1,
    "total": 11,
    "unit": "parts"
   },
@@ -95,7 +95,7 @@ window.STUDY_PROGRESS = {
   {
    "file": "courses/rustlings.md",
    "title": "rustlings",
-   "done": 70,
+   "done": 75,
    "total": 96,
    "unit": "exercises"
   },
@@ -204,12 +204,12 @@ window.STUDY_PROGRESS = {
    "title": "Backprop from scratch",
    "type": "core",
    "hours": 0,
-   "status": "today",
+   "status": "done",
    "file": "days/day01.md",
    "log": {
-    "done": "Learn — micrograd video; worked through it on paper.",
-    "blocked": "nothing yet; Build (code + training run) still in progress.",
-    "next": "finish micrograd in projects/w1-gpt/micrograd/ if not done tonight."
+    "done": "Learn — micrograd video; worked through it on paper. Build — Value class with autograd and a tiny MLP on a toy dataset. Rust — rustlings 71–75; Comprehensive Rust Day 1 morning.",
+    "blocked": "nothing.",
+    "next": "run the Day 2 plan. Start with the first item in days/day02.md."
    },
    "items": [
     {
@@ -223,28 +223,28 @@ window.STUDY_PROGRESS = {
      "text": "**Build:** w1-gpt/micrograd/ — a Value class with autograd, then a tiny MLP trained on a toy dataset.",
      "label": "Build",
      "section": "Plan",
-     "state": "todo",
+     "state": "done",
      "optional": false
     },
     {
      "text": "**Rust:** rustlings 71–75; Comprehensive Rust Day 1 morning.",
      "label": "Rust",
      "section": "Plan",
-     "state": "todo",
+     "state": "done",
      "optional": false
     },
     {
      "text": "**Post:** \"Backprop in 60 seconds: the chain rule, with code.\"",
      "label": "Post",
      "section": "Plan",
-     "state": "todo",
+     "state": "dropped",
      "optional": false
     },
     {
      "text": "loss goes down and you can explain backward() without notes.",
      "label": "Done when",
      "section": "Done when",
-     "state": "todo",
+     "state": "done",
      "optional": false
     }
    ]

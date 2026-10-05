@@ -1,7 +1,7 @@
 ---
 title: rustlings
 type: course
-progress: 70
+progress: 75
 total: 96
 unit: exercises
 days: 1-5

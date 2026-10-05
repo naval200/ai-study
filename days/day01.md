@@ -11,16 +11,18 @@ hours: 0
 
 ## Plan
 - [x] **Learn:** Karpathy, building micrograd (2h25m). Code along; don't just watch.
-- [ ] **Build:** w1-gpt/micrograd/ — a Value class with autograd, then a tiny MLP trained on a toy dataset.
-- [ ] **Rust:** rustlings 71–75; Comprehensive Rust Day 1 morning.
-- [ ] **Post:** "Backprop in 60 seconds: the chain rule, with code."
+- [x] **Build:** w1-gpt/micrograd/ — a Value class with autograd, then a tiny MLP trained on a toy dataset.
+- [x] **Rust:** rustlings 71–75; Comprehensive Rust Day 1 morning.
+- [-] **Post:** "Backprop in 60 seconds: the chain rule, with code."
 
 ## Done when
-- [ ] loss goes down and you can explain backward() without notes.
+- [x] loss goes down and you can explain backward() without notes.
 
 ## Log
-- **Done:** Learn — micrograd video; worked through it on paper.
-- **Blocked:** nothing yet; Build (code + training run) still in progress.
-- **Tomorrow's first task:** finish micrograd in projects/w1-gpt/micrograd/ if not done tonight.
+- **Done:** Learn — micrograd video; worked through it on paper. Build — Value class with autograd and a tiny MLP on a toy dataset. Rust — rustlings 71–75; Comprehensive Rust Day 1 morning.
+- **Blocked:** nothing.
+- **Tomorrow's first task:** run the Day 2 plan. Start with the first item in days/day02.md.
 
 ## Notes
+Post dropped on 2026-10-05: no channels set up yet, and no wish to share.
+Check 2026-10-05: backward() mechanics solid. The `+=` reason was wrong at first (fan-out, not samples). Rated fragile; first review in 1 day.

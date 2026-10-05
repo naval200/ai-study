@@ -7,7 +7,7 @@ days: 1-11
 
 # Comprehensive Rust
 
-- [ ] Day 1 morning
+- [x] Day 1 morning
 - [ ] Day 1 afternoon
 - [ ] Day 2 morning
 - [ ] Day 2 afternoon
