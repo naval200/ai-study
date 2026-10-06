@@ -37,7 +37,7 @@ Start with (from Day 1's log): _run the Day 2 plan. Start with the first item in
 
 | Week | Days done | Logged | Items | Hours (target 30-35) | Posts | Commits |
 |---|---|---|---|---|---|---|
-| 1 | 1/7 | 1 | 5/34 | 0 | 0 | 11 |
+| 1 | 1/7 | 1 | 5/34 | 0 | 0 | 12 |
 | 2 | 0/7 | 0 | 0/34 | 0 | 0 | – |
 | 3 | 0/7 | 0 | 0/33 | 0 | 0 | – |
 | 4 | 0/9 | 0 | 0/41 | 0 | 0 | – |
@@ -67,6 +67,10 @@ Start with (from Day 1's log): _run the Day 2 plan. Start with the first item in
 | Concept | Level | Target | Last checked | Next review |
 |---|---|---|---|---|
 | Backprop and gradient accumulation | explain ✅ | explain | 2026-10-05 (fragile) | 2026-10-06 |
+| Eval → repair loops and rules-first gates | aware ⚠️ | explain |  | 2026-10-11 |
+| Layered entity resolution (alias → fuzzy → LLM) | aware ⚠️ | explain |  | 2026-10-18 |
+| Model cascades and routing | aware ⚠️ | explain |  | 2026-10-11 |
+| Structured outputs and tool schemas | aware ⚠️ | explain |  | 2026-10-12 |
 
 ## Recent log
 
@@ -75,9 +79,9 @@ Start with (from Day 1's log): _run the Day 2 plan. Start with the first item in
 
 ## Plan changes
 
-- 3 change(s) logged · last: 2026-10-06 — Day 13: stretch item to add a Forksome-style cascade (cheap model first, escalate on validation fail) as a fourth router config
+- 4 change(s) logged · last: 2026-10-06 — Forksome topics kept as short refreshers: 4 concept files (structured outputs, cascades, eval → repair, entity resolution) with summaries and review dates; Day 8 gets a 15-min skim
 - 5 proposal(s) waiting for the next review
 
 ## Collected
 
-- Ideas in inbox: 0 · Parking lot: 11 · Articles/papers noted: 0 · Concepts checked: 1 · Misses logged: 1
+- Ideas in inbox: 0 · Parking lot: 11 · Articles/papers noted: 0 · Concepts checked: 5 · Misses logged: 1

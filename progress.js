@@ -597,7 +597,7 @@ window.STUDY_PROGRESS = {
    },
    "items": [
     {
-     "text": "**Learn:** OpenTelemetry semantic conventions for generative AI (the gen_ai.* span attributes); Claude tool use overview. (Structured outputs: known from Forksome, skip the guide.)",
+     "text": "**Learn:** OpenTelemetry semantic conventions for generative AI (the gen_ai.* span attributes); Claude tool use overview. (Structured outputs: known from Forksome. 15-min refresher only: `concepts/structured-outputs.md`.)",
      "label": "Learn",
      "section": "Plan",
      "state": "todo",
