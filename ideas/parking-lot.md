@@ -15,3 +15,4 @@ These stay out of Days 1–30. New ones get logged here and raised only on Day 3
 | EleutherAI, ETH AI Center topics, OpenAI fellowships | Research track; not on the path to the applied role | Day 60 |
 | CUDA kernels, distributed training, chips | Infra track; revisit if you switch north star | Day 90 |
 | Prior Labs research (priorlabs.ai/research): TabPFN, a pretrained transformer that predicts on tables in one forward pass (in-context learning, no training per dataset) | Not LLM engineering, so it does not serve Days 1–30. Possible use: a `predict` tool for the Days 31–60 agent. Promote only if the Day 30 job-post gap list asks for tabular ML | Day 60 (expires Day 90, Sat 2 Jan 2027: drop if not started) |
+| Measure Forksome (20 recipes through llm.py: cost per recipe, repair rate, escalation rate) | Learner is not sure to return to Forksome; the plan's own projects cover the same skills | Day 30 (drop if no interest) |
