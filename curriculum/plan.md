@@ -8,6 +8,7 @@ Run-sheet and rules: see `../STUDY.md`. Each weekday is 4 hours of core AI work 
 
 - LLM Engineer's Handbook (Iusztin & Labonne): ch. 1–4 already read (your 39%). Chapters 7–10 are used in Days 12–27; ch. 5–6 (fine-tuning) wait for month 2.
 - Build a Reasoning Model (From Scratch) (Raschka): ch. 2 and appendices C, E used this month; ch. 3–8 wait for month 2–3.
+- Applied LLM work already shipped (Forksome, April 2026): structured outputs, multi-pass prompt chains, eval → repair, rules before LLM, cheap-model-first cascades, fuzzy matching, batch jobs with resume state. This plan does not re-teach these. It adds what Forksome did not have: logs, traces, measured cost and quality, golden-set evals, and a real tool-calling agent loop.
 - Rust: 70 of 96 rustlings done. Comprehensive Rust (Google) not started: its four Fundamentals days plus the Concurrency day fill Days 1–11, then Rust goes into the project.
 
 Setup: `../days/day00.md`.
@@ -79,11 +80,11 @@ By Sunday you can say, with your own numbers, what a model costs per million tok
 Rent GPU time only on Days 10–11, about 3 hours in total; terminate the pod each time.
 
 ### Day 8 · Mon 12 Oct — Calling models like an engineer
-- **Learn:** OpenAI Structured Outputs guide; Claude tool use overview.
-- **Build:** w2-inference/llm.py — one client function with streaming, Pydantic structured output, and a JSONL log of model, tokens in/out, time to first token (TTFT), tokens/sec and cost.
+- **Learn:** OpenTelemetry semantic conventions for generative AI (the gen_ai.* span attributes); Claude tool use overview. (Structured outputs: known from Forksome, skip the guide.)
+- **Build:** w2-inference/llm.py — one client function with streaming, Pydantic structured output, and a JSONL log of model, tokens in/out, time to first token (TTFT), tokens/sec and cost. Use the gen_ai.* names for the log fields.
 - **Rust:** Comprehensive Rust Day 4 morning.
 - **Post:** "Every LLM call has four numbers: TTFT, tokens/sec, tokens, cost."
-- **Done when:** 20 calls are logged and one structured extraction validates against its schema.
+- **Done when:** 20 calls are logged with gen_ai.* field names, and one structured extraction validates against its schema.
 
 ### Day 9 · Tue 13 Oct — Local inference on the M1
 - **Learn:** kipply, Transformer Inference Arithmetic (KV cache and memory-bandwidth sections). The quantization section of the llama.cpp README.
@@ -119,6 +120,7 @@ Rent GPU time only on Days 10–11, about 3 hours in total; terminate the pod ea
 - **Build:** a 60-prompt test set (20 factual, 20 extraction, 20 reasoning). A router (rules + the local 3B model as a cheap classifier) sends each prompt to the local model or an API model. Score answers with an LLM judge.
 - **Rust:** loadgen v2 — p50/p95 latency, clap CLI; run it against local Ollama and an API. Read vLLM's Rust client vllm-bench for ideas.
 - **Post:** "I cut API cost by X% by routing easy prompts to my laptop."
+- **Build (stretch):** add a fourth config, the Forksome cascade: cheap model first, escalate to the strong model only when schema validation fails.
 - **Done when:** a table of quality, cost and latency for always-local, always-API and routed.
 
 ### Day 14 · Sun 18 Oct — Review (light day)

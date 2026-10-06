@@ -12,6 +12,7 @@ hours: 0
 ## Plan
 - [ ] **Learn:** RouteLLM paper, sections 1–3.
 - [ ] **Build:** a 60-prompt test set (20 factual, 20 extraction, 20 reasoning). A router (rules + the local 3B model as a cheap classifier) sends each prompt to the local model or an API model. Score answers with an LLM judge.
+- [ ] **Build (stretch):** add a fourth config, the Forksome cascade: cheap model first, escalate to the strong model only when schema validation fails.
 - [ ] **Rust:** loadgen v2 — p50/p95 latency, clap CLI; run it against local Ollama and an API. Read vLLM's Rust client vllm-bench for ideas.
 - [ ] **Post:** "I cut API cost by X% by routing easy prompts to my laptop."
 

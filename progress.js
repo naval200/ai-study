@@ -597,14 +597,14 @@ window.STUDY_PROGRESS = {
    },
    "items": [
     {
-     "text": "**Learn:** OpenAI Structured Outputs guide; Claude tool use overview.",
+     "text": "**Learn:** OpenTelemetry semantic conventions for generative AI (the gen_ai.* span attributes); Claude tool use overview. (Structured outputs: known from Forksome, skip the guide.)",
      "label": "Learn",
      "section": "Plan",
      "state": "todo",
      "optional": false
     },
     {
-     "text": "**Build:** w2-inference/llm.py — one client function with streaming, Pydantic structured output, and a JSONL log of model, tokens in/out, time to first token (TTFT), tokens/sec and cost.",
+     "text": "**Build:** w2-inference/llm.py — one client function with streaming, Pydantic structured output, and a JSONL log of model, tokens in/out, time to first token (TTFT), tokens/sec and cost. Use the gen_ai.* names for the log fields.",
      "label": "Build",
      "section": "Plan",
      "state": "todo",
@@ -625,7 +625,7 @@ window.STUDY_PROGRESS = {
      "optional": false
     },
     {
-     "text": "20 calls are logged and one structured extraction validates against its schema.",
+     "text": "20 calls are logged with gen_ai.* field names, and one structured extraction validates against its schema.",
      "label": "Done when",
      "section": "Done when",
      "state": "todo",
@@ -881,6 +881,13 @@ window.STUDY_PROGRESS = {
      "section": "Plan",
      "state": "todo",
      "optional": false
+    },
+    {
+     "text": "**Build (stretch):** add a fourth config, the Forksome cascade: cheap model first, escalate to the strong model only when schema validation fails.",
+     "label": "Build (stretch)",
+     "section": "Plan",
+     "state": "todo",
+     "optional": true
     },
     {
      "text": "**Rust:** loadgen v2 — p50/p95 latency, clap CLI; run it against local Ollama and an API. Read vLLM's Rust client vllm-bench for ideas.",

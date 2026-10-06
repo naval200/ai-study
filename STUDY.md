@@ -29,6 +29,8 @@ Get hired as a remote LLM / AI engineer by building four measured, public portfo
 ## Learner profile
 
 - Senior product engineer. Strong in Next.js / TypeScript, learning Python ML tooling and Rust.
+- Shipped applied LLM work before this plan (Forksome, April 2026): a multi-pass enrichment pipeline (gpt-4o-mini first, gpt-4o on reject), structured outputs, eval → repair passes, rules-first quality gate, RapidFuzz + batched background LLM for ingredient names, stock-first images with AI fallback, Apify crawl with dedup and resume state. FastAPI + MongoDB.
+- Gap from that project: no telemetry, logs or traces, and no measured numbers (cost per recipe, pass rates, golden sets). It was a plain Python workflow, not a tool-calling agent.
 - Hardware: M1 MacBook, 16 GB RAM → 7–8B models at 4-bit run locally.
 - Depth I want by default: **explain** (I can explain it without notes). Concepts on the exit test need **apply**.
 

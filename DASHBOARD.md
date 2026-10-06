@@ -37,7 +37,7 @@ Start with (from Day 1's log): _run the Day 2 plan. Start with the first item in
 
 | Week | Days done | Logged | Items | Hours (target 30-35) | Posts | Commits |
 |---|---|---|---|---|---|---|
-| 1 | 1/7 | 1 | 5/34 | 0 | 0 | 10 |
+| 1 | 1/7 | 1 | 5/34 | 0 | 0 | 11 |
 | 2 | 0/7 | 0 | 0/34 | 0 | 0 | – |
 | 3 | 0/7 | 0 | 0/33 | 0 | 0 | – |
 | 4 | 0/9 | 0 | 0/41 | 0 | 0 | – |
@@ -75,7 +75,8 @@ Start with (from Day 1's log): _run the Day 2 plan. Start with the first item in
 
 ## Plan changes
 
-- 1 change(s) logged · last: 2026-10-03 — Post items and the exit test accept any format (blog, LinkedIn, X, carousel, YouTube text) instead of filmed reels
+- 3 change(s) logged · last: 2026-10-06 — Day 13: stretch item to add a Forksome-style cascade (cheap model first, escalate on validation fail) as a fourth router config
+- 5 proposal(s) waiting for the next review
 
 ## Collected
 
