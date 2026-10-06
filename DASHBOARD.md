@@ -1,26 +1,31 @@
 # Dashboard — AI Study Plan — Days 1–30
 
-> Generated 2026-10-05 by study-coach. Don't edit by hand — run `/study-coach status`.
+> Generated 2026-10-06 by study-coach. Don't edit by hand — run `/study-coach status`.
 
 ## Where you are
 
-- **Day 1 of 30** · Mon 2026-10-05 · Week 1: Backprop from scratch
+- **Day 2 of 30** · Tue 2026-10-06 · Week 1: What a language model predicts
 - **Overall:** █░░░░░░░░░░░░░░░░░░░ 6% (9/149 required items)
 - **Pace:** 🔴 **Behind** — 3 item(s) owed across 1 day(s)
 - **Streak:** 2 day(s) logged in a row
 - **Exit test:** 0/9 (pass ≥ 7)
+- **Online:** https://naval200.github.io/ai-study/
+
+## Reviews due
+
+- 🔁 Backprop and gradient accumulation — due 2026-10-06 (last: fragile)
 
 ## Today
 
-**Backprop from scratch** — `days/day01.md`
+**What a language model predicts** — `days/day02.md`
 
-Start with (from Day 0's log): _open Karpathy's micrograd video and create projects/w1-gpt/micrograd/._
+Start with (from Day 1's log): _run the Day 2 plan. Start with the first item in days/day02.md._
 
-- [x] **Learn:** Karpathy, building micrograd (2h25m). Code along; don't just watch.
-- [x] **Build:** w1-gpt/micrograd/ — a Value class with autograd, then a tiny MLP trained on a toy dataset.
-- [x] **Rust:** rustlings 71–75; Comprehensive Rust Day 1 morning.
-- [-] **Post:** "Backprop in 60 seconds: the chain rule, with code."
-- [x] loss goes down and you can explain backward() without notes.
+- [ ] **Learn:** Karpathy, makemore part 1 (1h57m). Raschka ch. 2, Working with Text Data.
+- [ ] **Build:** a bigram character model; then the sliding-window dataset and embedding layer from ch. 2.
+- [ ] **Rust:** rustlings 76–80; Comprehensive Rust Day 1 afternoon.
+- [ ] **Post:** "An LLM is a next-token probability table. Here's the smallest one."
+- [ ] your bigram model samples name-like strings, and you can explain why cross-entropy is the loss.
 
 ## Catch-up queue (goes to Sunday)
 
@@ -32,7 +37,7 @@ Start with (from Day 0's log): _open Karpathy's micrograd video and create proje
 
 | Week | Days done | Logged | Items | Hours (target 30-35) | Posts | Commits |
 |---|---|---|---|---|---|---|
-| 1 | 1/7 | 1 | 5/34 | 0 | 0 | 9 |
+| 1 | 1/7 | 1 | 5/34 | 0 | 0 | 10 |
 | 2 | 0/7 | 0 | 0/34 | 0 | 0 | – |
 | 3 | 0/7 | 0 | 0/33 | 0 | 0 | – |
 | 4 | 0/9 | 0 | 0/41 | 0 | 0 | – |
@@ -42,7 +47,7 @@ Start with (from Day 0's log): _open Karpathy's micrograd video and create proje
 ✅ done · 🟡 partial · ❌ missed · 👉 today · · upcoming
 
 - **Setup:** 🟡 0
-- **Week 1:** ✅ 1  · 2  · 3  · 4  · 5  · 6  · 7
+- **Week 1:** ✅ 1  👉 2  · 3  · 4  · 5  · 6  · 7
 - **Week 2:** · 8  · 9  · 10  · 11  · 12  · 13  · 14
 - **Week 3:** · 15  · 16  · 17  · 18  · 19  · 20  · 21
 - **Week 4:** · 22  · 23  · 24  · 25  · 26  · 27  · 28  · 29  · 30
@@ -74,4 +79,4 @@ Start with (from Day 0's log): _open Karpathy's micrograd video and create proje
 
 ## Collected
 
-- Ideas in inbox: 0 · Parking lot: 10 · Articles/papers noted: 0 · Concepts checked: 1 · Misses logged: 1
+- Ideas in inbox: 0 · Parking lot: 11 · Articles/papers noted: 0 · Concepts checked: 1 · Misses logged: 1

@@ -1,10 +1,10 @@
 window.STUDY_PROGRESS = {
- "generated": "2026-10-05",
+ "generated": "2026-10-06",
  "timezone": "Asia/Kolkata",
  "curriculum": "AI Study Plan — Days 1–30",
  "start": "2026-10-05",
  "end": "2026-11-03",
- "dayNum": 1,
+ "dayNum": 2,
  "totalDays": 30,
  "pace": "🔴 Behind — 3 item(s) owed across 1 day(s)",
  "paceKind": "behind",
@@ -58,7 +58,13 @@ window.STUDY_PROGRESS = {
   ]
  },
  "posts": 0,
- "reviewsDue": [],
+ "reviewsDue": [
+  {
+   "title": "Backprop and gradient accumulation",
+   "next": "2026-10-06",
+   "outcome": "fragile"
+  }
+ ],
  "weeks": {
   "1": {
    "title": "LLM fundamentals",
@@ -257,7 +263,7 @@ window.STUDY_PROGRESS = {
    "title": "What a language model predicts",
    "type": "core",
    "hours": 0,
-   "status": "upcoming",
+   "status": "today",
    "file": "days/day02.md",
    "log": {
     "done": "",
