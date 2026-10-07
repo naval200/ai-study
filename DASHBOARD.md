@@ -11,10 +11,6 @@
 - **Exit test:** 0/9 (pass ≥ 7)
 - **Online:** https://naval200.github.io/ai-study/
 
-## Reviews due
-
-- 🔁 Backprop and gradient accumulation — due 2026-10-06 (last: fragile)
-
 ## Today
 
 **Finish Day 2: text data and embeddings** — `days/day03.md`
@@ -39,7 +35,7 @@ Start with (from Day 2's log): _Day 3 — Raschka ch. 2, then the sliding-window
 
 | Week | Days done | Logged | Items | Hours (target 30-35) | Posts | Commits |
 |---|---|---|---|---|---|---|
-| 1 | 1/12 | 2 | 10/53 | 0 | 0 | 15 |
+| 1 | 1/12 | 2 | 10/53 | 0 | 0 | 16 |
 | 2 | 0/11 | 0 | 0/47 | 0 | 0 | – |
 | 3 | 0/10 | 0 | 0/45 | 0 | 0 | – |
 | 4 | 0/14 | 0 | 0/54 | 0 | 0 | – |
@@ -68,7 +64,7 @@ Start with (from Day 2's log): _Day 3 — Raschka ch. 2, then the sliding-window
 
 | Concept | Level | Target | Last checked | Next review |
 |---|---|---|---|---|
-| Backprop and gradient accumulation | explain ✅ | explain | 2026-10-05 (fragile) | 2026-10-06 |
+| Backprop and gradient accumulation | explain ✅ | explain | 2026-10-07 (solid) | 2026-10-10 |
 | Cross-entropy and negative log likelihood | aware ⚠️ | explain | 2026-10-07 (fragile) | 2026-10-08 |
 | Eval → repair loops and rules-first gates | aware ⚠️ | explain |  | 2026-10-11 |
 | Layered entity resolution (alias → fuzzy → LLM) | aware ⚠️ | explain |  | 2026-10-18 |

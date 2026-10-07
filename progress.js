@@ -58,13 +58,7 @@ window.STUDY_PROGRESS = {
   ]
  },
  "posts": 0,
- "reviewsDue": [
-  {
-   "title": "Backprop and gradient accumulation",
-   "next": "2026-10-06",
-   "outcome": "fragile"
-  }
- ],
+ "reviewsDue": [],
  "weeks": {
   "1": {
    "title": "LLM fundamentals",
