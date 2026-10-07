@@ -1,17 +1,17 @@
 window.STUDY_PROGRESS = {
- "generated": "2026-10-06",
+ "generated": "2026-10-07",
  "timezone": "Asia/Kolkata",
  "curriculum": "AI Study Plan — Days 1–30",
  "start": "2026-10-05",
  "end": "2026-11-03",
- "dayNum": 2,
+ "dayNum": 3,
  "totalDays": 30,
- "pace": "🔴 Behind — 3 item(s) owed across 1 day(s)",
+ "pace": "🔴 Behind — 6 item(s) owed across 2 day(s)",
  "paceKind": "behind",
- "streak": 2,
+ "streak": 3,
  "missedRun": 0,
  "overall": {
-  "done": 9,
+  "done": 11,
   "total": 149
  },
  "exit": {
@@ -263,26 +263,26 @@ window.STUDY_PROGRESS = {
    "title": "What a language model predicts",
    "type": "core",
    "hours": 0,
-   "status": "today",
+   "status": "partial",
    "file": "days/day02.md",
    "log": {
-    "done": "",
-    "blocked": "",
-    "next": ""
+    "done": "Learn — makemore part 1 and Raschka ch. 2. Build — bigram character model, then the sliding-window dataset and embedding layer.",
+    "blocked": "Rust (rustlings 76–80, Comprehensive Rust Day 1 afternoon) and Post not done yet.",
+    "next": "open days/day03.md and start the Learn item. Do the Day 2 Rust items in the Sunday catch-up."
    },
    "items": [
     {
      "text": "**Learn:** Karpathy, makemore part 1 (1h57m). Raschka ch. 2, Working with Text Data.",
      "label": "Learn",
      "section": "Plan",
-     "state": "todo",
+     "state": "done",
      "optional": false
     },
     {
      "text": "**Build:** a bigram character model; then the sliding-window dataset and embedding layer from ch. 2.",
      "label": "Build",
      "section": "Plan",
-     "state": "todo",
+     "state": "done",
      "optional": false
     },
     {
@@ -316,7 +316,7 @@ window.STUDY_PROGRESS = {
    "title": "Attention",
    "type": "core",
    "hours": 0,
-   "status": "upcoming",
+   "status": "today",
    "file": "days/day03.md",
    "log": {
     "done": "",
