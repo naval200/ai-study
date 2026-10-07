@@ -1,22 +1,23 @@
 ---
 day: 15
 date: 2026-10-19
-week: 3
-title: Lexical search and a baseline
+week: 2
+title: Local inference on the M1
 type: core
 hours: 0
 ---
 
-# Day 15 · Mon 19 Oct — Lexical search and a baseline
+# Day 15 · Mon 19 Oct — Local inference on the M1
 
 ## Plan
-- [ ] **Learn:** Introduction to IR ch. 6 (tf-idf and the vector space model) and the Okapi BM25 section of ch. 11.
-- [ ] **Build:** w3-retrieval/ — load FiQA, run a BM25 baseline with bm25s, score nDCG@10, Recall@100 and MRR@10 with ranx.
-- [ ] **Rust:** start a BM25 scorer in Rust (tokenize, IDF, score) over 1,000 FiQA docs.
-- [ ] **Post:** "BM25 is 30 years old and still hard to beat."
+- [ ] **Learn:** The quantization section of the llama.cpp README.
+- [ ] **Build:** run one 3B instruct model through Ollama at Q4_K_M and Q8_0, and through MLX LM at 4-bit. Record TTFT, tokens/sec and peak RAM.
+- [ ] **Build:** point llm.py at Ollama's OpenAI-compatible endpoint.
+- [ ] **Rust:** Comprehensive Rust Day 4 afternoon (Fundamentals done).
+- [ ] **Post:** "My M1 runs a 3B model at X tokens/sec. Here's the memory math."
 
 ## Done when
-- [ ] baseline numbers are in results.csv.
+- [ ] a table of at least four configs, and your predicted decode speed (memory bandwidth ÷ model size in bytes) lands within 2× of measured.
 
 ## Log
 - **Done:**

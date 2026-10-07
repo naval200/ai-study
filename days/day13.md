@@ -2,22 +2,20 @@
 day: 13
 date: 2026-10-17
 week: 2
-title: Mini SLM router
+title: Calling models (2 of 2) · Local inference (start)
 type: core
 hours: 0
 ---
 
-# Day 13 · Sat 17 Oct — Mini SLM router
+# Day 13 · Sat 17 Oct — Calling models (2 of 2) · Local inference (start)
 
 ## Plan
-- [ ] **Learn:** RouteLLM paper, sections 1–3.
-- [ ] **Build:** a 60-prompt test set (20 factual, 20 extraction, 20 reasoning). A router (rules + the local 3B model as a cheap classifier) sends each prompt to the local model or an API model. Score answers with an LLM judge.
-- [ ] **Build (stretch):** add a fourth config, the Forksome cascade: cheap model first, escalate to the strong model only when schema validation fails.
-- [ ] **Rust:** loadgen v2 — p50/p95 latency, clap CLI; run it against local Ollama and an API. Read vLLM's Rust client vllm-bench for ideas.
-- [ ] **Post:** "I cut API cost by X% by routing easy prompts to my laptop."
+- [ ] **Learn:** kipply, Transformer Inference Arithmetic (KV cache and memory-bandwidth sections).
+- [ ] **Build:** a JSONL log in llm.py: model, tokens in/out, time to first token (TTFT), tokens/sec and cost. Use the gen_ai.* names for the log fields.
+- [ ] **Post:** "Every LLM call has four numbers: TTFT, tokens/sec, tokens, cost."
 
 ## Done when
-- [ ] a table of quality, cost and latency for always-local, always-API and routed.
+- [ ] 20 calls are logged with gen_ai.* field names, and one structured extraction validates against its schema.
 
 ## Log
 - **Done:**

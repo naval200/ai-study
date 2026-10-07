@@ -14,7 +14,7 @@ hours: 0
 - [x] **Python:** Python 3.11+ via uv, then PyTorch with MPS. Check `torch.backends.mps.is_available()`.
 - [x] **Tools:** Ollama and Docker Desktop (for Qdrant in Week 3).
 - [ ] **Accounts:** GPU cloud (RunPod or Modal), OpenAI or Anthropic API, Hugging Face — all with spend caps.
-- [ ] **Budget:** ~$15–25 of rented GPU time (Days 10–11) plus a few dollars of API calls.
+- [ ] **Budget:** ~$15–25 of rented GPU time (Days 16–18) plus a few dollars of API calls.
 - [x] **RAM check:** find out the M1's RAM and write it into STUDY.md.
 
 ## Done when

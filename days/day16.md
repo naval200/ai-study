@@ -1,22 +1,23 @@
 ---
 day: 16
 date: 2026-10-20
-week: 3
-title: Dense retrieval
+week: 2
+title: Serving theory and the first GPU
 type: core
 hours: 0
 ---
 
-# Day 16 · Tue 20 Oct — Dense retrieval
+# Day 16 · Tue 20 Oct — Serving theory and the first GPU
 
 ## Plan
-- [ ] **Learn:** Sentence Transformers docs on semantic search and bi-encoders. Browse the MTEB leaderboard to pick models.
-- [ ] **Build:** embed the corpus on MPS with two small models (e.g. BAAI/bge-small-en-v1.5 and all-MiniLM-L6-v2); exact search in NumPy; evaluate. Note embedding time per 1,000 docs.
-- [ ] **Rust:** finish the BM25 scorer; check its top-10 matches bm25s on 20 queries.
-- [ ] **Post:** "Keyword search vs meaning search: where each one fails."
+- [ ] **Learn:** PagedAttention / vLLM paper, sections 1–4.
+- [ ] **Learn:** Anyscale, continuous batching.
+- [ ] **Build:** rent one 24 GB GPU (RTX 4090, L4 or A10). Follow the vLLM quickstart: vllm serve Qwen/Qwen2.5-7B-Instruct. Call it from llm.py.
+- [ ] **Rust:** Comprehensive Rust Concurrency, morning (threads, channels, Send/Sync).
+- [ ] **Post:** "Serving 1 user and 50 users are different problems."
 
 ## Done when
-- [ ] dense numbers sit next to BM25 in results.csv, with 10 queries where they disagree.
+- [ ] the server answers and you've logged single-request TTFT and tokens/sec. Pod terminated.
 
 ## Log
 - **Done:**

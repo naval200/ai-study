@@ -1,21 +1,21 @@
 ---
 day: 14
 date: 2026-10-18
-week: 2
-title: Review (light day)
+week: 1
+title: Week 1 write-up (light day)
 type: light
 hours: 0
 ---
 
-# Day 14 · Sun 18 Oct — Review (light day)
+# Day 14 · Sun 18 Oct — Week 1 write-up (light day)
 
 ## Plan
-- [ ] **Write:** blog post #2, "LLM inference on an M1 vs a rented GPU: real numbers".
-- [ ] **Review:** scorecard; README for w2-inference/.
-- [ ] **Rust:** loadgen README; publish the repo.
+- [ ] **Write:** blog post #1, "Building a GPT from scratch on an M1", with the loss curve and the KV-cache numbers.
+- [ ] **Review:** fill the scorecard; tidy w1-gpt/ with a README.
+- [ ] **Rust (if behind):** catch-up only if behind.
 
 ## Done when
-- [ ] the post is published and loadgen is public.
+- [ ] the post is published and the repo is public.
 
 ## Log
 - **Done:**

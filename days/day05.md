@@ -2,21 +2,22 @@
 day: 5
 date: 2026-10-09
 week: 1
-title: Pretraining and sampling
+title: Attention (2 of 2) · GPT (start)
 type: core
 hours: 0
 ---
 
-# Day 5 · Fri 9 Oct — Pretraining and sampling
+# Day 5 · Fri 9 Oct — Attention (2 of 2) · GPT (start)
 
 ## Plan
-- [ ] **Learn:** Raschka ch. 5, Pretraining on Unlabeled Data (loss curves, temperature, top-k).
-- [ ] **Build:** switch the data to TinyStories (a 50–100 MB subset), train a ~10M-parameter model, and implement temperature, top-k and top-p sampling.
-- [ ] **Rust:** rustlings 91–96 (done); Comprehensive Rust Day 3 morning.
-- [ ] **Post:** "Temperature, top-k, top-p: same model, three personalities."
+- [ ] **Learn:** Paper: Attention Is All You Need, section 3 only.
+- [ ] **Learn:** Karpathy, Let's build GPT (1h56m).
+- [ ] **Build:** multi-head attention, with shape asserts in the test file.
+- [ ] **Rust:** Comprehensive Rust Day 2 morning.
+- [ ] **Post:** "Q, K, V explained with a library-search analogy."
 
 ## Done when
-- [ ] the model writes coherent three-sentence stories, and you have a sampling comparison table.
+- [ ] your multi-head attention matches torch.nn.functional.scaled_dot_product_attention within 1e-5.
 
 ## Log
 - **Done:**

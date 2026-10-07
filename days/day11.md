@@ -1,22 +1,21 @@
 ---
 day: 11
 date: 2026-10-15
-week: 2
-title: Benchmark day
+week: 1
+title: Tokenizers
 type: core
 hours: 0
 ---
 
-# Day 11 · Thu 15 Oct — Benchmark day
+# Day 11 · Thu 15 Oct — Tokenizers
 
 ## Plan
-- [ ] **Learn:** vLLM Benchmark CLI docs; Build a Reasoning Model appendix E, Batching and Throughput-Oriented Execution.
-- [ ] **Build:** vllm bench serve at concurrency 1, 4, 16 and 64, for the FP16 model and an AWQ 4-bit version. Record throughput, p50/p95 TTFT, inter-token latency and GPU memory.
-- [ ] **Rust:** Comprehensive Rust Concurrency, afternoon (async/await); Tokio tutorial, first three sections.
-- [ ] **Post:** "Throughput goes up, latency goes up: the concurrency curve."
+- [ ] **Learn:** Karpathy, Let's build the GPT Tokenizer (2h13m, at 1.5×).
+- [ ] **Learn:** Play with Tiktokenizer.
+- [ ] **Build (stretch):** BPE train/encode/decode following minbpe.
+- [ ] **Rust:** Comprehensive Rust Day 3 afternoon.
 
 ## Done when
-- [ ] results are saved as CSV and the pod is terminated.
 
 ## Log
 - **Done:**

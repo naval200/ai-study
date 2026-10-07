@@ -2,22 +2,21 @@
 day: 12
 date: 2026-10-16
 week: 2
-title: Speed tricks and cost
+title: Calling models like an engineer (1 of 2)
 type: core
 hours: 0
 ---
 
-# Day 12 · Fri 16 Oct — Speed tricks and cost
+# Day 12 · Fri 16 Oct — Calling models like an engineer (1 of 2)
 
 ## Plan
-- [ ] **Learn:** LLM Engineer's Handbook ch. 8, Inference Optimization. Speculative decoding paper: abstract, figure 1, section 3.
-- [ ] **Build:** a cost notebook — dollars per 1M output tokens for the M1, the rented GPU (hourly price ÷ measured throughput) and two API models; break-even requests/day for self-hosting.
-- [ ] **Build (stretch):** speculative decoding in MLX LM with a small draft model.
-- [ ] **Rust:** rust/loadgen v1 — reqwest + tokio, firing N concurrent chat requests at any OpenAI-compatible URL.
-- [ ] **Post:** "When does self-hosting beat the API? My break-even math."
+- [ ] **Learn:** OpenTelemetry semantic conventions for generative AI (the gen_ai.* span attributes).
+- [ ] **Learn:** Claude tool use overview.
+- [ ] **Learn:** 15-min refresher only: `concepts/structured-outputs.md` (known from Forksome).
+- [ ] **Build:** w2-inference/llm.py — one client function with streaming and Pydantic structured output.
+- [ ] **Rust:** Comprehensive Rust Day 4 morning.
 
 ## Done when
-- [ ] one chart comparing cost per 1M tokens across the three options.
 
 ## Log
 - **Done:**

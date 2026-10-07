@@ -1,9 +1,9 @@
 ---
-curriculum: AI Study Plan — Days 1–30
+curriculum: AI Study Plan — Days 1–47
 plan: curriculum/plan.md
 start: 2026-10-05
-end: 2026-11-03
-days: 30
+end: 2026-11-20
+days: 47
 timezone: Asia/Kolkata
 hours_target_per_week: 30-35
 scope_cut_after_missed: 2
@@ -11,7 +11,7 @@ exit_test: curriculum/exit-test.md
 exit_test_pass: 7
 default_depth: explain
 post_formats: linkedin, x, instagram-carousel, youtube-community
-checkpoints: 30, 60, 90
+checkpoints: 47, 77, 107
 goal_cooldown_days: 7
 max_swaps_per_week: 2
 progress_js: progress.js
@@ -44,6 +44,8 @@ Get hired as a remote LLM / AI engineer by building four measured, public portfo
 | 18:00–19:30 | Rust (1.5h) | The day's Rust line |
 | 21:00–22:00 | Optional | Watch list only. Never replaces a block above |
 
+Since the 2026-10-07 replan, each day holds about 2/3 of the old load. If you finish early, go deeper on the day's topic; do not start the next day.
+
 Sundays are light: one 3-hour block for the write-up and scorecard, plus Rust catch-up only if behind. No new material.
 
 ## Rules
@@ -53,4 +55,4 @@ Sundays are light: one 3-hour block for the write-up and scorecard, plus Rust ca
 3. Items marked stretch are the first to drop when behind.
 4. New books, courses or videos go to `ideas/parking-lot.md` or the optional evening slot, never into a block.
 5. Each task must feed this week's deliverable. Two missed days in a row triggers a scope cut, not extra hours.
-6. Day 30 is judged against the exit test, not hours logged.
+6. Day 47 is judged against the exit test, not hours logged.

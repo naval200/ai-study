@@ -1,22 +1,21 @@
 ---
 day: 20
 date: 2026-10-24
-week: 3
-title: From search to answers
+week: 2
+title: Mini SLM router (1 of 2)
 type: core
 hours: 0
 ---
 
-# Day 20 · Sat 24 Oct — From search to answers
+# Day 20 · Sat 24 Oct — Mini SLM router (1 of 2)
 
 ## Plan
-- [ ] **Learn:** LLM Engineer's Handbook ch. 9, RAG Inference Pipeline; Anthropic, Contextual Retrieval.
-- [ ] **Build:** a FastAPI /ask endpoint — hybrid top-10, a prompt with numbered sources, a streamed answer with [1][2] citations via llm.py. Let your Week 2 router choose local or API.
-- [ ] **Rust:** gateway forwards POST /ask to FastAPI and passes the stream through.
-- [ ] **Post:** "From search to answers: RAG in 80 lines."
+- [ ] **Learn:** RouteLLM paper, sections 1–3.
+- [ ] **Build:** a 60-prompt test set (20 factual, 20 extraction, 20 reasoning).
+- [ ] **Build:** a router (rules + the local 3B model as a cheap classifier) that sends each prompt to the local model or an API model.
+- [ ] **Rust:** loadgen v2 — p50/p95 latency, clap CLI.
 
 ## Done when
-- [ ] 10 sample questions return cited answers you'd trust, through the gateway.
 
 ## Log
 - **Done:**

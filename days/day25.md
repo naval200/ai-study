@@ -1,22 +1,22 @@
 ---
 day: 25
 date: 2026-10-29
-week: 4
-title: The product UI
+week: 3
+title: Dense retrieval
 type: core
 hours: 0
 ---
 
-# Day 25 · Thu 29 Oct — The product UI
+# Day 25 · Thu 29 Oct — Dense retrieval
 
 ## Plan
-- [ ] **Learn:** LLM Engineer's Handbook ch. 10, Inference Pipeline Deployment (first half).
-- [ ] **Build:** a Next.js front end (your home turf): question box, streamed answer, clickable citations that open the source post, a mode switch (BM25 / hybrid / hybrid + rerank), and per-stage latency and cost under each answer.
-- [ ] **Rust:** gateway adds an in-memory cache for repeat questions and a token-bucket rate limit.
-- [ ] **Post:** a 60-second screen recording of the app answering a real question.
+- [ ] **Build:** embed the corpus on MPS with two small models (e.g. BAAI/bge-small-en-v1.5 and all-MiniLM-L6-v2). Note embedding time per 1,000 docs.
+- [ ] **Build:** exact search in NumPy; evaluate.
+- [ ] **Rust:** finish the BM25 scorer; check its top-10 matches bm25s on 20 queries.
+- [ ] **Post:** "Keyword search vs meaning search: where each one fails."
 
 ## Done when
-- [ ] the full flow works locally end to end, through the gateway.
+- [ ] dense numbers sit next to BM25 in results.csv, with 10 queries where they disagree.
 
 ## Log
 - **Done:**

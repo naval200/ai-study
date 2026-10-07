@@ -2,7 +2,7 @@
 title: Comprehensive Rust (Google)
 type: course
 url: https://google.github.io/comprehensive-rust/
-days: 1-11
+days: 1-18
 ---
 
 # Comprehensive Rust

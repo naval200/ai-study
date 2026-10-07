@@ -1,22 +1,21 @@
 ---
 day: 26
 date: 2026-10-30
-week: 4
-title: Eval page and guardrails
+week: 3
+title: Qdrant (1 of 2)
 type: core
 hours: 0
 ---
 
-# Day 26 · Fri 30 Oct — Eval page and guardrails
+# Day 26 · Fri 30 Oct — Qdrant (1 of 2)
 
 ## Plan
-- [ ] **Learn:** LLM Engineer's Handbook ch. 10 (second half).
-- [ ] **Build:** an /evals page that renders results.csv and eval_report.json as charts. In Python: max-token caps and a "no good source found" reply when the top retrieval score is low.
-- [ ] **Rust:** gateway records p50/p95 latency per route at /metrics; show it on the evals page.
-- [ ] **Post:** "The page that proves my RAG works."
+- [ ] **Learn:** Qdrant Hybrid Queries docs.
+- [ ] **Learn:** re-skim LLM Engineer's Handbook ch. 4, RAG Feature Pipeline, for how it uses Qdrant.
+- [ ] **Build:** Qdrant in Docker; one collection with a named dense vector and a sparse BM25 vector (via FastEmbed).
+- [ ] **Rust:** an ingest tool using the Qdrant Rust client that upserts from JSONL.
 
 ## Done when
-- [ ] a weak question gets the fallback reply, not a made-up answer.
 
 ## Log
 - **Done:**

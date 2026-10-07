@@ -2,21 +2,22 @@
 day: 6
 date: 2026-10-10
 week: 1
-title: KV cache and a real modern model
+title: Build the GPT
 type: core
 hours: 0
 ---
 
-# Day 6 · Sat 10 Oct — KV cache and a real modern model
+# Day 6 · Sat 10 Oct — Build the GPT
 
 ## Plan
-- [ ] **Learn:** Build a Reasoning Model ch. 2, Generating Text with a Pre-trained LLM, and appendix C (Qwen3 source code) — note how RoPE, RMSNorm and grouped-query attention differ from your GPT.
-- [ ] **Build:** add a KV cache to your GPT and measure tokens/sec with and without it. Then run the book's from-scratch Qwen3 0.6B on MPS and time it the same way.
-- [ ] **Rust:** Comprehensive Rust Day 3 afternoon.
-- [ ] **Post:** "The KV cache made my model N× faster. Here's why."
+- [ ] **Learn:** Raschka ch. 4, Implementing a GPT Model from Scratch.
+- [ ] **Build:** a full GPT (embeddings, blocks, LayerNorm, residuals).
+- [ ] **Build:** train it on Tiny Shakespeare on MPS. Hold out 10% and print the validation loss.
+- [ ] **Rust:** rustlings 86–90.
+- [ ] **Post:** "I trained a GPT on my MacBook. Here's what it wrote."
 
 ## Done when
-- [ ] you have both speedup numbers and can say why decode time grows without the cache.
+- [ ] validation loss below about 2.0 and the samples look like play dialogue.
 
 ## Log
 - **Done:**

@@ -1,6 +1,6 @@
-# Day 30 exit test
+# Day 47 exit test
 
-Pass at least 7 of 9 to move on to agents in Days 31–60. Fewer than 7 means Days 31–37 close the gaps first.
+Pass at least 7 of 9 to move on to agents in Days 48–77. Fewer than 7 means Days 48–54 close the gaps first.
 
 - [ ] Ask FiQA is live at a public URL, with an eval page
 - [ ] Four public repos: w1-gpt, w2-inference, w3-retrieval, w4-ask-fiqa

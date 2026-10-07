@@ -2,21 +2,20 @@
 day: 4
 date: 2026-10-08
 week: 1
-title: Build the GPT
+title: Attention (1 of 2)
 type: core
 hours: 0
 ---
 
-# Day 4 · Thu 8 Oct — Build the GPT
+# Day 4 · Thu 8 Oct — Attention (1 of 2)
 
 ## Plan
-- [ ] **Learn:** Karpathy, Let's build GPT (1h56m). Raschka ch. 4, Implementing a GPT Model from Scratch.
-- [ ] **Build:** a full GPT (embeddings, blocks, LayerNorm, residuals); train on Tiny Shakespeare on MPS.
-- [ ] **Rust:** rustlings 86–90; Comprehensive Rust Day 2 afternoon.
-- [ ] **Post:** "I trained a GPT on my MacBook. Here's what it wrote."
+- [ ] **Learn:** Jay Alammar, The Illustrated Transformer.
+- [ ] **Learn:** Raschka ch. 3, Coding Attention Mechanisms.
+- [ ] **Build:** scaled dot-product attention with a causal mask, with shape asserts in a test file.
+- [ ] **Rust:** rustlings 81–85.
 
 ## Done when
-- [ ] validation loss below about 2.0 and the samples look like play dialogue.
 
 ## Log
 - **Done:**

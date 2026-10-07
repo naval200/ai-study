@@ -1,18 +1,18 @@
 window.STUDY_PROGRESS = {
  "generated": "2026-10-07",
  "timezone": "Asia/Kolkata",
- "curriculum": "AI Study Plan — Days 1–30",
+ "curriculum": "AI Study Plan — Days 1–47",
  "start": "2026-10-05",
- "end": "2026-11-03",
+ "end": "2026-11-20",
  "dayNum": 3,
- "totalDays": 30,
- "pace": "🔴 Behind — 6 item(s) owed across 2 day(s)",
+ "totalDays": 47,
+ "pace": "🔴 Behind — 5 item(s) owed across 2 day(s)",
  "paceKind": "behind",
  "streak": 3,
  "missedRun": 0,
  "overall": {
-  "done": 11,
-  "total": 149
+  "done": 14,
+  "total": 206
  },
  "exit": {
   "done": 0,
@@ -68,19 +68,19 @@ window.STUDY_PROGRESS = {
  "weeks": {
   "1": {
    "title": "LLM fundamentals",
-   "goal": "By Sunday you have a GPT you wrote yourself, trained on TinyStories on the M1, plus a KV cache and three sampling methods. You've also run Qwen3 from scratch. On the Rust side, rustlings is finished (96/96) and you're through Comprehensive Rust Day 3."
+   "goal": "By Day 14 you have a GPT you wrote yourself, trained on TinyStories on the M1, plus a KV cache and three sampling methods. You've also run Qwen3 from scratch. On the Rust side, rustlings is finished (96/96) and you're through Comprehensive Rust Day 3. Days 12–13 start the Week 2 material."
   },
   "2": {
    "title": "Inference economics",
-   "goal": "By Sunday you can say, with your own numbers, what a model costs per million tokens on the M1, on a rented GPU and through an API, and you have a router that picks between them. On the Rust side, you finish Comprehensive Rust (Fundamentals + Concurrency) and publish loadgen, an async load tester."
+   "goal": "By Day 28 you can say, with your own numbers, what a model costs per million tokens on the M1, on a rented GPU and through an API, and you have a router that picks between them. On the Rust side, you finish Comprehensive Rust (Fundamentals + Concurrency) and publish loadgen, an async load tester."
   },
   "3": {
    "title": "Hybrid retrieval on FiQA",
-   "goal": "By Sunday you have a measured hybrid search engine over FiQA (57,638 finance forum posts, 648 test queries), plus a first /ask endpoint that answers with citations. In Rust, you write a BM25 scorer and a Qdrant ingest tool, and start an axum gateway that will sit in front of the app."
+   "goal": "By Day 35 you have a measured hybrid search engine over FiQA (57,638 finance forum posts, 648 test queries), plus a first /ask endpoint that answers with citations. In Rust, you write a BM25 scorer and a Qdrant ingest tool, and start an axum gateway that will sit in front of the app."
   },
   "4": {
    "title": "Reranking, evals, ship Portfolio #1",
-   "goal": "By Day 30, \"Ask FiQA\" is live at a public URL: hybrid search, reranking, cited answers, and an eval page showing what each stage bought you. A Rust gateway in front of the app handles caching, rate limits and latency metrics. If the gateway slips, Python does those jobs and the gateway moves to month 2."
+   "goal": "By Day 47, \"Ask FiQA\" is live at a public URL: hybrid search, reranking, cited answers, and an eval page showing what each stage bought you. A Rust gateway in front of the app handles caching, rate limits and latency metrics. If the gateway slips, Python does those jobs and the gateway moves to month 2."
   }
  },
  "tracks": [
@@ -94,7 +94,7 @@ window.STUDY_PROGRESS = {
   {
    "file": "courses/karpathy-zero-to-hero.md",
    "title": "Karpathy — Neural Networks: Zero to Hero",
-   "done": 1,
+   "done": 2,
    "total": 4,
    "unit": "parts"
   },
@@ -180,7 +180,7 @@ window.STUDY_PROGRESS = {
      "optional": false
     },
     {
-     "text": "**Budget:** ~$15–25 of rented GPU time (Days 10–11) plus a few dollars of API calls.",
+     "text": "**Budget:** ~$15–25 of rented GPU time (Days 16–18) plus a few dollars of API calls.",
      "label": "Budget",
      "section": "Plan",
      "state": "todo",
@@ -266,30 +266,44 @@ window.STUDY_PROGRESS = {
    "status": "partial",
    "file": "days/day02.md",
    "log": {
-    "done": "Learn — makemore part 1 and Raschka ch. 2. Build — bigram character model, then the sliding-window dataset and embedding layer.",
-    "blocked": "Rust (rustlings 76–80, Comprehensive Rust Day 1 afternoon) and Post not done yet.",
-    "next": "open days/day03.md and start the Learn item. Do the Day 2 Rust items in the Sunday catch-up."
+    "done": "Learn — makemore part 1. Build — bigram character model.",
+    "blocked": "Raschka ch. 2 and its Build part (sliding-window dataset, embedding layer) not done yet. Rust (rustlings 76–80, Comprehensive Rust Day 1 afternoon) and Post not done yet.",
+    "next": "Day 3 — Raschka ch. 2, then the sliding-window dataset."
    },
    "items": [
     {
-     "text": "**Learn:** Karpathy, makemore part 1 (1h57m). Raschka ch. 2, Working with Text Data.",
+     "text": "**Learn:** Karpathy, makemore part 1 (1h57m).",
      "label": "Learn",
      "section": "Plan",
      "state": "done",
      "optional": false
     },
     {
-     "text": "**Build:** a bigram character model; then the sliding-window dataset and embedding layer from ch. 2.",
+     "text": "**Learn:** Raschka ch. 2, Working with Text Data.",
+     "label": "Learn",
+     "section": "Plan",
+     "state": "dropped",
+     "optional": false
+    },
+    {
+     "text": "**Build:** a bigram character model.",
      "label": "Build",
      "section": "Plan",
      "state": "done",
      "optional": false
     },
     {
+     "text": "**Build:** the sliding-window dataset and embedding layer from ch. 2.",
+     "label": "Build",
+     "section": "Plan",
+     "state": "dropped",
+     "optional": false
+    },
+    {
      "text": "**Rust:** rustlings 76–80; Comprehensive Rust Day 1 afternoon.",
      "label": "Rust",
      "section": "Plan",
-     "state": "todo",
+     "state": "dropped",
      "optional": false
     },
     {
@@ -313,7 +327,7 @@ window.STUDY_PROGRESS = {
    "date": "2026-10-07",
    "weekday": "Wed",
    "week": 1,
-   "title": "Attention",
+   "title": "Finish Day 2: text data and embeddings",
    "type": "core",
    "hours": 0,
    "status": "today",
@@ -325,21 +339,127 @@ window.STUDY_PROGRESS = {
    },
    "items": [
     {
-     "text": "**Learn:** Jay Alammar, The Illustrated Transformer. Raschka ch. 3, Coding Attention Mechanisms. Paper: Attention Is All You Need, section 3 only.",
+     "text": "**Learn:** Raschka ch. 2, Working with Text Data.",
      "label": "Learn",
      "section": "Plan",
      "state": "todo",
      "optional": false
     },
     {
-     "text": "**Build:** scaled dot-product attention, causal mask, multi-head attention, with shape asserts in a test file.",
+     "text": "**Build:** the sliding-window dataset and embedding layer from ch. 2.",
      "label": "Build",
      "section": "Plan",
      "state": "todo",
      "optional": false
     },
     {
-     "text": "**Rust:** rustlings 81–85; Comprehensive Rust Day 2 morning.",
+     "text": "**Rust:** rustlings 76–80.",
+     "label": "Rust",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Rust:** Comprehensive Rust Day 1 afternoon.",
+     "label": "Rust",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "the sliding-window loader yields (input, target) pairs shifted by one token.",
+     "label": "Done when",
+     "section": "Done when",
+     "state": "todo",
+     "optional": false
+    }
+   ]
+  },
+  {
+   "day": 4,
+   "date": "2026-10-08",
+   "weekday": "Thu",
+   "week": 1,
+   "title": "Attention (1 of 2)",
+   "type": "core",
+   "hours": 0,
+   "status": "upcoming",
+   "file": "days/day04.md",
+   "log": {
+    "done": "",
+    "blocked": "",
+    "next": ""
+   },
+   "items": [
+    {
+     "text": "**Learn:** Jay Alammar, The Illustrated Transformer.",
+     "label": "Learn",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Learn:** Raschka ch. 3, Coding Attention Mechanisms.",
+     "label": "Learn",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Build:** scaled dot-product attention with a causal mask, with shape asserts in a test file.",
+     "label": "Build",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Rust:** rustlings 81–85.",
+     "label": "Rust",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    }
+   ]
+  },
+  {
+   "day": 5,
+   "date": "2026-10-09",
+   "weekday": "Fri",
+   "week": 1,
+   "title": "Attention (2 of 2) · GPT (start)",
+   "type": "core",
+   "hours": 0,
+   "status": "upcoming",
+   "file": "days/day05.md",
+   "log": {
+    "done": "",
+    "blocked": "",
+    "next": ""
+   },
+   "items": [
+    {
+     "text": "**Learn:** Paper: Attention Is All You Need, section 3 only.",
+     "label": "Learn",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Learn:** Karpathy, Let's build GPT (1h56m).",
+     "label": "Learn",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Build:** multi-head attention, with shape asserts in the test file.",
+     "label": "Build",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Rust:** Comprehensive Rust Day 2 morning.",
      "label": "Rust",
      "section": "Plan",
      "state": "todo",
@@ -362,15 +482,15 @@ window.STUDY_PROGRESS = {
    ]
   },
   {
-   "day": 4,
-   "date": "2026-10-08",
-   "weekday": "Thu",
+   "day": 6,
+   "date": "2026-10-10",
+   "weekday": "Sat",
    "week": 1,
    "title": "Build the GPT",
    "type": "core",
    "hours": 0,
    "status": "upcoming",
-   "file": "days/day04.md",
+   "file": "days/day06.md",
    "log": {
     "done": "",
     "blocked": "",
@@ -378,21 +498,28 @@ window.STUDY_PROGRESS = {
    },
    "items": [
     {
-     "text": "**Learn:** Karpathy, Let's build GPT (1h56m). Raschka ch. 4, Implementing a GPT Model from Scratch.",
+     "text": "**Learn:** Raschka ch. 4, Implementing a GPT Model from Scratch.",
      "label": "Learn",
      "section": "Plan",
      "state": "todo",
      "optional": false
     },
     {
-     "text": "**Build:** a full GPT (embeddings, blocks, LayerNorm, residuals); train on Tiny Shakespeare on MPS.",
+     "text": "**Build:** a full GPT (embeddings, blocks, LayerNorm, residuals).",
      "label": "Build",
      "section": "Plan",
      "state": "todo",
      "optional": false
     },
     {
-     "text": "**Rust:** rustlings 86–90; Comprehensive Rust Day 2 afternoon.",
+     "text": "**Build:** train it on Tiny Shakespeare on MPS. Hold out 10% and print the validation loss.",
+     "label": "Build",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Rust:** rustlings 86–90.",
      "label": "Rust",
      "section": "Plan",
      "state": "todo",
@@ -415,15 +542,54 @@ window.STUDY_PROGRESS = {
    ]
   },
   {
-   "day": 5,
-   "date": "2026-10-09",
-   "weekday": "Fri",
+   "day": 7,
+   "date": "2026-10-11",
+   "weekday": "Sun",
    "week": 1,
-   "title": "Pretraining and sampling",
+   "title": "Catch-up (light day)",
+   "type": "light",
+   "hours": 0,
+   "status": "upcoming",
+   "file": "days/day07.md",
+   "log": {
+    "done": "",
+    "blocked": "",
+    "next": ""
+   },
+   "items": [
+    {
+     "text": "**Catch-up (if behind):** the dashboard catch-up queue, Builds first.",
+     "label": "Catch-up (if behind)",
+     "section": "Plan",
+     "state": "todo",
+     "optional": true
+    },
+    {
+     "text": "**Review (stretch):** the concept reviews that are due.",
+     "label": "Review (stretch)",
+     "section": "Plan",
+     "state": "todo",
+     "optional": true
+    },
+    {
+     "text": "**Rust (if behind):** catch-up only if behind.",
+     "label": "Rust (if behind)",
+     "section": "Plan",
+     "state": "todo",
+     "optional": true
+    }
+   ]
+  },
+  {
+   "day": 8,
+   "date": "2026-10-12",
+   "weekday": "Mon",
+   "week": 1,
+   "title": "Pretraining (1 of 2)",
    "type": "core",
    "hours": 0,
    "status": "upcoming",
-   "file": "days/day05.md",
+   "file": "days/day08.md",
    "log": {
     "done": "",
     "blocked": "",
@@ -438,14 +604,53 @@ window.STUDY_PROGRESS = {
      "optional": false
     },
     {
-     "text": "**Build:** switch the data to TinyStories (a 50–100 MB subset), train a ~10M-parameter model, and implement temperature, top-k and top-p sampling.",
+     "text": "**Build:** switch the data to TinyStories (a 50–100 MB subset) and train a ~10M-parameter model.",
      "label": "Build",
      "section": "Plan",
      "state": "todo",
      "optional": false
     },
     {
-     "text": "**Rust:** rustlings 91–96 (done); Comprehensive Rust Day 3 morning.",
+     "text": "**Rust:** Comprehensive Rust Day 2 afternoon.",
+     "label": "Rust",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    }
+   ]
+  },
+  {
+   "day": 9,
+   "date": "2026-10-13",
+   "weekday": "Tue",
+   "week": 1,
+   "title": "Sampling · KV cache (start)",
+   "type": "core",
+   "hours": 0,
+   "status": "upcoming",
+   "file": "days/day09.md",
+   "log": {
+    "done": "",
+    "blocked": "",
+    "next": ""
+   },
+   "items": [
+    {
+     "text": "**Learn:** Build a Reasoning Model ch. 2, Generating Text with a Pre-trained LLM.",
+     "label": "Learn",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Build:** temperature, top-k and top-p sampling, and a sampling comparison table.",
+     "label": "Build",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Rust:** rustlings 91–96 (done).",
      "label": "Rust",
      "section": "Plan",
      "state": "todo",
@@ -468,15 +673,15 @@ window.STUDY_PROGRESS = {
    ]
   },
   {
-   "day": 6,
-   "date": "2026-10-10",
-   "weekday": "Sat",
+   "day": 10,
+   "date": "2026-10-14",
+   "weekday": "Wed",
    "week": 1,
    "title": "KV cache and a real modern model",
    "type": "core",
    "hours": 0,
    "status": "upcoming",
-   "file": "days/day06.md",
+   "file": "days/day10.md",
    "log": {
     "done": "",
     "blocked": "",
@@ -484,21 +689,28 @@ window.STUDY_PROGRESS = {
    },
    "items": [
     {
-     "text": "**Learn:** Build a Reasoning Model ch. 2, Generating Text with a Pre-trained LLM, and appendix C (Qwen3 source code) — note how RoPE, RMSNorm and grouped-query attention differ from your GPT.",
+     "text": "**Learn:** Build a Reasoning Model appendix C (Qwen3 source code). Note how RoPE, RMSNorm and grouped-query attention differ from your GPT.",
      "label": "Learn",
      "section": "Plan",
      "state": "todo",
      "optional": false
     },
     {
-     "text": "**Build:** add a KV cache to your GPT and measure tokens/sec with and without it. Then run the book's from-scratch Qwen3 0.6B on MPS and time it the same way.",
+     "text": "**Build:** add a KV cache to your GPT and measure tokens/sec with and without it.",
      "label": "Build",
      "section": "Plan",
      "state": "todo",
      "optional": false
     },
     {
-     "text": "**Rust:** Comprehensive Rust Day 3 afternoon.",
+     "text": "**Build:** run the book's from-scratch Qwen3 0.6B on MPS and time it the same way.",
+     "label": "Build",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Rust:** Comprehensive Rust Day 3 morning.",
      "label": "Rust",
      "section": "Plan",
      "state": "todo",
@@ -521,15 +733,15 @@ window.STUDY_PROGRESS = {
    ]
   },
   {
-   "day": 7,
-   "date": "2026-10-11",
-   "weekday": "Sun",
+   "day": 11,
+   "date": "2026-10-15",
+   "weekday": "Thu",
    "week": 1,
-   "title": "Tokenizers and review (light day)",
-   "type": "light",
+   "title": "Tokenizers",
+   "type": "core",
    "hours": 0,
    "status": "upcoming",
-   "file": "days/day07.md",
+   "file": "days/day11.md",
    "log": {
     "done": "",
     "blocked": "",
@@ -537,7 +749,14 @@ window.STUDY_PROGRESS = {
    },
    "items": [
     {
-     "text": "**Learn:** Karpathy, Let's build the GPT Tokenizer (2h13m, at 1.5×). Play with Tiktokenizer.",
+     "text": "**Learn:** Karpathy, Let's build the GPT Tokenizer (2h13m, at 1.5×).",
+     "label": "Learn",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Learn:** Play with Tiktokenizer.",
      "label": "Learn",
      "section": "Plan",
      "state": "todo",
@@ -551,7 +770,131 @@ window.STUDY_PROGRESS = {
      "optional": true
     },
     {
-     "text": "**Write:** blog post #1, \"Building a GPT from scratch in a week on an M1\", with the loss curve and the KV-cache numbers.",
+     "text": "**Rust:** Comprehensive Rust Day 3 afternoon.",
+     "label": "Rust",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    }
+   ]
+  },
+  {
+   "day": 12,
+   "date": "2026-10-16",
+   "weekday": "Fri",
+   "week": 2,
+   "title": "Calling models like an engineer (1 of 2)",
+   "type": "core",
+   "hours": 0,
+   "status": "upcoming",
+   "file": "days/day12.md",
+   "log": {
+    "done": "",
+    "blocked": "",
+    "next": ""
+   },
+   "items": [
+    {
+     "text": "**Learn:** OpenTelemetry semantic conventions for generative AI (the gen_ai.* span attributes).",
+     "label": "Learn",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Learn:** Claude tool use overview.",
+     "label": "Learn",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Learn:** 15-min refresher only: `concepts/structured-outputs.md` (known from Forksome).",
+     "label": "Learn",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Build:** w2-inference/llm.py — one client function with streaming and Pydantic structured output.",
+     "label": "Build",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Rust:** Comprehensive Rust Day 4 morning.",
+     "label": "Rust",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    }
+   ]
+  },
+  {
+   "day": 13,
+   "date": "2026-10-17",
+   "weekday": "Sat",
+   "week": 2,
+   "title": "Calling models (2 of 2) · Local inference (start)",
+   "type": "core",
+   "hours": 0,
+   "status": "upcoming",
+   "file": "days/day13.md",
+   "log": {
+    "done": "",
+    "blocked": "",
+    "next": ""
+   },
+   "items": [
+    {
+     "text": "**Learn:** kipply, Transformer Inference Arithmetic (KV cache and memory-bandwidth sections).",
+     "label": "Learn",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Build:** a JSONL log in llm.py: model, tokens in/out, time to first token (TTFT), tokens/sec and cost. Use the gen_ai.* names for the log fields.",
+     "label": "Build",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Post:** \"Every LLM call has four numbers: TTFT, tokens/sec, tokens, cost.\"",
+     "label": "Post",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "20 calls are logged with gen_ai.* field names, and one structured extraction validates against its schema.",
+     "label": "Done when",
+     "section": "Done when",
+     "state": "todo",
+     "optional": false
+    }
+   ]
+  },
+  {
+   "day": 14,
+   "date": "2026-10-18",
+   "weekday": "Sun",
+   "week": 1,
+   "title": "Week 1 write-up (light day)",
+   "type": "light",
+   "hours": 0,
+   "status": "upcoming",
+   "file": "days/day14.md",
+   "log": {
+    "done": "",
+    "blocked": "",
+    "next": ""
+   },
+   "items": [
+    {
+     "text": "**Write:** blog post #1, \"Building a GPT from scratch on an M1\", with the loss curve and the KV-cache numbers.",
      "label": "Write",
      "section": "Plan",
      "state": "todo",
@@ -581,15 +924,15 @@ window.STUDY_PROGRESS = {
    ]
   },
   {
-   "day": 8,
-   "date": "2026-10-12",
+   "day": 15,
+   "date": "2026-10-19",
    "weekday": "Mon",
    "week": 2,
-   "title": "Calling models like an engineer",
+   "title": "Local inference on the M1",
    "type": "core",
    "hours": 0,
    "status": "upcoming",
-   "file": "days/day08.md",
+   "file": "days/day15.md",
    "log": {
     "done": "",
     "blocked": "",
@@ -597,67 +940,21 @@ window.STUDY_PROGRESS = {
    },
    "items": [
     {
-     "text": "**Learn:** OpenTelemetry semantic conventions for generative AI (the gen_ai.* span attributes); Claude tool use overview. (Structured outputs: known from Forksome. 15-min refresher only: `concepts/structured-outputs.md`.)",
+     "text": "**Learn:** The quantization section of the llama.cpp README.",
      "label": "Learn",
      "section": "Plan",
      "state": "todo",
      "optional": false
     },
     {
-     "text": "**Build:** w2-inference/llm.py — one client function with streaming, Pydantic structured output, and a JSONL log of model, tokens in/out, time to first token (TTFT), tokens/sec and cost. Use the gen_ai.* names for the log fields.",
+     "text": "**Build:** run one 3B instruct model through Ollama at Q4_K_M and Q8_0, and through MLX LM at 4-bit. Record TTFT, tokens/sec and peak RAM.",
      "label": "Build",
      "section": "Plan",
      "state": "todo",
      "optional": false
     },
     {
-     "text": "**Rust:** Comprehensive Rust Day 4 morning.",
-     "label": "Rust",
-     "section": "Plan",
-     "state": "todo",
-     "optional": false
-    },
-    {
-     "text": "**Post:** \"Every LLM call has four numbers: TTFT, tokens/sec, tokens, cost.\"",
-     "label": "Post",
-     "section": "Plan",
-     "state": "todo",
-     "optional": false
-    },
-    {
-     "text": "20 calls are logged with gen_ai.* field names, and one structured extraction validates against its schema.",
-     "label": "Done when",
-     "section": "Done when",
-     "state": "todo",
-     "optional": false
-    }
-   ]
-  },
-  {
-   "day": 9,
-   "date": "2026-10-13",
-   "weekday": "Tue",
-   "week": 2,
-   "title": "Local inference on the M1",
-   "type": "core",
-   "hours": 0,
-   "status": "upcoming",
-   "file": "days/day09.md",
-   "log": {
-    "done": "",
-    "blocked": "",
-    "next": ""
-   },
-   "items": [
-    {
-     "text": "**Learn:** kipply, Transformer Inference Arithmetic (KV cache and memory-bandwidth sections). The quantization section of the llama.cpp README.",
-     "label": "Learn",
-     "section": "Plan",
-     "state": "todo",
-     "optional": false
-    },
-    {
-     "text": "**Build:** run one 3B instruct model through Ollama at Q4_K_M and Q8_0, and through MLX LM at 4-bit. Record TTFT, tokens/sec and peak RAM. Point llm.py at Ollama's OpenAI-compatible endpoint.",
+     "text": "**Build:** point llm.py at Ollama's OpenAI-compatible endpoint.",
      "label": "Build",
      "section": "Plan",
      "state": "todo",
@@ -687,15 +984,15 @@ window.STUDY_PROGRESS = {
    ]
   },
   {
-   "day": 10,
-   "date": "2026-10-14",
-   "weekday": "Wed",
+   "day": 16,
+   "date": "2026-10-20",
+   "weekday": "Tue",
    "week": 2,
    "title": "Serving theory and the first GPU",
    "type": "core",
    "hours": 0,
    "status": "upcoming",
-   "file": "days/day10.md",
+   "file": "days/day16.md",
    "log": {
     "done": "",
     "blocked": "",
@@ -703,7 +1000,14 @@ window.STUDY_PROGRESS = {
    },
    "items": [
     {
-     "text": "**Learn:** PagedAttention / vLLM paper, sections 1–4. Anyscale, continuous batching.",
+     "text": "**Learn:** PagedAttention / vLLM paper, sections 1–4.",
+     "label": "Learn",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Learn:** Anyscale, continuous batching.",
      "label": "Learn",
      "section": "Plan",
      "state": "todo",
@@ -740,15 +1044,15 @@ window.STUDY_PROGRESS = {
    ]
   },
   {
-   "day": 11,
-   "date": "2026-10-15",
-   "weekday": "Thu",
+   "day": 17,
+   "date": "2026-10-21",
+   "weekday": "Wed",
    "week": 2,
-   "title": "Benchmark day",
+   "title": "Benchmark day (1 of 2)",
    "type": "core",
    "hours": 0,
    "status": "upcoming",
-   "file": "days/day11.md",
+   "file": "days/day17.md",
    "log": {
     "done": "",
     "blocked": "",
@@ -756,21 +1060,67 @@ window.STUDY_PROGRESS = {
    },
    "items": [
     {
-     "text": "**Learn:** vLLM Benchmark CLI docs; Build a Reasoning Model appendix E, Batching and Throughput-Oriented Execution.",
+     "text": "**Learn:** vLLM Benchmark CLI docs.",
      "label": "Learn",
      "section": "Plan",
      "state": "todo",
      "optional": false
     },
     {
-     "text": "**Build:** vllm bench serve at concurrency 1, 4, 16 and 64, for the FP16 model and an AWQ 4-bit version. Record throughput, p50/p95 TTFT, inter-token latency and GPU memory.",
+     "text": "**Learn:** Build a Reasoning Model appendix E, Batching and Throughput-Oriented Execution.",
+     "label": "Learn",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Build:** vllm bench serve at concurrency 1, 4, 16 and 64 for the FP16 model. Record throughput, p50/p95 TTFT, inter-token latency and GPU memory. Terminate the pod.",
      "label": "Build",
      "section": "Plan",
      "state": "todo",
      "optional": false
     },
     {
-     "text": "**Rust:** Comprehensive Rust Concurrency, afternoon (async/await); Tokio tutorial, first three sections.",
+     "text": "**Rust:** Comprehensive Rust Concurrency, afternoon (async/await).",
+     "label": "Rust",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    }
+   ]
+  },
+  {
+   "day": 18,
+   "date": "2026-10-22",
+   "weekday": "Thu",
+   "week": 2,
+   "title": "Benchmark (2 of 2) · Speed and cost (start)",
+   "type": "core",
+   "hours": 0,
+   "status": "upcoming",
+   "file": "days/day18.md",
+   "log": {
+    "done": "",
+    "blocked": "",
+    "next": ""
+   },
+   "items": [
+    {
+     "text": "**Learn:** LLM Engineer's Handbook ch. 8, Inference Optimization.",
+     "label": "Learn",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Build:** the same benchmark for an AWQ 4-bit version; save all results as CSV.",
+     "label": "Build",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Rust:** Tokio tutorial, first three sections.",
      "label": "Rust",
      "section": "Plan",
      "state": "todo",
@@ -793,15 +1143,15 @@ window.STUDY_PROGRESS = {
    ]
   },
   {
-   "day": 12,
-   "date": "2026-10-16",
+   "day": 19,
+   "date": "2026-10-23",
    "weekday": "Fri",
    "week": 2,
    "title": "Speed tricks and cost",
    "type": "core",
    "hours": 0,
    "status": "upcoming",
-   "file": "days/day12.md",
+   "file": "days/day19.md",
    "log": {
     "done": "",
     "blocked": "",
@@ -809,7 +1159,7 @@ window.STUDY_PROGRESS = {
    },
    "items": [
     {
-     "text": "**Learn:** LLM Engineer's Handbook ch. 8, Inference Optimization. Speculative decoding paper: abstract, figure 1, section 3.",
+     "text": "**Learn:** Speculative decoding paper: abstract, figure 1, section 3.",
      "label": "Learn",
      "section": "Plan",
      "state": "todo",
@@ -853,15 +1203,15 @@ window.STUDY_PROGRESS = {
    ]
   },
   {
-   "day": 13,
-   "date": "2026-10-17",
+   "day": 20,
+   "date": "2026-10-24",
    "weekday": "Sat",
    "week": 2,
-   "title": "Mini SLM router",
+   "title": "Mini SLM router (1 of 2)",
    "type": "core",
    "hours": 0,
    "status": "upcoming",
-   "file": "days/day13.md",
+   "file": "days/day20.md",
    "log": {
     "done": "",
     "blocked": "",
@@ -876,7 +1226,85 @@ window.STUDY_PROGRESS = {
      "optional": false
     },
     {
-     "text": "**Build:** a 60-prompt test set (20 factual, 20 extraction, 20 reasoning). A router (rules + the local 3B model as a cheap classifier) sends each prompt to the local model or an API model. Score answers with an LLM judge.",
+     "text": "**Build:** a 60-prompt test set (20 factual, 20 extraction, 20 reasoning).",
+     "label": "Build",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Build:** a router (rules + the local 3B model as a cheap classifier) that sends each prompt to the local model or an API model.",
+     "label": "Build",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Rust:** loadgen v2 — p50/p95 latency, clap CLI.",
+     "label": "Rust",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    }
+   ]
+  },
+  {
+   "day": 21,
+   "date": "2026-10-25",
+   "weekday": "Sun",
+   "week": 2,
+   "title": "Catch-up (light day)",
+   "type": "light",
+   "hours": 0,
+   "status": "upcoming",
+   "file": "days/day21.md",
+   "log": {
+    "done": "",
+    "blocked": "",
+    "next": ""
+   },
+   "items": [
+    {
+     "text": "**Catch-up (if behind):** the dashboard catch-up queue, Builds first.",
+     "label": "Catch-up (if behind)",
+     "section": "Plan",
+     "state": "todo",
+     "optional": true
+    },
+    {
+     "text": "**Review (stretch):** the concept reviews that are due.",
+     "label": "Review (stretch)",
+     "section": "Plan",
+     "state": "todo",
+     "optional": true
+    },
+    {
+     "text": "**Rust (if behind):** catch-up only if behind.",
+     "label": "Rust (if behind)",
+     "section": "Plan",
+     "state": "todo",
+     "optional": true
+    }
+   ]
+  },
+  {
+   "day": 22,
+   "date": "2026-10-26",
+   "weekday": "Mon",
+   "week": 2,
+   "title": "Mini SLM router (2 of 2)",
+   "type": "core",
+   "hours": 0,
+   "status": "upcoming",
+   "file": "days/day22.md",
+   "log": {
+    "done": "",
+    "blocked": "",
+    "next": ""
+   },
+   "items": [
+    {
+     "text": "**Build:** score the answers with an LLM judge.",
      "label": "Build",
      "section": "Plan",
      "state": "todo",
@@ -890,7 +1318,7 @@ window.STUDY_PROGRESS = {
      "optional": true
     },
     {
-     "text": "**Rust:** loadgen v2 — p50/p95 latency, clap CLI; run it against local Ollama and an API. Read vLLM's Rust client vllm-bench for ideas.",
+     "text": "**Rust:** run loadgen against local Ollama and an API. Read vLLM's Rust client vllm-bench for ideas.",
      "label": "Rust",
      "section": "Plan",
      "state": "todo",
@@ -913,15 +1341,266 @@ window.STUDY_PROGRESS = {
    ]
   },
   {
-   "day": 14,
-   "date": "2026-10-18",
+   "day": 23,
+   "date": "2026-10-27",
+   "weekday": "Tue",
+   "week": 3,
+   "title": "Lexical search (1 of 2)",
+   "type": "core",
+   "hours": 0,
+   "status": "upcoming",
+   "file": "days/day23.md",
+   "log": {
+    "done": "",
+    "blocked": "",
+    "next": ""
+   },
+   "items": [
+    {
+     "text": "**Learn:** Introduction to IR ch. 6 (tf-idf and the vector space model).",
+     "label": "Learn",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Learn:** Introduction to IR ch. 11, the Okapi BM25 section.",
+     "label": "Learn",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Build:** w3-retrieval/ — load FiQA and run a BM25 baseline with bm25s.",
+     "label": "Build",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Rust:** start a BM25 scorer in Rust (tokenize, IDF).",
+     "label": "Rust",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    }
+   ]
+  },
+  {
+   "day": 24,
+   "date": "2026-10-28",
+   "weekday": "Wed",
+   "week": 3,
+   "title": "Lexical search (2 of 2) · Dense (start)",
+   "type": "core",
+   "hours": 0,
+   "status": "upcoming",
+   "file": "days/day24.md",
+   "log": {
+    "done": "",
+    "blocked": "",
+    "next": ""
+   },
+   "items": [
+    {
+     "text": "**Learn:** Sentence Transformers docs on semantic search and bi-encoders. Browse the MTEB leaderboard to pick models.",
+     "label": "Learn",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Build:** score the baseline: nDCG@10, Recall@100 and MRR@10 with ranx.",
+     "label": "Build",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Rust:** the Rust BM25 scorer scores 1,000 FiQA docs.",
+     "label": "Rust",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Post:** \"BM25 is 30 years old and still hard to beat.\"",
+     "label": "Post",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "baseline numbers are in results.csv.",
+     "label": "Done when",
+     "section": "Done when",
+     "state": "todo",
+     "optional": false
+    }
+   ]
+  },
+  {
+   "day": 25,
+   "date": "2026-10-29",
+   "weekday": "Thu",
+   "week": 3,
+   "title": "Dense retrieval",
+   "type": "core",
+   "hours": 0,
+   "status": "upcoming",
+   "file": "days/day25.md",
+   "log": {
+    "done": "",
+    "blocked": "",
+    "next": ""
+   },
+   "items": [
+    {
+     "text": "**Build:** embed the corpus on MPS with two small models (e.g. BAAI/bge-small-en-v1.5 and all-MiniLM-L6-v2). Note embedding time per 1,000 docs.",
+     "label": "Build",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Build:** exact search in NumPy; evaluate.",
+     "label": "Build",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Rust:** finish the BM25 scorer; check its top-10 matches bm25s on 20 queries.",
+     "label": "Rust",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Post:** \"Keyword search vs meaning search: where each one fails.\"",
+     "label": "Post",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "dense numbers sit next to BM25 in results.csv, with 10 queries where they disagree.",
+     "label": "Done when",
+     "section": "Done when",
+     "state": "todo",
+     "optional": false
+    }
+   ]
+  },
+  {
+   "day": 26,
+   "date": "2026-10-30",
+   "weekday": "Fri",
+   "week": 3,
+   "title": "Qdrant (1 of 2)",
+   "type": "core",
+   "hours": 0,
+   "status": "upcoming",
+   "file": "days/day26.md",
+   "log": {
+    "done": "",
+    "blocked": "",
+    "next": ""
+   },
+   "items": [
+    {
+     "text": "**Learn:** Qdrant Hybrid Queries docs.",
+     "label": "Learn",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Learn:** re-skim LLM Engineer's Handbook ch. 4, RAG Feature Pipeline, for how it uses Qdrant.",
+     "label": "Learn",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Build:** Qdrant in Docker; one collection with a named dense vector and a sparse BM25 vector (via FastEmbed).",
+     "label": "Build",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Rust:** an ingest tool using the Qdrant Rust client that upserts from JSONL.",
+     "label": "Rust",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    }
+   ]
+  },
+  {
+   "day": 27,
+   "date": "2026-10-31",
+   "weekday": "Sat",
+   "week": 3,
+   "title": "Qdrant (2 of 2) · Fusion (start)",
+   "type": "core",
+   "hours": 0,
+   "status": "upcoming",
+   "file": "days/day27.md",
+   "log": {
+    "done": "",
+    "blocked": "",
+    "next": ""
+   },
+   "items": [
+    {
+     "text": "**Learn:** the original Reciprocal Rank Fusion paper (two pages).",
+     "label": "Learn",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Build:** upsert the full corpus; query each vector type separately.",
+     "label": "Build",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Rust:** time your Rust ingest against the Python one.",
+     "label": "Rust",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Post:** \"Running a vector database on my laptop.\"",
+     "label": "Post",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "both query types return the same top-10 as Days 23–25 (or you can explain why not).",
+     "label": "Done when",
+     "section": "Done when",
+     "state": "todo",
+     "optional": false
+    }
+   ]
+  },
+  {
+   "day": 28,
+   "date": "2026-11-01",
    "weekday": "Sun",
    "week": 2,
-   "title": "Review (light day)",
+   "title": "Week 2 write-up (light day)",
    "type": "light",
    "hours": 0,
    "status": "upcoming",
-   "file": "days/day14.md",
+   "file": "days/day28.md",
    "log": {
     "done": "",
     "blocked": "",
@@ -959,174 +1638,15 @@ window.STUDY_PROGRESS = {
    ]
   },
   {
-   "day": 15,
-   "date": "2026-10-19",
+   "day": 29,
+   "date": "2026-11-02",
    "weekday": "Mon",
-   "week": 3,
-   "title": "Lexical search and a baseline",
-   "type": "core",
-   "hours": 0,
-   "status": "upcoming",
-   "file": "days/day15.md",
-   "log": {
-    "done": "",
-    "blocked": "",
-    "next": ""
-   },
-   "items": [
-    {
-     "text": "**Learn:** Introduction to IR ch. 6 (tf-idf and the vector space model) and the Okapi BM25 section of ch. 11.",
-     "label": "Learn",
-     "section": "Plan",
-     "state": "todo",
-     "optional": false
-    },
-    {
-     "text": "**Build:** w3-retrieval/ — load FiQA, run a BM25 baseline with bm25s, score nDCG@10, Recall@100 and MRR@10 with ranx.",
-     "label": "Build",
-     "section": "Plan",
-     "state": "todo",
-     "optional": false
-    },
-    {
-     "text": "**Rust:** start a BM25 scorer in Rust (tokenize, IDF, score) over 1,000 FiQA docs.",
-     "label": "Rust",
-     "section": "Plan",
-     "state": "todo",
-     "optional": false
-    },
-    {
-     "text": "**Post:** \"BM25 is 30 years old and still hard to beat.\"",
-     "label": "Post",
-     "section": "Plan",
-     "state": "todo",
-     "optional": false
-    },
-    {
-     "text": "baseline numbers are in results.csv.",
-     "label": "Done when",
-     "section": "Done when",
-     "state": "todo",
-     "optional": false
-    }
-   ]
-  },
-  {
-   "day": 16,
-   "date": "2026-10-20",
-   "weekday": "Tue",
-   "week": 3,
-   "title": "Dense retrieval",
-   "type": "core",
-   "hours": 0,
-   "status": "upcoming",
-   "file": "days/day16.md",
-   "log": {
-    "done": "",
-    "blocked": "",
-    "next": ""
-   },
-   "items": [
-    {
-     "text": "**Learn:** Sentence Transformers docs on semantic search and bi-encoders. Browse the MTEB leaderboard to pick models.",
-     "label": "Learn",
-     "section": "Plan",
-     "state": "todo",
-     "optional": false
-    },
-    {
-     "text": "**Build:** embed the corpus on MPS with two small models (e.g. BAAI/bge-small-en-v1.5 and all-MiniLM-L6-v2); exact search in NumPy; evaluate. Note embedding time per 1,000 docs.",
-     "label": "Build",
-     "section": "Plan",
-     "state": "todo",
-     "optional": false
-    },
-    {
-     "text": "**Rust:** finish the BM25 scorer; check its top-10 matches bm25s on 20 queries.",
-     "label": "Rust",
-     "section": "Plan",
-     "state": "todo",
-     "optional": false
-    },
-    {
-     "text": "**Post:** \"Keyword search vs meaning search: where each one fails.\"",
-     "label": "Post",
-     "section": "Plan",
-     "state": "todo",
-     "optional": false
-    },
-    {
-     "text": "dense numbers sit next to BM25 in results.csv, with 10 queries where they disagree.",
-     "label": "Done when",
-     "section": "Done when",
-     "state": "todo",
-     "optional": false
-    }
-   ]
-  },
-  {
-   "day": 17,
-   "date": "2026-10-21",
-   "weekday": "Wed",
-   "week": 3,
-   "title": "Qdrant",
-   "type": "core",
-   "hours": 0,
-   "status": "upcoming",
-   "file": "days/day17.md",
-   "log": {
-    "done": "",
-    "blocked": "",
-    "next": ""
-   },
-   "items": [
-    {
-     "text": "**Learn:** Qdrant Hybrid Queries docs; re-skim LLM Engineer's Handbook ch. 4, RAG Feature Pipeline, for how it uses Qdrant.",
-     "label": "Learn",
-     "section": "Plan",
-     "state": "todo",
-     "optional": false
-    },
-    {
-     "text": "**Build:** Qdrant in Docker; one collection with a named dense vector and a sparse BM25 vector (via FastEmbed); upsert the full corpus; query each vector type separately.",
-     "label": "Build",
-     "section": "Plan",
-     "state": "todo",
-     "optional": false
-    },
-    {
-     "text": "**Rust:** an ingest tool using the Qdrant Rust client that upserts from JSONL.",
-     "label": "Rust",
-     "section": "Plan",
-     "state": "todo",
-     "optional": false
-    },
-    {
-     "text": "**Post:** \"Running a vector database on my laptop.\"",
-     "label": "Post",
-     "section": "Plan",
-     "state": "todo",
-     "optional": false
-    },
-    {
-     "text": "both query types return the same top-10 as Days 15–16 (or you can explain why not).",
-     "label": "Done when",
-     "section": "Done when",
-     "state": "todo",
-     "optional": false
-    }
-   ]
-  },
-  {
-   "day": 18,
-   "date": "2026-10-22",
-   "weekday": "Thu",
    "week": 3,
    "title": "Fusion",
    "type": "core",
    "hours": 0,
    "status": "upcoming",
-   "file": "days/day18.md",
+   "file": "days/day29.md",
    "log": {
     "done": "",
     "blocked": "",
@@ -1134,21 +1654,21 @@ window.STUDY_PROGRESS = {
    },
    "items": [
     {
-     "text": "**Learn:** the original Reciprocal Rank Fusion paper (two pages).",
-     "label": "Learn",
-     "section": "Plan",
-     "state": "todo",
-     "optional": false
-    },
-    {
-     "text": "**Build:** hybrid search using Qdrant's prefetch + RRF; then try weighted and CombSUM fusion with ranx. Add p50 latency per method.",
+     "text": "**Build:** hybrid search using Qdrant's prefetch + RRF.",
      "label": "Build",
      "section": "Plan",
      "state": "todo",
      "optional": false
     },
     {
-     "text": "**Rust:** time your Rust ingest against the Python one; batch size and concurrency sweep.",
+     "text": "**Build:** weighted and CombSUM fusion with ranx. Add p50 latency per method.",
+     "label": "Build",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Rust:** Rust ingest: batch size and concurrency sweep.",
      "label": "Rust",
      "section": "Plan",
      "state": "todo",
@@ -1171,15 +1691,15 @@ window.STUDY_PROGRESS = {
    ]
   },
   {
-   "day": 19,
-   "date": "2026-10-23",
-   "weekday": "Fri",
+   "day": 30,
+   "date": "2026-11-03",
+   "weekday": "Tue",
    "week": 3,
-   "title": "Error analysis and filters",
+   "title": "Error analysis (1 of 2)",
    "type": "core",
    "hours": 0,
    "status": "upcoming",
-   "file": "days/day19.md",
+   "file": "days/day30.md",
    "log": {
     "done": "",
     "blocked": "",
@@ -1194,14 +1714,53 @@ window.STUDY_PROGRESS = {
      "optional": false
     },
     {
-     "text": "**Build:** read 30 queries where hybrid misses; tag each failure (vocabulary gap, multi-part question, label noise, etc.) and count them. Add a payload field (e.g. a document length bucket) and try a filtered query.",
+     "text": "**Build:** read 30 queries where hybrid misses; tag each failure (vocabulary gap, multi-part question, label noise, etc.) and count them.",
      "label": "Build",
      "section": "Plan",
      "state": "todo",
      "optional": false
     },
     {
-     "text": "**Rust:** start rust/gateway with axum: a health route and a /search route that calls Qdrant through the Rust client.",
+     "text": "**Rust:** start rust/gateway with axum: a health route.",
+     "label": "Rust",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    }
+   ]
+  },
+  {
+   "day": 31,
+   "date": "2026-11-04",
+   "weekday": "Wed",
+   "week": 3,
+   "title": "Error analysis (2 of 2) · Answers (start)",
+   "type": "core",
+   "hours": 0,
+   "status": "upcoming",
+   "file": "days/day31.md",
+   "log": {
+    "done": "",
+    "blocked": "",
+    "next": ""
+   },
+   "items": [
+    {
+     "text": "**Learn:** LLM Engineer's Handbook ch. 9, RAG Inference Pipeline.",
+     "label": "Learn",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Build:** add a payload field (e.g. a document length bucket) and try a filtered query.",
+     "label": "Build",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Rust:** gateway: a /search route that calls Qdrant through the Rust client.",
      "label": "Rust",
      "section": "Plan",
      "state": "todo",
@@ -1224,15 +1783,15 @@ window.STUDY_PROGRESS = {
    ]
   },
   {
-   "day": 20,
-   "date": "2026-10-24",
-   "weekday": "Sat",
+   "day": 32,
+   "date": "2026-11-05",
+   "weekday": "Thu",
    "week": 3,
    "title": "From search to answers",
    "type": "core",
    "hours": 0,
    "status": "upcoming",
-   "file": "days/day20.md",
+   "file": "days/day32.md",
    "log": {
     "done": "",
     "blocked": "",
@@ -1240,14 +1799,21 @@ window.STUDY_PROGRESS = {
    },
    "items": [
     {
-     "text": "**Learn:** LLM Engineer's Handbook ch. 9, RAG Inference Pipeline; Anthropic, Contextual Retrieval.",
+     "text": "**Learn:** Anthropic, Contextual Retrieval.",
      "label": "Learn",
      "section": "Plan",
      "state": "todo",
      "optional": false
     },
     {
-     "text": "**Build:** a FastAPI /ask endpoint — hybrid top-10, a prompt with numbered sources, a streamed answer with [1][2] citations via llm.py. Let your Week 2 router choose local or API.",
+     "text": "**Build:** a FastAPI /ask endpoint — hybrid top-10, a prompt with numbered sources, a streamed answer with [1][2] citations via llm.py.",
+     "label": "Build",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Build:** let your Week 2 router choose local or API.",
      "label": "Build",
      "section": "Plan",
      "state": "todo",
@@ -1277,15 +1843,100 @@ window.STUDY_PROGRESS = {
    ]
   },
   {
-   "day": 21,
-   "date": "2026-10-25",
+   "day": 33,
+   "date": "2026-11-06",
+   "weekday": "Fri",
+   "week": 4,
+   "title": "Cross-encoder reranking (1 of 2)",
+   "type": "core",
+   "hours": 0,
+   "status": "upcoming",
+   "file": "days/day33.md",
+   "log": {
+    "done": "",
+    "blocked": "",
+    "next": ""
+   },
+   "items": [
+    {
+     "text": "**Learn:** Sentence Transformers cross-encoder usage and Retrieve & Re-Rank.",
+     "label": "Learn",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Build:** rerank hybrid top-50 → top-10 with cross-encoder/ms-marco-MiniLM-L6-v2 on MPS.",
+     "label": "Build",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Rust:** port your nDCG@10 and MRR scorer to Rust.",
+     "label": "Rust",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    }
+   ]
+  },
+  {
+   "day": 34,
+   "date": "2026-11-07",
+   "weekday": "Sat",
+   "week": 4,
+   "title": "Reranking (2 of 2) · ColBERT (start)",
+   "type": "core",
+   "hours": 0,
+   "status": "upcoming",
+   "file": "days/day34.md",
+   "log": {
+    "done": "",
+    "blocked": "",
+    "next": ""
+   },
+   "items": [
+    {
+     "text": "**Learn:** ColBERT paper, sections 1–3.",
+     "label": "Learn",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Build:** the same with BAAI/bge-reranker-base. Record the nDCG@10 gain and added latency of both.",
+     "label": "Build",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Post:** \"Reranking: run the slow, smart model on only the top 50.\"",
+     "label": "Post",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "two new rows in results.csv.",
+     "label": "Done when",
+     "section": "Done when",
+     "state": "todo",
+     "optional": false
+    }
+   ]
+  },
+  {
+   "day": 35,
+   "date": "2026-11-08",
    "weekday": "Sun",
    "week": 3,
-   "title": "Review (light day)",
+   "title": "Week 3 write-up (light day)",
    "type": "light",
    "hours": 0,
    "status": "upcoming",
-   "file": "days/day21.md",
+   "file": "days/day35.md",
    "log": {
     "done": "",
     "blocked": "",
@@ -1323,15 +1974,15 @@ window.STUDY_PROGRESS = {
    ]
   },
   {
-   "day": 22,
-   "date": "2026-10-26",
+   "day": 36,
+   "date": "2026-11-09",
    "weekday": "Mon",
    "week": 4,
-   "title": "Cross-encoder reranking",
+   "title": "Late interaction (ColBERT)",
    "type": "core",
    "hours": 0,
    "status": "upcoming",
-   "file": "days/day22.md",
+   "file": "days/day36.md",
    "log": {
     "done": "",
     "blocked": "",
@@ -1339,67 +1990,21 @@ window.STUDY_PROGRESS = {
    },
    "items": [
     {
-     "text": "**Learn:** Sentence Transformers cross-encoder usage and Retrieve & Re-Rank.",
+     "text": "**Learn:** Qdrant tutorials: Multivectors and Late Interaction, and Hybrid Search with Reranking.",
      "label": "Learn",
      "section": "Plan",
      "state": "todo",
      "optional": false
     },
     {
-     "text": "**Build:** rerank hybrid top-50 → top-10 with cross-encoder/ms-marco-MiniLM-L6-v2 and BAAI/bge-reranker-base on MPS. Record the nDCG@10 gain and added latency.",
+     "text": "**Build:** a ColBERT rescoring stage inside one Qdrant query (hybrid prefetch 50 → ColBERT top 10) using FastEmbed's ColBERT.",
      "label": "Build",
      "section": "Plan",
      "state": "todo",
      "optional": false
     },
     {
-     "text": "**Rust:** port your nDCG@10 and MRR scorer to Rust.",
-     "label": "Rust",
-     "section": "Plan",
-     "state": "todo",
-     "optional": false
-    },
-    {
-     "text": "**Post:** \"Reranking: run the slow, smart model on only the top 50.\"",
-     "label": "Post",
-     "section": "Plan",
-     "state": "todo",
-     "optional": false
-    },
-    {
-     "text": "two new rows in results.csv.",
-     "label": "Done when",
-     "section": "Done when",
-     "state": "todo",
-     "optional": false
-    }
-   ]
-  },
-  {
-   "day": 23,
-   "date": "2026-10-27",
-   "weekday": "Tue",
-   "week": 4,
-   "title": "Late interaction (ColBERT)",
-   "type": "core",
-   "hours": 0,
-   "status": "upcoming",
-   "file": "days/day23.md",
-   "log": {
-    "done": "",
-    "blocked": "",
-    "next": ""
-   },
-   "items": [
-    {
-     "text": "**Learn:** ColBERT paper, sections 1–3. Qdrant tutorials: Multivectors and Late Interaction and Hybrid Search with Reranking.",
-     "label": "Learn",
-     "section": "Plan",
-     "state": "todo",
-     "optional": false
-    },
-    {
-     "text": "**Build:** a ColBERT rescoring stage inside one Qdrant query (hybrid prefetch 50 → ColBERT top 10) using FastEmbed's ColBERT. Compare with the cross-encoder on quality, latency and index size.",
+     "text": "**Build:** compare with the cross-encoder on quality, latency and index size.",
      "label": "Build",
      "section": "Plan",
      "state": "todo",
@@ -1429,15 +2034,15 @@ window.STUDY_PROGRESS = {
    ]
   },
   {
-   "day": 24,
-   "date": "2026-10-28",
-   "weekday": "Wed",
+   "day": 37,
+   "date": "2026-11-10",
+   "weekday": "Tue",
    "week": 4,
-   "title": "Evaluating answers, not just search",
+   "title": "Evaluating answers (1 of 2)",
    "type": "core",
    "hours": 0,
    "status": "upcoming",
-   "file": "days/day24.md",
+   "file": "days/day37.md",
    "log": {
     "done": "",
     "blocked": "",
@@ -1445,14 +2050,21 @@ window.STUDY_PROGRESS = {
    },
    "items": [
     {
-     "text": "**Learn:** LLM Engineer's Handbook ch. 7, Evaluating LLMs. Ragas available metrics.",
+     "text": "**Learn:** LLM Engineer's Handbook ch. 7, Evaluating LLMs.",
      "label": "Learn",
      "section": "Plan",
      "state": "todo",
      "optional": false
     },
     {
-     "text": "**Build:** a 40-question golden set from FiQA test queries; a make eval command that scores faithfulness, response relevancy and context precision for three configs and writes eval_report.json.",
+     "text": "**Learn:** Ragas available metrics.",
+     "label": "Learn",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Build:** a 40-question golden set from FiQA test queries.",
      "label": "Build",
      "section": "Plan",
      "state": "todo",
@@ -1461,6 +2073,38 @@ window.STUDY_PROGRESS = {
     {
      "text": "**Rust:** publish the scorer as a small CLI.",
      "label": "Rust",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    }
+   ]
+  },
+  {
+   "day": 38,
+   "date": "2026-11-11",
+   "weekday": "Wed",
+   "week": 4,
+   "title": "Evaluating answers (2 of 2) · UI (start)",
+   "type": "core",
+   "hours": 0,
+   "status": "upcoming",
+   "file": "days/day38.md",
+   "log": {
+    "done": "",
+    "blocked": "",
+    "next": ""
+   },
+   "items": [
+    {
+     "text": "**Learn:** LLM Engineer's Handbook ch. 10, Inference Pipeline Deployment (first half).",
+     "label": "Learn",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Build:** a make eval command that scores faithfulness, response relevancy and context precision for three configs and writes eval_report.json.",
+     "label": "Build",
      "section": "Plan",
      "state": "todo",
      "optional": false
@@ -1482,15 +2126,15 @@ window.STUDY_PROGRESS = {
    ]
   },
   {
-   "day": 25,
-   "date": "2026-10-29",
+   "day": 39,
+   "date": "2026-11-12",
    "weekday": "Thu",
    "week": 4,
    "title": "The product UI",
    "type": "core",
    "hours": 0,
    "status": "upcoming",
-   "file": "days/day25.md",
+   "file": "days/day39.md",
    "log": {
     "done": "",
     "blocked": "",
@@ -1498,14 +2142,14 @@ window.STUDY_PROGRESS = {
    },
    "items": [
     {
-     "text": "**Learn:** LLM Engineer's Handbook ch. 10, Inference Pipeline Deployment (first half).",
-     "label": "Learn",
+     "text": "**Build:** a Next.js front end: question box, streamed answer, clickable citations that open the source post.",
+     "label": "Build",
      "section": "Plan",
      "state": "todo",
      "optional": false
     },
     {
-     "text": "**Build:** a Next.js front end (your home turf): question box, streamed answer, clickable citations that open the source post, a mode switch (BM25 / hybrid / hybrid + rerank), and per-stage latency and cost under each answer.",
+     "text": "**Build:** a mode switch (BM25 / hybrid / hybrid + rerank), and per-stage latency and cost under each answer.",
      "label": "Build",
      "section": "Plan",
      "state": "todo",
@@ -1535,15 +2179,15 @@ window.STUDY_PROGRESS = {
    ]
   },
   {
-   "day": 26,
-   "date": "2026-10-30",
+   "day": 40,
+   "date": "2026-11-13",
    "weekday": "Fri",
    "week": 4,
-   "title": "Eval page and guardrails",
+   "title": "Eval page and guardrails (1 of 2)",
    "type": "core",
    "hours": 0,
    "status": "upcoming",
-   "file": "days/day26.md",
+   "file": "days/day40.md",
    "log": {
     "done": "",
     "blocked": "",
@@ -1558,15 +2202,54 @@ window.STUDY_PROGRESS = {
      "optional": false
     },
     {
-     "text": "**Build:** an /evals page that renders results.csv and eval_report.json as charts. In Python: max-token caps and a \"no good source found\" reply when the top retrieval score is low.",
+     "text": "**Build:** an /evals page that renders results.csv and eval_report.json as charts.",
      "label": "Build",
      "section": "Plan",
      "state": "todo",
      "optional": false
     },
     {
-     "text": "**Rust:** gateway records p50/p95 latency per route at /metrics; show it on the evals page.",
+     "text": "**Rust:** gateway records p50/p95 latency per route at /metrics.",
      "label": "Rust",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    }
+   ]
+  },
+  {
+   "day": 41,
+   "date": "2026-11-14",
+   "weekday": "Sat",
+   "week": 4,
+   "title": "Guardrails (2 of 2) · Deploy (start)",
+   "type": "core",
+   "hours": 0,
+   "status": "upcoming",
+   "file": "days/day41.md",
+   "log": {
+    "done": "",
+    "blocked": "",
+    "next": ""
+   },
+   "items": [
+    {
+     "text": "**Build:** in Python: max-token caps and a \"no good source found\" reply when the top retrieval score is low.",
+     "label": "Build",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Build:** show the gateway /metrics on the evals page.",
+     "label": "Build",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Build:** index into Qdrant Cloud's free tier (1 GB RAM, enough for FiQA with a small embedding model).",
+     "label": "Build",
      "section": "Plan",
      "state": "todo",
      "optional": false
@@ -1588,15 +2271,15 @@ window.STUDY_PROGRESS = {
    ]
   },
   {
-   "day": 27,
-   "date": "2026-10-31",
-   "weekday": "Sat",
+   "day": 42,
+   "date": "2026-11-15",
+   "weekday": "Sun",
    "week": 4,
-   "title": "Deploy",
-   "type": "core",
+   "title": "Catch-up (light day)",
+   "type": "light",
    "hours": 0,
    "status": "upcoming",
-   "file": "days/day27.md",
+   "file": "days/day42.md",
    "log": {
     "done": "",
     "blocked": "",
@@ -1604,14 +2287,60 @@ window.STUDY_PROGRESS = {
    },
    "items": [
     {
-     "text": "**Build:** index into Qdrant Cloud's free tier (1 GB RAM, enough for FiQA with a small embedding model); gateway and backend on Fly.io or Render; front end on Vercel; spend caps on every API key. A README with an architecture diagram, the results table and local setup steps.",
+     "text": "**Catch-up (if behind):** the dashboard catch-up queue, Builds first.",
+     "label": "Catch-up (if behind)",
+     "section": "Plan",
+     "state": "todo",
+     "optional": true
+    },
+    {
+     "text": "**Review (stretch):** the concept reviews that are due.",
+     "label": "Review (stretch)",
+     "section": "Plan",
+     "state": "todo",
+     "optional": true
+    },
+    {
+     "text": "**Rust (if behind):** catch-up only if behind.",
+     "label": "Rust (if behind)",
+     "section": "Plan",
+     "state": "todo",
+     "optional": true
+    }
+   ]
+  },
+  {
+   "day": 43,
+   "date": "2026-11-16",
+   "weekday": "Mon",
+   "week": 4,
+   "title": "Deploy",
+   "type": "core",
+   "hours": 0,
+   "status": "upcoming",
+   "file": "days/day43.md",
+   "log": {
+    "done": "",
+    "blocked": "",
+    "next": ""
+   },
+   "items": [
+    {
+     "text": "**Build:** gateway and backend on Fly.io or Render; front end on Vercel; spend caps on every API key.",
      "label": "Build",
      "section": "Plan",
      "state": "todo",
      "optional": false
     },
     {
-     "text": "**Rust:** gateway deployed in front of the backend (this is part of the Build today).",
+     "text": "**Build:** a README with an architecture diagram, the results table and local setup steps.",
+     "label": "Build",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Rust:** gateway deployed in front of the backend (part of the Build today).",
      "label": "Rust",
      "section": "Plan",
      "state": "todo",
@@ -1634,15 +2363,15 @@ window.STUDY_PROGRESS = {
    ]
   },
   {
-   "day": 28,
-   "date": "2026-11-01",
-   "weekday": "Sun",
+   "day": 44,
+   "date": "2026-11-17",
+   "weekday": "Tue",
    "week": 4,
-   "title": "Review (light day)",
+   "title": "Ask FiQA write-up (light day)",
    "type": "light",
    "hours": 0,
    "status": "upcoming",
-   "file": "days/day28.md",
+   "file": "days/day44.md",
    "log": {
     "done": "",
     "blocked": "",
@@ -1650,7 +2379,14 @@ window.STUDY_PROGRESS = {
    },
    "items": [
     {
-     "text": "**Write:** blog post #4, \"Building Ask FiQA: a measured RAG system end to end\", plus a 3–5 minute YouTube walkthrough.",
+     "text": "**Write:** blog post #4, \"Building Ask FiQA: a measured RAG system end to end\".",
+     "label": "Write",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Write:** a 3–5 minute YouTube walkthrough.",
      "label": "Write",
      "section": "Plan",
      "state": "todo",
@@ -1673,15 +2409,15 @@ window.STUDY_PROGRESS = {
    ]
   },
   {
-   "day": 29,
-   "date": "2026-11-02",
-   "weekday": "Mon",
+   "day": 45,
+   "date": "2026-11-18",
+   "weekday": "Wed",
    "week": 4,
-   "title": "Portfolio and profile",
+   "title": "Portfolio and profile (1 of 2)",
    "type": "core",
    "hours": 0,
    "status": "upcoming",
-   "file": "days/day29.md",
+   "file": "days/day45.md",
    "log": {
     "done": "",
     "blocked": "",
@@ -1689,21 +2425,60 @@ window.STUDY_PROGRESS = {
    },
    "items": [
     {
-     "text": "**Build:** personal site with /projects (4 entries) and /blog (4 posts); GitHub profile README with pinned repos; LinkedIn headline along the lines of \"Senior product engineer building LLM systems: RAG, inference, evals\".",
+     "text": "**Build:** personal site with /projects (4 entries) and /blog (4 posts).",
      "label": "Build",
      "section": "Plan",
      "state": "todo",
      "optional": false
     },
     {
-     "text": "**Research:** read 10 remote LLM / AI engineer job posts at your target level; list the skills they ask for that you can't yet show. That gap list feeds Days 31–60.",
+     "text": "**Build:** GitHub profile README with pinned repos.",
+     "label": "Build",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Build:** LinkedIn headline along the lines of \"Senior product engineer building LLM systems: RAG, inference, evals\".",
+     "label": "Build",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    },
+    {
+     "text": "**Rust:** gateway README.",
+     "label": "Rust",
+     "section": "Plan",
+     "state": "todo",
+     "optional": false
+    }
+   ]
+  },
+  {
+   "day": 46,
+   "date": "2026-11-19",
+   "weekday": "Thu",
+   "week": 4,
+   "title": "Portfolio and profile (2 of 2)",
+   "type": "core",
+   "hours": 0,
+   "status": "upcoming",
+   "file": "days/day46.md",
+   "log": {
+    "done": "",
+    "blocked": "",
+    "next": ""
+   },
+   "items": [
+    {
+     "text": "**Research:** read 10 remote LLM / AI engineer job posts at your target level; list the skills they ask for that you can't yet show. That gap list feeds Days 48–77.",
      "label": "Research",
      "section": "Plan",
      "state": "todo",
      "optional": false
     },
     {
-     "text": "**Rust:** gateway README and a post: \"Why I put a Rust gateway in front of my Python RAG\".",
+     "text": "**Rust:** a post: \"Why I put a Rust gateway in front of my Python RAG\".",
      "label": "Rust",
      "section": "Plan",
      "state": "todo",
@@ -1719,15 +2494,15 @@ window.STUDY_PROGRESS = {
    ]
   },
   {
-   "day": 30,
-   "date": "2026-11-03",
-   "weekday": "Tue",
+   "day": 47,
+   "date": "2026-11-20",
+   "weekday": "Fri",
    "week": 4,
    "title": "Exit test and next plan",
    "type": "core",
    "hours": 0,
    "status": "upcoming",
-   "file": "days/day30.md",
+   "file": "days/day47.md",
    "log": {
     "done": "",
     "blocked": "",
@@ -1749,7 +2524,7 @@ window.STUDY_PROGRESS = {
      "optional": false
     },
     {
-     "text": "**Plan:** draft Days 31–60: tool calling, your own agent loop, a durable runtime (Redis/Postgres), an MCP server (a Rust MCP server is a natural fit), and Handbook ch. 5–6 for fine-tuning. Applications start at Day 45.",
+     "text": "**Plan:** draft Days 48–77: tool calling, your own agent loop, a durable runtime (Redis/Postgres), an MCP server (a Rust MCP server is a natural fit), and Handbook ch. 5–6 for fine-tuning. Applications start at Day 62.",
      "label": "Plan",
      "section": "Plan",
      "state": "todo",
@@ -1759,13 +2534,6 @@ window.STUDY_PROGRESS = {
      "text": "**Post:** launch post on IG and LinkedIn linking the app and the four write-ups.",
      "label": "Post",
      "section": "Plan",
-     "state": "todo",
-     "optional": false
-    },
-    {
-     "text": "All plan items above are done",
-     "label": "Done when",
-     "section": "Done when",
      "state": "todo",
      "optional": false
     }

@@ -1,22 +1,20 @@
 ---
 day: 30
 date: 2026-11-03
-week: 4
-title: Exit test and next plan
+week: 3
+title: Error analysis (1 of 2)
 type: core
 hours: 0
 ---
 
-# Day 30 · Tue 3 Nov — Exit test and next plan
+# Day 30 · Tue 3 Nov — Error analysis (1 of 2)
 
 ## Plan
-- [ ] **Exit test:** run the exit test (`exit-test.md`) and score it honestly.
-- [ ] **Review:** the parking lot: keep, drop or schedule each item.
-- [ ] **Plan:** draft Days 31–60: tool calling, your own agent loop, a durable runtime (Redis/Postgres), an MCP server (a Rust MCP server is a natural fit), and Handbook ch. 5–6 for fine-tuning. Applications start at Day 45.
-- [ ] **Post:** launch post on IG and LinkedIn linking the app and the four write-ups.
+- [ ] **Learn:** Hamel Husain, Your AI Product Needs Evals (the error-analysis parts).
+- [ ] **Build:** read 30 queries where hybrid misses; tag each failure (vocabulary gap, multi-part question, label noise, etc.) and count them.
+- [ ] **Rust:** start rust/gateway with axum: a health route.
 
 ## Done when
-- [ ] All plan items above are done
 
 ## Log
 - **Done:**

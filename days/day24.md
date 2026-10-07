@@ -1,22 +1,22 @@
 ---
 day: 24
 date: 2026-10-28
-week: 4
-title: Evaluating answers, not just search
+week: 3
+title: Lexical search (2 of 2) · Dense (start)
 type: core
 hours: 0
 ---
 
-# Day 24 · Wed 28 Oct — Evaluating answers, not just search
+# Day 24 · Wed 28 Oct — Lexical search (2 of 2) · Dense (start)
 
 ## Plan
-- [ ] **Learn:** LLM Engineer's Handbook ch. 7, Evaluating LLMs. Ragas available metrics.
-- [ ] **Build:** a 40-question golden set from FiQA test queries; a make eval command that scores faithfulness, response relevancy and context precision for three configs and writes eval_report.json.
-- [ ] **Rust:** publish the scorer as a small CLI.
-- [ ] **Post:** "How I grade an AI's answers automatically, and where the judge lies."
+- [ ] **Learn:** Sentence Transformers docs on semantic search and bi-encoders. Browse the MTEB leaderboard to pick models.
+- [ ] **Build:** score the baseline: nDCG@10, Recall@100 and MRR@10 with ranx.
+- [ ] **Rust:** the Rust BM25 scorer scores 1,000 FiQA docs.
+- [ ] **Post:** "BM25 is 30 years old and still hard to beat."
 
 ## Done when
-- [ ] one command runs the full eval in under 10 minutes.
+- [ ] baseline numbers are in results.csv.
 
 ## Log
 - **Done:**

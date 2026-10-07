@@ -1,22 +1,22 @@
 ---
 day: 18
 date: 2026-10-22
-week: 3
-title: Fusion
+week: 2
+title: Benchmark (2 of 2) · Speed and cost (start)
 type: core
 hours: 0
 ---
 
-# Day 18 · Thu 22 Oct — Fusion
+# Day 18 · Thu 22 Oct — Benchmark (2 of 2) · Speed and cost (start)
 
 ## Plan
-- [ ] **Learn:** the original Reciprocal Rank Fusion paper (two pages).
-- [ ] **Build:** hybrid search using Qdrant's prefetch + RRF; then try weighted and CombSUM fusion with ranx. Add p50 latency per method.
-- [ ] **Rust:** time your Rust ingest against the Python one; batch size and concurrency sweep.
-- [ ] **Post:** "Reciprocal Rank Fusion in one formula."
+- [ ] **Learn:** LLM Engineer's Handbook ch. 8, Inference Optimization.
+- [ ] **Build:** the same benchmark for an AWQ 4-bit version; save all results as CSV.
+- [ ] **Rust:** Tokio tutorial, first three sections.
+- [ ] **Post:** "Throughput goes up, latency goes up: the concurrency curve."
 
 ## Done when
-- [ ] a results table with BM25, dense, hybrid-RRF and hybrid-weighted (nDCG@10, Recall@100, p50 ms).
+- [ ] results are saved as CSV and the pod is terminated.
 
 ## Log
 - **Done:**
