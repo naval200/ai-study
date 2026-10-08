@@ -1,15 +1,15 @@
 window.STUDY_PROGRESS = {
- "generated": "2026-10-07",
+ "generated": "2026-10-08",
  "timezone": "Asia/Kolkata",
  "curriculum": "AI Study Plan — Days 1–47",
  "start": "2026-10-05",
  "end": "2026-11-20",
- "dayNum": 3,
+ "dayNum": 4,
  "totalDays": 47,
- "pace": "🔴 Behind — 5 item(s) owed across 2 day(s)",
+ "pace": "🔴 Behind — 10 item(s) owed across 3 day(s)",
  "paceKind": "behind",
- "streak": 3,
- "missedRun": 0,
+ "streak": 4,
+ "missedRun": 1,
  "overall": {
   "done": 14,
   "total": 206
@@ -58,7 +58,13 @@ window.STUDY_PROGRESS = {
   ]
  },
  "posts": 0,
- "reviewsDue": [],
+ "reviewsDue": [
+  {
+   "title": "Cross-entropy and negative log likelihood",
+   "next": "2026-10-08",
+   "outcome": "fragile"
+  }
+ ],
  "weeks": {
   "1": {
    "title": "LLM fundamentals",
@@ -324,12 +330,12 @@ window.STUDY_PROGRESS = {
    "title": "Finish Day 2: text data and embeddings",
    "type": "core",
    "hours": 0,
-   "status": "today",
+   "status": "missed",
    "file": "days/day03.md",
    "log": {
-    "done": "",
-    "blocked": "",
-    "next": ""
+    "done": "Nothing yet. No Day 3 item is complete.",
+    "blocked": "Day 3 did not start on 2026-10-07.",
+    "next": "Restart Day 3 on 2026-10-09. Start with Raschka ch. 2, then the sliding-window dataset."
    },
    "items": [
     {
@@ -377,7 +383,7 @@ window.STUDY_PROGRESS = {
    "title": "Attention (1 of 2)",
    "type": "core",
    "hours": 0,
-   "status": "upcoming",
+   "status": "today",
    "file": "days/day04.md",
    "log": {
     "done": "",

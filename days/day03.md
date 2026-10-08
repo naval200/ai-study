@@ -19,8 +19,8 @@ hours: 0
 - [ ] the sliding-window loader yields (input, target) pairs shifted by one token.
 
 ## Log
-- **Done:**
-- **Blocked:**
-- **Tomorrow's first task:**
+- **Done:** Nothing yet. No Day 3 item is complete.
+- **Blocked:** Day 3 did not start on 2026-10-07.
+- **Tomorrow's first task:** Restart Day 3 on 2026-10-09. Start with Raschka ch. 2, then the sliding-window dataset.
 
 ## Notes
