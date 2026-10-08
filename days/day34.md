@@ -1,13 +1,13 @@
 ---
 day: 34
-date: 2026-11-07
+date: 2026-11-09
 week: 4
 title: Reranking (2 of 2) · ColBERT (start)
 type: core
 hours: 0
 ---
 
-# Day 34 · Sat 7 Nov — Reranking (2 of 2) · ColBERT (start)
+# Day 34 · Mon 9 Nov — Reranking (2 of 2) · ColBERT (start)
 
 ## Plan
 - [ ] **Learn:** ColBERT paper, sections 1–3.

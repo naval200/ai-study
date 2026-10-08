@@ -1,13 +1,13 @@
 ---
 day: 37
-date: 2026-11-10
+date: 2026-11-12
 week: 4
 title: Evaluating answers (1 of 2)
 type: core
 hours: 0
 ---
 
-# Day 37 · Tue 10 Nov — Evaluating answers (1 of 2)
+# Day 37 · Thu 12 Nov — Evaluating answers (1 of 2)
 
 ## Plan
 - [ ] **Learn:** LLM Engineer's Handbook ch. 7, Evaluating LLMs.

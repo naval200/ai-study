@@ -1,13 +1,13 @@
 ---
 day: 11
-date: 2026-10-15
+date: 2026-10-17
 week: 1
 title: Tokenizers
 type: core
 hours: 0
 ---
 
-# Day 11 · Thu 15 Oct — Tokenizers
+# Day 11 · Sat 17 Oct — Tokenizers
 
 ## Plan
 - [ ] **Learn:** Karpathy, Let's build the GPT Tokenizer (2h13m, at 1.5×).

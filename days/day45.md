@@ -1,13 +1,13 @@
 ---
 day: 45
-date: 2026-11-18
+date: 2026-11-20
 week: 4
 title: Portfolio and profile (1 of 2)
 type: core
 hours: 0
 ---
 
-# Day 45 · Wed 18 Nov — Portfolio and profile (1 of 2)
+# Day 45 · Fri 20 Nov — Portfolio and profile (1 of 2)
 
 ## Plan
 - [ ] **Build:** personal site with /projects (4 entries) and /blog (4 posts).

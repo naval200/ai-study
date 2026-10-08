@@ -1,13 +1,13 @@
 ---
 day: 40
-date: 2026-11-13
+date: 2026-11-15
 week: 4
 title: Eval page and guardrails (1 of 2)
 type: core
 hours: 0
 ---
 
-# Day 40 · Fri 13 Nov — Eval page and guardrails (1 of 2)
+# Day 40 · Sun 15 Nov — Eval page and guardrails (1 of 2)
 
 ## Plan
 - [ ] **Learn:** LLM Engineer's Handbook ch. 10 (second half).

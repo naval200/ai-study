@@ -1,13 +1,13 @@
 ---
 day: 15
-date: 2026-10-19
+date: 2026-10-21
 week: 2
 title: Local inference on the M1
 type: core
 hours: 0
 ---
 
-# Day 15 · Mon 19 Oct — Local inference on the M1
+# Day 15 · Wed 21 Oct — Local inference on the M1
 
 ## Plan
 - [ ] **Learn:** The quantization section of the llama.cpp README.

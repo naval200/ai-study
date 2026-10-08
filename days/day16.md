@@ -1,13 +1,13 @@
 ---
 day: 16
-date: 2026-10-20
+date: 2026-10-22
 week: 2
 title: Serving theory and the first GPU
 type: core
 hours: 0
 ---
 
-# Day 16 · Tue 20 Oct — Serving theory and the first GPU
+# Day 16 · Thu 22 Oct — Serving theory and the first GPU
 
 ## Plan
 - [ ] **Learn:** PagedAttention / vLLM paper, sections 1–4.

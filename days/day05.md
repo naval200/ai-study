@@ -1,13 +1,13 @@
 ---
 day: 5
-date: 2026-10-09
+date: 2026-10-11
 week: 1
 title: Attention (2 of 2) · GPT (start)
 type: core
 hours: 0
 ---
 
-# Day 5 · Fri 9 Oct — Attention (2 of 2) · GPT (start)
+# Day 5 · Sun 11 Oct — Attention (2 of 2) · GPT (start)
 
 ## Plan
 - [ ] **Learn:** Paper: Attention Is All You Need, section 3 only.

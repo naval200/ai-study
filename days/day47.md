@@ -1,13 +1,13 @@
 ---
 day: 47
-date: 2026-11-20
+date: 2026-11-22
 week: 4
 title: Exit test and next plan
 type: core
 hours: 0
 ---
 
-# Day 47 · Fri 20 Nov — Exit test and next plan
+# Day 47 · Sun 22 Nov — Exit test and next plan
 
 ## Plan
 - [ ] **Exit test:** run the exit test (`exit-test.md`) and score it honestly.

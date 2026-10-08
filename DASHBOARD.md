@@ -4,10 +4,10 @@
 
 ## Where you are
 
-- **Day 4 of 47** · Thu 2026-10-08 · Week 1: Attention (1 of 2)
+- **Day 4 of 47** · Thu 2026-10-08
 - **Overall:** █░░░░░░░░░░░░░░░░░░░ 7% (14/206 required items)
-- **Pace:** 🔴 **Behind** — 10 item(s) owed across 3 day(s)
-- **Streak:** 4 day(s) logged in a row
+- **Pace:** 🔴 **Behind** — 5 item(s) owed across 2 day(s)
+- **Streak:** 3 day(s) logged in a row
 - **Exit test:** 0/9 (pass ≥ 7)
 - **Online:** https://naval200.github.io/ai-study/
 
@@ -17,14 +17,7 @@
 
 ## Today
 
-**Attention (1 of 2)** — `days/day04.md`
-
-Start with (from Day 3's log): _Restart Day 3 on 2026-10-09. Start with Raschka ch. 2, then the sliding-window dataset._
-
-- [ ] **Learn:** Jay Alammar, The Illustrated Transformer.
-- [ ] **Learn:** Raschka ch. 3, Coding Attention Mechanisms.
-- [ ] **Build:** scaled dot-product attention with a causal mask, with shape asserts in a test file.
-- [ ] **Rust:** rustlings 81–85.
+No entry for today. Next: Day 3 (2026-10-09) — Finish Day 2: text data and embeddings
 
 ## Catch-up queue (goes to Sunday)
 
@@ -33,17 +26,12 @@ Start with (from Day 3's log): _Restart Day 3 on 2026-10-09. Start with Raschka 
 - Day 0 · **Budget:** ~$15–25 of rented GPU time (Days 16–18) plus a few dollars of API calls.
 - Day 2 · **Post:** "An LLM is a next-token probability table. Here's the smallest one."
 - Day 2 · your bigram model samples name-like strings, and you can explain why cross-entropy is the loss.
-- Day 3 · **Learn:** Raschka ch. 2, Working with Text Data.
-- Day 3 · **Build:** the sliding-window dataset and embedding layer from ch. 2.
-- Day 3 · **Rust:** rustlings 76–80.
-- Day 3 · **Rust:** Comprehensive Rust Day 1 afternoon.
-- Day 3 · the sliding-window loader yields (input, target) pairs shifted by one token.
 
 ## Weekly scorecard
 
 | Week | Days done | Logged | Items | Hours (target 30-35) | Posts | Commits |
 |---|---|---|---|---|---|---|
-| 1 | 1/12 | 3 | 10/53 | 0 | 0 | 17 |
+| 1 | 1/12 | 3 | 10/53 | 0 | 0 | 18 |
 | 2 | 0/11 | 0 | 0/47 | 0 | 0 | – |
 | 3 | 0/10 | 0 | 0/45 | 0 | 0 | – |
 | 4 | 0/14 | 0 | 0/54 | 0 | 0 | – |
@@ -53,7 +41,7 @@ Start with (from Day 3's log): _Restart Day 3 on 2026-10-09. Start with Raschka 
 ✅ done · 🟡 partial · ❌ missed · 👉 today · · upcoming
 
 - **Setup:** 🟡 0
-- **Week 1:** ✅ 1  🟡 2  ❌ 3  👉 4  · 5  · 6  · 7  · 8  · 9  · 10  · 11  · 14
+- **Week 1:** ✅ 1  🟡 2  · 3  · 4  · 5  · 6  · 7  · 8  · 9  · 10  · 11  · 14
 - **Week 2:** · 12  · 13  · 15  · 16  · 17  · 18  · 19  · 20  · 21  · 22  · 28
 - **Week 3:** · 23  · 24  · 25  · 26  · 27  · 29  · 30  · 31  · 32  · 35
 - **Week 4:** · 33  · 34  · 36  · 37  · 38  · 39  · 40  · 41  · 42  · 43  · 44  · 45  · 46  · 47
@@ -81,13 +69,13 @@ Start with (from Day 3's log): _Restart Day 3 on 2026-10-09. Start with Raschka 
 
 ## Recent log
 
-- **Day 3** (2026-10-07) — done: Nothing yet. No Day 3 item is complete. · blocked: Day 3 did not start on 2026-10-07.
 - **Day 2** (2026-10-06) — done: Learn — makemore part 1. Build — bigram character model. · blocked: Raschka ch. 2 and its Build part (sliding-window dataset, embedding layer) not done yet. Rust (rustlings 76–80, Comprehensive Rust Day 1 afternoon) and Post not done yet.
 - **Day 1** (2026-10-05) — done: Learn — micrograd video; worked through it on paper. Build — Value class with autograd and a tiny MLP on a toy dataset. Rust — rustlings 71–75; Comprehensive Rust Day 1 morning. · blocked: nothing.
+- **Day 0** (2026-10-04) — done: uv env (Python 3.11.9, torch 2.14.1) with MPS True; Ollama 0.35.1 + qwen2.5:3b answers; Docker 20.10 running; RAM is 16 GB. · blocked: repo not pushed to GitHub yet; accounts and spend caps still to do (by hand).
 
 ## Plan changes
 
-- 6 change(s) logged · last: 2026-10-07 — Days 3–30 stretched to Days 3–47 (each pair of old days becomes three days; catch-up Sundays added; every task is its own checkbox). Roadmap Days 31–112 → 48–129; checkpoints 47, 77, 107. Day 2 leftovers moved to Day 3
+- 7 change(s) logged · last: 2026-10-08 — All dates from Day 3 shifted +2 days (Day 3 = Fri 9 Oct; Day 47 = Sun 22 Nov). Days 1–2 unchanged. Roadmap dates shifted +2 days
 - 4 proposal(s) waiting for the next review
 
 ## Collected

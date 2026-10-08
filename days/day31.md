@@ -1,13 +1,13 @@
 ---
 day: 31
-date: 2026-11-04
+date: 2026-11-06
 week: 3
 title: Error analysis (2 of 2) · Answers (start)
 type: core
 hours: 0
 ---
 
-# Day 31 · Wed 4 Nov — Error analysis (2 of 2) · Answers (start)
+# Day 31 · Fri 6 Nov — Error analysis (2 of 2) · Answers (start)
 
 ## Plan
 - [ ] **Learn:** LLM Engineer's Handbook ch. 9, RAG Inference Pipeline.

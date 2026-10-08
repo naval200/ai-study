@@ -2,7 +2,7 @@
 curriculum: AI Study Plan — Days 1–47
 plan: curriculum/plan.md
 start: 2026-10-05
-end: 2026-11-20
+end: 2026-11-22
 days: 47
 timezone: Asia/Kolkata
 hours_target_per_week: 30-35

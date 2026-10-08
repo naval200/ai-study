@@ -1,13 +1,13 @@
 ---
 day: 3
-date: 2026-10-07
+date: 2026-10-09
 week: 1
 title: Finish Day 2: text data and embeddings
 type: core
 hours: 0
 ---
 
-# Day 3 · Wed 7 Oct — Finish Day 2: text data and embeddings
+# Day 3 · Fri 9 Oct — Finish Day 2: text data and embeddings
 
 ## Plan
 - [ ] **Learn:** Raschka ch. 2, Working with Text Data.

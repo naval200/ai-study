@@ -1,13 +1,13 @@
 ---
 day: 28
-date: 2026-11-01
+date: 2026-11-03
 week: 2
 title: Week 2 write-up (light day)
 type: light
 hours: 0
 ---
 
-# Day 28 · Sun 1 Nov — Week 2 write-up (light day)
+# Day 28 · Tue 3 Nov — Week 2 write-up (light day)
 
 ## Plan
 - [ ] **Write:** blog post #2, "LLM inference on an M1 vs a rented GPU: real numbers".

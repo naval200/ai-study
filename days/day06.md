@@ -1,13 +1,13 @@
 ---
 day: 6
-date: 2026-10-10
+date: 2026-10-12
 week: 1
 title: Build the GPT
 type: core
 hours: 0
 ---
 
-# Day 6 · Sat 10 Oct — Build the GPT
+# Day 6 · Mon 12 Oct — Build the GPT
 
 ## Plan
 - [ ] **Learn:** Raschka ch. 4, Implementing a GPT Model from Scratch.

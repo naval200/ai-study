@@ -1,13 +1,13 @@
 ---
 day: 43
-date: 2026-11-16
+date: 2026-11-18
 week: 4
 title: Deploy
 type: core
 hours: 0
 ---
 
-# Day 43 · Mon 16 Nov — Deploy
+# Day 43 · Wed 18 Nov — Deploy
 
 ## Plan
 - [ ] **Build:** gateway and backend on Fly.io or Render; front end on Vercel; spend caps on every API key.

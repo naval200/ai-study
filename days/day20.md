@@ -1,13 +1,13 @@
 ---
 day: 20
-date: 2026-10-24
+date: 2026-10-26
 week: 2
 title: Mini SLM router (1 of 2)
 type: core
 hours: 0
 ---
 
-# Day 20 · Sat 24 Oct — Mini SLM router (1 of 2)
+# Day 20 · Mon 26 Oct — Mini SLM router (1 of 2)
 
 ## Plan
 - [ ] **Learn:** RouteLLM paper, sections 1–3.

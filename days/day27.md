@@ -1,13 +1,13 @@
 ---
 day: 27
-date: 2026-10-31
+date: 2026-11-02
 week: 3
 title: Qdrant (2 of 2) · Fusion (start)
 type: core
 hours: 0
 ---
 
-# Day 27 · Sat 31 Oct — Qdrant (2 of 2) · Fusion (start)
+# Day 27 · Mon 2 Nov — Qdrant (2 of 2) · Fusion (start)
 
 ## Plan
 - [ ] **Learn:** the original Reciprocal Rank Fusion paper (two pages).

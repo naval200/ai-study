@@ -1,13 +1,13 @@
 ---
 day: 10
-date: 2026-10-14
+date: 2026-10-16
 week: 1
 title: KV cache and a real modern model
 type: core
 hours: 0
 ---
 
-# Day 10 · Wed 14 Oct — KV cache and a real modern model
+# Day 10 · Fri 16 Oct — KV cache and a real modern model
 
 ## Plan
 - [ ] **Learn:** Build a Reasoning Model appendix C (Qwen3 source code). Note how RoPE, RMSNorm and grouped-query attention differ from your GPT.
