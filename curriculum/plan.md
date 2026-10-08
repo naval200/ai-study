@@ -368,43 +368,43 @@ Days 48–129 (Mon 23 Nov to Fri 12 Feb) cover Weeks 5–16 of your LLM / Agent 
 | 117 | Sun 31 Jan | Secure execution environment (Portfolio #4) |
 | 129 | Wed 10 Feb | Capstone: financial research agent |
 
-### Days 48–61 · 21 Nov–4 Dec — Tool calling and your own agent loop (your Weeks 7–8)
+### Days 48–61 · 23 Nov–6 Dec — Tool calling and your own agent loop (your Weeks 7–8)
 - **Learn:** function calling, JSON Schema, argument validation, tool errors and retries; ReAct, planning, reflection, stopping conditions, agents as state machines. Anthropic, Building Effective AI Agents; ReAct paper.
 - **Build:** a lightweight agent runtime without LangChain. It needs a tool registry with schema validation, retries with backoff, a step budget, stopping rules and a trace log per run. Tools: search (Ask FiQA retrieval), database (Postgres), calculator, python, and one market-data API.
 - **Rust:** the tool-argument validator in Rust (serde + JSON Schema).
 - **Deliverable (Portfolio #2):** a finance agent that answers multi-step questions with its tools, with a trace viewer in the UI.
 - **Job track from Day 62:** five targeted applications a week, plus 2 hours a week of LLM system-design interview prep.
 
-### Days 62–75 · 5–18 Dec — Agentic RAG and fine-tuning (your Weeks 5–6, reshaped)
+### Days 62–75 · 7–20 Dec — Agentic RAG and fine-tuning (your Weeks 5–6, reshaped)
 - **Learn:** query rewriting, decomposition, multi-hop retrieval, retrieval confidence, answer verification. Papers: Self-RAG, CRAG, GraphRAG (skim). LLM Engineer's Handbook ch. 5–6 (SFT, preference alignment).
 - **Build, Days 62–68:** wire the agent loop into Ask FiQA — plan, search, judge the retrieval, search again, answer, verify. Measure against the Day 47 baseline on multi-hop questions. GraphRAG gets a 3-day experiment and stays only if it beats hybrid on multi-hop.
 - **Build, Days 69–75:** LoRA fine-tune of a 0.5–1.5B model (MLX LM on the M1, or a rented GPU) for one narrow job, such as query rewriting or the router classifier. Compare it with the prompted base model and an API model.
 - **Rust:** gateway v2 — API keys and per-key budgets.
 - **Deliverable:** two posts — "Agentic RAG vs plain RAG on multi-hop finance questions" and "Fine-tuning a 1B model to replace an API call".
 
-### Days 76–89 · 19 Dec–1 Jan — Durable agent runtime (your Weeks 9–10)
+### Days 76–89 · 21 Dec–3 Jan — Durable agent runtime (your Weeks 9–10)
 - **Learn:** stateless services, session state in Redis, durable state in Postgres, checkpoints, event sourcing, idempotency keys. Designing Data-Intensive Applications (Kleppmann): the chapters on transactions and on stream processing.
 - **Build:** each agent run stored as an event log in Postgres, with Redis for hot session state. Add pause, resume, cancel, timeout and retry, with idempotent tool calls. Kill the container mid-run and it resumes.
 - **Rust:** a worker that claims runs from Postgres (FOR UPDATE SKIP LOCKED) and enforces timeouts.
 - **Deliverable (Portfolio #3):** Durable Agent Runtime, with a demo video of a kill -9 mid-run followed by a clean resume.
 - **Note:** this block spans the holidays. Lighter days are fine; the calendar rule still holds.
 
-### Days 90–103 · 2–15 Jan — MCP and multi-agent (your Weeks 11–12)
+### Days 90–103 · 4–17 Jan — MCP and multi-agent (your Weeks 11–12)
 - **Learn:** the MCP specification (hosts, clients, servers; tools, resources, prompts; capability negotiation; auth). Multi-agent patterns: orchestrator-workers, supervisor, evaluator-optimizer.
 - **Build:** an MCP server exposing market_data, database, filesystem (read-only), python and search. Connect it to an existing MCP host and to your own runtime. Then build an orchestrator with research, coding and reviewer agents: shared state, isolation, and handling for a stalled agent.
 - **Rust:** write the MCP server in Rust with the official SDK, rmcp.
 
-### Days 104–117 · 16–29 Jan — Sandboxing and agent security (your Weeks 13–14)
+### Days 104–117 · 18–31 Jan — Sandboxing and agent security (your Weeks 13–14)
 - **Learn:** Docker isolation, microVMs (Firecracker), filesystem and network isolation, resource limits, timeouts. E2B docs. OWASP Top 10 for LLM Applications: prompt injection, excessive agency, improper output handling, unbounded consumption.
 - **Build:** the python tool runs in a sandbox — Docker first, then E2B for comparison — with no network and CPU, memory and time limits. Add a permission engine with allow/approve/deny policies (READ allow, PYTHON approve, TRANSFER deny). Write a red-team set of 30 prompt-injection and tool-poisoning attacks and report pass rates.
 - **Rust:** the permission engine and sandbox runner in Rust, with a policy file and an audit log.
 - **Deliverable (Portfolio #4):** Secure Execution Environment plus an attack report. This doubles as your Coding-Agent Safety Evaluator idea.
 
-### Days 118–124 · 30 Jan–5 Feb — Evaluation and observability (your Week 15)
+### Days 118–124 · 1–7 Feb — Evaluation and observability (your Week 15)
 - **Learn:** Ragas agent metrics (tool-call accuracy, agent goal accuracy); trace-based evaluation; OpenTelemetry basics.
 - **Build:** golden datasets for each system; a regression suite in CI; traces with per-step latency, cost, tool accuracy and safety flags; one dashboard across all four portfolio projects.
 
-### Days 125–129 · 6–10 Feb — Capstone: financial research agent (your Week 16)
+### Days 125–129 · 8–12 Feb — Capstone: financial research agent (your Week 16)
 - **Build:** orchestrator → research agent (MCP + hybrid RAG + reranking), coding agent (sandbox), reviewer agent (evaluator). It runs on Redis + Postgres state, under the permission system, with evals and tracing. Add one crypto/DeFi data source.
 - **Deliverable:** a live demo, a 5-minute video and a write-up.
 
