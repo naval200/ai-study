@@ -1,13 +1,13 @@
 # Dashboard — AI Study Plan — Days 1–47
 
-> Generated 2026-10-08 by study-coach. Don't edit by hand — run `/study-coach status`.
+> Generated 2026-10-09 by study-coach. Don't edit by hand — run `/study-coach status`.
 
 ## Where you are
 
-- **Day 4 of 47** · Thu 2026-10-08
+- **Day 5 of 47** · Fri 2026-10-09 · Week 1: Finish Day 2: text data and embeddings
 - **Overall:** █░░░░░░░░░░░░░░░░░░░ 7% (14/206 required items)
 - **Pace:** 🔴 **Behind** — 5 item(s) owed across 2 day(s)
-- **Streak:** 3 day(s) logged in a row
+- **Streak:** 4 day(s) logged in a row
 - **Exit test:** 0/9 (pass ≥ 7)
 - **Online:** https://naval200.github.io/ai-study/
 
@@ -17,7 +17,15 @@
 
 ## Today
 
-No entry for today. Next: Day 3 (2026-10-09) — Finish Day 2: text data and embeddings
+**Finish Day 2: text data and embeddings** — `days/day03.md`
+
+Start with (from Day 2's log): _Day 3 — Raschka ch. 2, then the sliding-window dataset._
+
+- [ ] **Learn:** Raschka ch. 2, Working with Text Data.
+- [ ] **Build:** the sliding-window dataset and embedding layer from ch. 2.
+- [ ] **Rust:** rustlings 76–80.
+- [ ] **Rust:** Comprehensive Rust Day 1 afternoon.
+- [ ] the sliding-window loader yields (input, target) pairs shifted by one token.
 
 ## Catch-up queue (goes to Sunday)
 
@@ -31,7 +39,7 @@ No entry for today. Next: Day 3 (2026-10-09) — Finish Day 2: text data and emb
 
 | Week | Days done | Logged | Items | Hours (target 30-35) | Posts | Commits |
 |---|---|---|---|---|---|---|
-| 1 | 1/12 | 3 | 10/53 | 0 | 0 | 19 |
+| 1 | 1/12 | 3 | 10/53 | 0 | 0 | 20 |
 | 2 | 0/11 | 0 | 0/47 | 0 | 0 | – |
 | 3 | 0/10 | 0 | 0/45 | 0 | 0 | – |
 | 4 | 0/14 | 0 | 0/54 | 0 | 0 | – |
@@ -41,7 +49,7 @@ No entry for today. Next: Day 3 (2026-10-09) — Finish Day 2: text data and emb
 ✅ done · 🟡 partial · ❌ missed · 👉 today · · upcoming
 
 - **Setup:** 🟡 0
-- **Week 1:** ✅ 1  🟡 2  · 3  · 4  · 5  · 6  · 7  · 8  · 9  · 10  · 11  · 14
+- **Week 1:** ✅ 1  🟡 2  👉 3  · 4  · 5  · 6  · 7  · 8  · 9  · 10  · 11  · 14
 - **Week 2:** · 12  · 13  · 15  · 16  · 17  · 18  · 19  · 20  · 21  · 22  · 28
 - **Week 3:** · 23  · 24  · 25  · 26  · 27  · 29  · 30  · 31  · 32  · 35
 - **Week 4:** · 33  · 34  · 36  · 37  · 38  · 39  · 40  · 41  · 42  · 43  · 44  · 45  · 46  · 47
@@ -69,9 +77,9 @@ No entry for today. Next: Day 3 (2026-10-09) — Finish Day 2: text data and emb
 
 ## Recent log
 
+- **Day 3** (2026-10-09) — done: Nothing yet. No Day 3 item is complete. · blocked: Day 3 did not start on 2026-10-07.
 - **Day 2** (2026-10-06) — done: Learn — makemore part 1. Build — bigram character model. · blocked: Raschka ch. 2 and its Build part (sliding-window dataset, embedding layer) not done yet. Rust (rustlings 76–80, Comprehensive Rust Day 1 afternoon) and Post not done yet.
 - **Day 1** (2026-10-05) — done: Learn — micrograd video; worked through it on paper. Build — Value class with autograd and a tiny MLP on a toy dataset. Rust — rustlings 71–75; Comprehensive Rust Day 1 morning. · blocked: nothing.
-- **Day 0** (2026-10-04) — done: uv env (Python 3.11.9, torch 2.14.1) with MPS True; Ollama 0.35.1 + qwen2.5:3b answers; Docker 20.10 running; RAM is 16 GB. · blocked: repo not pushed to GitHub yet; accounts and spend caps still to do (by hand).
 
 ## Plan changes
 

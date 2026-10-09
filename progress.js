@@ -1,14 +1,14 @@
 window.STUDY_PROGRESS = {
- "generated": "2026-10-08",
+ "generated": "2026-10-09",
  "timezone": "Asia/Kolkata",
  "curriculum": "AI Study Plan — Days 1–47",
  "start": "2026-10-05",
  "end": "2026-11-22",
- "dayNum": 4,
+ "dayNum": 5,
  "totalDays": 47,
  "pace": "🔴 Behind — 5 item(s) owed across 2 day(s)",
  "paceKind": "behind",
- "streak": 3,
+ "streak": 4,
  "missedRun": 0,
  "overall": {
   "done": 14,
@@ -330,7 +330,7 @@ window.STUDY_PROGRESS = {
    "title": "Finish Day 2: text data and embeddings",
    "type": "core",
    "hours": 0,
-   "status": "upcoming",
+   "status": "today",
    "file": "days/day03.md",
    "log": {
     "done": "Nothing yet. No Day 3 item is complete.",
