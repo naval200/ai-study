@@ -1,31 +1,36 @@
 # Dashboard — AI Study Plan — Days 1–47
 
-> Generated 2026-10-09 by study-coach. Don't edit by hand — run `/study-coach status`.
+> Generated 2026-10-15 by study-coach. Don't edit by hand — run `/study-coach status`.
 
 ## Where you are
 
-- **Day 5 of 47** · Fri 2026-10-09 · Week 1: Finish Day 2: text data and embeddings
-- **Overall:** █░░░░░░░░░░░░░░░░░░░ 7% (14/206 required items)
-- **Pace:** 🔴 **Behind** — 5 item(s) owed across 2 day(s)
-- **Streak:** 4 day(s) logged in a row
+- **Day 11 of 47** · Thu 2026-10-15 · Week 1: Sampling · KV cache (start)
+- **Overall:** █░░░░░░░░░░░░░░░░░░░ 7% (15/206 required items)
+- **Pace:** 🔴 **Behind** — 28 item(s) owed across 7 day(s)
+- **Streak:** 0 day(s) logged in a row
+- ⚠️ **5 days missed in a row** — plan rule: cut scope, don't add hours.
 - **Exit test:** 0/9 (pass ≥ 7)
 - **Online:** https://naval200.github.io/ai-study/
 
 ## Reviews due
 
 - 🔁 Cross-entropy and negative log likelihood — due 2026-10-08 (last: fragile)
+- 🔁 Backprop and gradient accumulation — due 2026-10-10 (last: solid)
+- 🔁 Eval → repair loops and rules-first gates — due 2026-10-11
+- 🔁 Model cascades and routing — due 2026-10-11
+- 🔁 Structured outputs and tool schemas — due 2026-10-12
 
 ## Today
 
-**Finish Day 2: text data and embeddings** — `days/day03.md`
+**Sampling · KV cache (start)** — `days/day09.md`
 
-Start with (from Day 2's log): _Day 3 — Raschka ch. 2, then the sliding-window dataset._
+Start with (from Day 3's log): _Build the sliding-window dataset and embedding layer. Save the code in `projects/w1-gpt/text-data/`._
 
-- [ ] **Learn:** Raschka ch. 2, Working with Text Data.
-- [ ] **Build:** the sliding-window dataset and embedding layer from ch. 2.
-- [ ] **Rust:** rustlings 76–80.
-- [ ] **Rust:** Comprehensive Rust Day 1 afternoon.
-- [ ] the sliding-window loader yields (input, target) pairs shifted by one token.
+- [ ] **Learn:** Build a Reasoning Model ch. 2, Generating Text with a Pre-trained LLM.
+- [ ] **Build:** temperature, top-k and top-p sampling, and a sampling comparison table.
+- [ ] **Rust:** rustlings 91–96 (done).
+- [ ] **Post:** "Temperature, top-k, top-p: same model, three personalities."
+- [ ] the model writes coherent three-sentence stories, and you have a sampling comparison table.
 
 ## Catch-up queue (goes to Sunday)
 
@@ -34,12 +39,23 @@ Start with (from Day 2's log): _Day 3 — Raschka ch. 2, then the sliding-window
 - Day 0 · **Budget:** ~$15–25 of rented GPU time (Days 16–18) plus a few dollars of API calls.
 - Day 2 · **Post:** "An LLM is a next-token probability table. Here's the smallest one."
 - Day 2 · your bigram model samples name-like strings, and you can explain why cross-entropy is the loss.
+- Day 3 · **Build:** the sliding-window dataset and embedding layer from ch. 2.
+- Day 3 · **Rust:** rustlings 76–80.
+- Day 3 · **Rust:** Comprehensive Rust Day 1 afternoon.
+- Day 3 · the sliding-window loader yields (input, target) pairs shifted by one token.
+- Day 4 · **Learn:** Jay Alammar, The Illustrated Transformer.
+- Day 4 · **Learn:** Raschka ch. 3, Coding Attention Mechanisms.
+- Day 4 · **Build:** scaled dot-product attention with a causal mask, with shape asserts in a test file.
+- Day 4 · **Rust:** rustlings 81–85.
+- Day 5 · **Learn:** Paper: Attention Is All You Need, section 3 only.
+- Day 5 · **Learn:** Karpathy, Let's build GPT (1h56m).
+- …and 13 more
 
 ## Weekly scorecard
 
 | Week | Days done | Logged | Items | Hours (target 30-35) | Posts | Commits |
 |---|---|---|---|---|---|---|
-| 1 | 1/12 | 3 | 10/53 | 0 | 0 | 20 |
+| 1 | 1/12 | 3 | 11/53 | 0 | 0 | 21 |
 | 2 | 0/11 | 0 | 0/47 | 0 | 0 | – |
 | 3 | 0/10 | 0 | 0/45 | 0 | 0 | – |
 | 4 | 0/14 | 0 | 0/54 | 0 | 0 | – |
@@ -49,7 +65,7 @@ Start with (from Day 2's log): _Day 3 — Raschka ch. 2, then the sliding-window
 ✅ done · 🟡 partial · ❌ missed · 👉 today · · upcoming
 
 - **Setup:** 🟡 0
-- **Week 1:** ✅ 1  🟡 2  👉 3  · 4  · 5  · 6  · 7  · 8  · 9  · 10  · 11  · 14
+- **Week 1:** ✅ 1  🟡 2  🟡 3  ❌ 4  ❌ 5  ❌ 6  ❌ 7  ❌ 8  👉 9  · 10  · 11  · 14
 - **Week 2:** · 12  · 13  · 15  · 16  · 17  · 18  · 19  · 20  · 21  · 22  · 28
 - **Week 3:** · 23  · 24  · 25  · 26  · 27  · 29  · 30  · 31  · 32  · 35
 - **Week 4:** · 33  · 34  · 36  · 37  · 38  · 39  · 40  · 41  · 42  · 43  · 44  · 45  · 46  · 47
@@ -77,7 +93,7 @@ Start with (from Day 2's log): _Day 3 — Raschka ch. 2, then the sliding-window
 
 ## Recent log
 
-- **Day 3** (2026-10-09) — done: Nothing yet. No Day 3 item is complete. · blocked: Day 3 did not start on 2026-10-07.
+- **Day 3** (2026-10-09) — done: Learn — Raschka ch. 2, Working with Text Data. · blocked: The Build part (sliding-window dataset, embedding layer) is open. The notebook in the repo has no such code yet. Rust items are open.
 - **Day 2** (2026-10-06) — done: Learn — makemore part 1. Build — bigram character model. · blocked: Raschka ch. 2 and its Build part (sliding-window dataset, embedding layer) not done yet. Rust (rustlings 76–80, Comprehensive Rust Day 1 afternoon) and Post not done yet.
 - **Day 1** (2026-10-05) — done: Learn — micrograd video; worked through it on paper. Build — Value class with autograd and a tiny MLP on a toy dataset. Rust — rustlings 71–75; Comprehensive Rust Day 1 morning. · blocked: nothing.
 

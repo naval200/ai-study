@@ -1,17 +1,17 @@
 window.STUDY_PROGRESS = {
- "generated": "2026-10-09",
+ "generated": "2026-10-15",
  "timezone": "Asia/Kolkata",
  "curriculum": "AI Study Plan — Days 1–47",
  "start": "2026-10-05",
  "end": "2026-11-22",
- "dayNum": 5,
+ "dayNum": 11,
  "totalDays": 47,
- "pace": "🔴 Behind — 5 item(s) owed across 2 day(s)",
+ "pace": "🔴 Behind — 28 item(s) owed across 7 day(s)",
  "paceKind": "behind",
- "streak": 4,
- "missedRun": 0,
+ "streak": 0,
+ "missedRun": 5,
  "overall": {
-  "done": 14,
+  "done": 15,
   "total": 206
  },
  "exit": {
@@ -63,6 +63,26 @@ window.STUDY_PROGRESS = {
    "title": "Cross-entropy and negative log likelihood",
    "next": "2026-10-08",
    "outcome": "fragile"
+  },
+  {
+   "title": "Backprop and gradient accumulation",
+   "next": "2026-10-10",
+   "outcome": "solid"
+  },
+  {
+   "title": "Eval → repair loops and rules-first gates",
+   "next": "2026-10-11",
+   "outcome": ""
+  },
+  {
+   "title": "Model cascades and routing",
+   "next": "2026-10-11",
+   "outcome": ""
+  },
+  {
+   "title": "Structured outputs and tool schemas",
+   "next": "2026-10-12",
+   "outcome": ""
   }
  ],
  "weeks": {
@@ -330,19 +350,19 @@ window.STUDY_PROGRESS = {
    "title": "Finish Day 2: text data and embeddings",
    "type": "core",
    "hours": 0,
-   "status": "today",
+   "status": "partial",
    "file": "days/day03.md",
    "log": {
-    "done": "Nothing yet. No Day 3 item is complete.",
-    "blocked": "Day 3 did not start on 2026-10-07.",
-    "next": "Restart Day 3 on 2026-10-09. Start with Raschka ch. 2, then the sliding-window dataset."
+    "done": "Learn — Raschka ch. 2, Working with Text Data.",
+    "blocked": "The Build part (sliding-window dataset, embedding layer) is open. The notebook in the repo has no such code yet. Rust items are open.",
+    "next": "Build the sliding-window dataset and embedding layer. Save the code in `projects/w1-gpt/text-data/`."
    },
    "items": [
     {
      "text": "**Learn:** Raschka ch. 2, Working with Text Data.",
      "label": "Learn",
      "section": "Plan",
-     "state": "todo",
+     "state": "done",
      "optional": false
     },
     {
@@ -383,7 +403,7 @@ window.STUDY_PROGRESS = {
    "title": "Attention (1 of 2)",
    "type": "core",
    "hours": 0,
-   "status": "upcoming",
+   "status": "missed",
    "file": "days/day04.md",
    "log": {
     "done": "",
@@ -429,7 +449,7 @@ window.STUDY_PROGRESS = {
    "title": "Attention (2 of 2) · GPT (start)",
    "type": "core",
    "hours": 0,
-   "status": "upcoming",
+   "status": "missed",
    "file": "days/day05.md",
    "log": {
     "done": "",
@@ -489,7 +509,7 @@ window.STUDY_PROGRESS = {
    "title": "Build the GPT",
    "type": "core",
    "hours": 0,
-   "status": "upcoming",
+   "status": "missed",
    "file": "days/day06.md",
    "log": {
     "done": "",
@@ -549,7 +569,7 @@ window.STUDY_PROGRESS = {
    "title": "Catch-up (light day)",
    "type": "light",
    "hours": 0,
-   "status": "upcoming",
+   "status": "missed",
    "file": "days/day07.md",
    "log": {
     "done": "",
@@ -588,7 +608,7 @@ window.STUDY_PROGRESS = {
    "title": "Pretraining (1 of 2)",
    "type": "core",
    "hours": 0,
-   "status": "upcoming",
+   "status": "missed",
    "file": "days/day08.md",
    "log": {
     "done": "",
@@ -627,7 +647,7 @@ window.STUDY_PROGRESS = {
    "title": "Sampling · KV cache (start)",
    "type": "core",
    "hours": 0,
-   "status": "upcoming",
+   "status": "today",
    "file": "days/day09.md",
    "log": {
     "done": "",
