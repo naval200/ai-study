@@ -1,13 +1,13 @@
 ---
 day: 25
-date: 2026-10-31
+date: 2026-11-12
 week: 3
 title: Dense retrieval
 type: core
 hours: 0
 ---
 
-# Day 25 · Sat 31 Oct — Dense retrieval
+# Day 25 · Thu 12 Nov — Dense retrieval
 
 ## Plan
 - [ ] **Build:** embed the corpus on MPS with two small models (e.g. BAAI/bge-small-en-v1.5 and all-MiniLM-L6-v2). Note embedding time per 1,000 docs.

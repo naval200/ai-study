@@ -1,13 +1,13 @@
 ---
 day: 12
-date: 2026-10-18
+date: 2026-10-30
 week: 2
 title: Calling models like an engineer (1 of 2)
 type: core
 hours: 0
 ---
 
-# Day 12 · Sun 18 Oct — Calling models like an engineer (1 of 2)
+# Day 12 · Fri 30 Oct — Calling models like an engineer (1 of 2)
 
 ## Plan
 - [ ] **Learn:** OpenTelemetry semantic conventions for generative AI (the gen_ai.* span attributes).

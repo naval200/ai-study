@@ -1,13 +1,13 @@
 ---
 day: 36
-date: 2026-11-11
+date: 2026-11-23
 week: 4
 title: Late interaction (ColBERT)
 type: core
 hours: 0
 ---
 
-# Day 36 · Wed 11 Nov — Late interaction (ColBERT)
+# Day 36 · Mon 23 Nov — Late interaction (ColBERT)
 
 ## Plan
 - [ ] **Learn:** Qdrant tutorials: Multivectors and Late Interaction, and Hybrid Search with Reranking.

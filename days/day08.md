@@ -1,13 +1,13 @@
 ---
 day: 8
-date: 2026-10-14
+date: 2026-10-26
 week: 1
 title: Pretraining (1 of 2)
 type: core
 hours: 0
 ---
 
-# Day 8 · Wed 14 Oct — Pretraining (1 of 2)
+# Day 8 · Mon 26 Oct — Pretraining (1 of 2)
 
 ## Plan
 - [ ] **Learn:** Raschka ch. 5, Pretraining on Unlabeled Data (loss curves, temperature, top-k).

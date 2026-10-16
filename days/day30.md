@@ -1,13 +1,13 @@
 ---
 day: 30
-date: 2026-11-05
+date: 2026-11-17
 week: 3
 title: Error analysis (1 of 2)
 type: core
 hours: 0
 ---
 
-# Day 30 · Thu 5 Nov — Error analysis (1 of 2)
+# Day 30 · Tue 17 Nov — Error analysis (1 of 2)
 
 ## Plan
 - [ ] **Learn:** Hamel Husain, Your AI Product Needs Evals (the error-analysis parts).

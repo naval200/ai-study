@@ -1,13 +1,13 @@
 ---
 day: 7
-date: 2026-10-13
+date: 2026-10-25
 week: 1
 title: Catch-up (light day)
 type: light
 hours: 0
 ---
 
-# Day 7 · Tue 13 Oct — Catch-up (light day)
+# Day 7 · Sun 25 Oct — Catch-up (light day)
 
 ## Plan
 - [ ] **Catch-up (if behind):** the dashboard catch-up queue, Builds first.

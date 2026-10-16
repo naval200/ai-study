@@ -1,13 +1,13 @@
 ---
 day: 44
-date: 2026-11-19
+date: 2026-12-01
 week: 4
 title: Ask FiQA write-up (light day)
 type: light
 hours: 0
 ---
 
-# Day 44 · Thu 19 Nov — Ask FiQA write-up (light day)
+# Day 44 · Tue 1 Dec — Ask FiQA write-up (light day)
 
 ## Plan
 - [ ] **Write:** blog post #4, "Building Ask FiQA: a measured RAG system end to end".
