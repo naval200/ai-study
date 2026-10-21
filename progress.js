@@ -1,14 +1,14 @@
 window.STUDY_PROGRESS = {
- "generated": "2026-10-16",
+ "generated": "2026-10-21",
  "timezone": "Asia/Kolkata",
  "curriculum": "AI Study Plan — Days 1–47",
- "start": "2026-10-05",
+ "start": "2026-10-19",
  "end": "2026-12-04",
- "dayNum": 12,
+ "dayNum": 3,
  "totalDays": 47,
- "pace": "🟠 Mixed — 5 item(s) owed from past days, 1 done ahead",
- "paceKind": "mixed",
- "streak": 3,
+ "pace": "🔴 Behind — 5 item(s) owed across 2 day(s)",
+ "paceKind": "behind",
+ "streak": 4,
  "missedRun": 0,
  "overall": {
   "done": 15,
@@ -82,6 +82,11 @@ window.STUDY_PROGRESS = {
   {
    "title": "Structured outputs and tool schemas",
    "next": "2026-10-12",
+   "outcome": ""
+  },
+  {
+   "title": "Layered entity resolution (alias → fuzzy → LLM)",
+   "next": "2026-10-18",
    "outcome": ""
   }
  ],
@@ -350,7 +355,7 @@ window.STUDY_PROGRESS = {
    "title": "Finish Day 2: text data and embeddings",
    "type": "core",
    "hours": 0,
-   "status": "upcoming",
+   "status": "today",
    "file": "days/day03.md",
    "log": {
     "done": "Learn — Raschka ch. 2, Working with Text Data.",
