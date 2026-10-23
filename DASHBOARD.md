@@ -58,7 +58,7 @@ Start with (from Day 3's log): _Build the sliding-window dataset and embedding l
 
 | Week | Days done | Logged | Items | Hours (target 30-35) | Posts | Commits |
 |---|---|---|---|---|---|---|
-| 1 | 1/12 | 3 | 12/53 | 0 | 0 | 26 |
+| 1 | 1/12 | 3 | 12/53 | 0 | 0 | 27 |
 | 2 | 0/11 | 0 | 0/47 | 0 | 0 | – |
 | 3 | 0/10 | 0 | 0/45 | 0 | 0 | – |
 | 4 | 0/14 | 0 | 0/54 | 0 | 0 | – |
