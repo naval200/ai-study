@@ -54,7 +54,7 @@ Start with (from Day 3's log): _Build the sliding-window dataset and embedding l
 
 | Week | Days done | Logged | Items | Hours (target 30-35) | Posts | Commits |
 |---|---|---|---|---|---|---|
-| 1 | 1/12 | 3 | 11/53 | 0 | 0 | 24 |
+| 1 | 1/12 | 3 | 11/53 | 0 | 0 | 25 |
 | 2 | 0/11 | 0 | 0/47 | 0 | 0 | – |
 | 3 | 0/10 | 0 | 0/45 | 0 | 0 | – |
 | 4 | 0/14 | 0 | 0/54 | 0 | 0 | – |
@@ -104,4 +104,4 @@ Start with (from Day 3's log): _Build the sliding-window dataset and embedding l
 
 ## Collected
 
-- Ideas in inbox: 0 · Parking lot: 12 · Articles/papers noted: 0 · Concepts checked: 7 · Misses logged: 3
+- Ideas in inbox: 0 · Parking lot: 12 · Articles/papers noted: 1 · Concepts checked: 7 · Misses logged: 3

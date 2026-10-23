@@ -28,3 +28,5 @@ hours: 0
 Note 2026-10-15: The learner started Day 3 late and asked to pause advancing days until they catch up. The coach made no date change. The progress page export ticked Build and Done-when, but the repo has no matching code. Both stay open until the code is saved.
 
 Note 2026-10-16: The learner is away 16–20 Oct. Day 3 restarts Wed 21 Oct. The Build item and the Done-when item stay open. The learner may swap the Day 4 Learn item for the DeepLearning.AI course "How Transformer LLMs Work". The coach made no plan change for this swap yet.
+
+Note 2026-10-23: The learner read Jay Alammar, The Illustrated Transformer, and checked self-attention. Result: misconception on the score matrix shape (see `concepts/self-attention-and-causal-mask.md`). The Day 3 Build stays open. The learner continues it on 24 Oct. The Day 4 Learn item stays unticked.
