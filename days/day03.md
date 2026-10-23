@@ -12,7 +12,7 @@ hours: 0
 ## Plan
 - [x] **Learn:** Raschka ch. 2, Working with Text Data.
 - [ ] **Build:** the sliding-window dataset and embedding layer from ch. 2.
-- [ ] **Rust:** rustlings 76–80.
+- [x] **Rust:** rustlings 76–80.
 - [ ] **Rust:** Comprehensive Rust Day 1 afternoon.
 
 ## Done when
@@ -30,3 +30,5 @@ Note 2026-10-15: The learner started Day 3 late and asked to pause advancing day
 Note 2026-10-16: The learner is away 16–20 Oct. Day 3 restarts Wed 21 Oct. The Build item and the Done-when item stay open. The learner may swap the Day 4 Learn item for the DeepLearning.AI course "How Transformer LLMs Work". The coach made no plan change for this swap yet.
 
 Note 2026-10-23: The learner read Jay Alammar, The Illustrated Transformer, and checked self-attention. Result: misconception on the score matrix shape (see `concepts/self-attention-and-causal-mask.md`). The Day 3 Build stays open. The learner continues it on 24 Oct. The Day 4 Learn item stays unticked.
+
+Note 2026-10-24: The learner pasted the rustlings output: 80/94 done, current exercise threads2.rs. The rustlings 76–80 item is done. The tool shows 94 exercises, so the course total changed from 96 to 94. The Build and Comprehensive Rust items stay open.

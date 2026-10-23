@@ -1,13 +1,14 @@
 # Dashboard — AI Study Plan — Days 1–47
 
-> Generated 2026-10-23 by study-coach. Don't edit by hand — run `/study-coach status`.
+> Generated 2026-10-24 by study-coach. Don't edit by hand — run `/study-coach status`.
 
 ## Where you are
 
-- **Day 5 of 47** · Fri 2026-10-23 · Week 1: Attention (2 of 2) · GPT (start)
-- **Overall:** █░░░░░░░░░░░░░░░░░░░ 7% (15/206 required items)
-- **Pace:** 🔴 **Behind** — 13 item(s) owed across 4 day(s)
+- **Day 6 of 47** · Sat 2026-10-24 · Week 1: Build the GPT
+- **Overall:** ██░░░░░░░░░░░░░░░░░░ 8% (16/206 required items)
+- **Pace:** 🔴 **Behind** — 18 item(s) owed across 5 day(s)
 - **Streak:** 0 day(s) logged in a row
+- ⚠️ **2 days missed in a row** — plan rule: cut scope, don't add hours.
 - **Exit test:** 0/9 (pass ≥ 7)
 - **Online:** https://naval200.github.io/ai-study/
 
@@ -23,16 +24,16 @@
 
 ## Today
 
-**Attention (2 of 2) · GPT (start)** — `days/day05.md`
+**Build the GPT** — `days/day06.md`
 
 Start with (from Day 3's log): _Build the sliding-window dataset and embedding layer. Save the code in `projects/w1-gpt/text-data/`._
 
-- [ ] **Learn:** Paper: Attention Is All You Need, section 3 only.
-- [ ] **Learn:** Karpathy, Let's build GPT (1h56m).
-- [ ] **Build:** multi-head attention, with shape asserts in the test file.
-- [ ] **Rust:** Comprehensive Rust Day 2 morning.
-- [ ] **Post:** "Q, K, V explained with a library-search analogy."
-- [ ] your multi-head attention matches torch.nn.functional.scaled_dot_product_attention within 1e-5.
+- [ ] **Learn:** Raschka ch. 4, Implementing a GPT Model from Scratch.
+- [ ] **Build:** a full GPT (embeddings, blocks, LayerNorm, residuals).
+- [ ] **Build:** train it on Tiny Shakespeare on MPS. Hold out 10% and print the validation loss.
+- [ ] **Rust:** rustlings 86–90.
+- [ ] **Post:** "I trained a GPT on my MacBook. Here's what it wrote."
+- [ ] validation loss below about 2.0 and the samples look like play dialogue.
 
 ## Catch-up queue (goes to Sunday)
 
@@ -42,19 +43,22 @@ Start with (from Day 3's log): _Build the sliding-window dataset and embedding l
 - Day 2 · **Post:** "An LLM is a next-token probability table. Here's the smallest one."
 - Day 2 · your bigram model samples name-like strings, and you can explain why cross-entropy is the loss.
 - Day 3 · **Build:** the sliding-window dataset and embedding layer from ch. 2.
-- Day 3 · **Rust:** rustlings 76–80.
 - Day 3 · **Rust:** Comprehensive Rust Day 1 afternoon.
 - Day 3 · the sliding-window loader yields (input, target) pairs shifted by one token.
 - Day 4 · **Learn:** Jay Alammar, The Illustrated Transformer.
 - Day 4 · **Learn:** Raschka ch. 3, Coding Attention Mechanisms.
 - Day 4 · **Build:** scaled dot-product attention with a causal mask, with shape asserts in a test file.
 - Day 4 · **Rust:** rustlings 81–85.
+- Day 5 · **Learn:** Paper: Attention Is All You Need, section 3 only.
+- Day 5 · **Learn:** Karpathy, Let's build GPT (1h56m).
+- Day 5 · **Build:** multi-head attention, with shape asserts in the test file.
+- …and 3 more
 
 ## Weekly scorecard
 
 | Week | Days done | Logged | Items | Hours (target 30-35) | Posts | Commits |
 |---|---|---|---|---|---|---|
-| 1 | 1/12 | 3 | 11/53 | 0 | 0 | 25 |
+| 1 | 1/12 | 3 | 12/53 | 0 | 0 | 26 |
 | 2 | 0/11 | 0 | 0/47 | 0 | 0 | – |
 | 3 | 0/10 | 0 | 0/45 | 0 | 0 | – |
 | 4 | 0/14 | 0 | 0/54 | 0 | 0 | – |
@@ -64,7 +68,7 @@ Start with (from Day 3's log): _Build the sliding-window dataset and embedding l
 ✅ done · 🟡 partial · ❌ missed · 👉 today · · upcoming
 
 - **Setup:** 🟡 0
-- **Week 1:** ✅ 1  🟡 2  🟡 3  ❌ 4  👉 5  · 6  · 7  · 8  · 9  · 10  · 11  · 14
+- **Week 1:** ✅ 1  🟡 2  🟡 3  ❌ 4  ❌ 5  👉 6  · 7  · 8  · 9  · 10  · 11  · 14
 - **Week 2:** · 12  · 13  · 15  · 16  · 17  · 18  · 19  · 20  · 21  · 22  · 28
 - **Week 3:** · 23  · 24  · 25  · 26  · 27  · 29  · 30  · 31  · 32  · 35
 - **Week 4:** · 33  · 34  · 36  · 37  · 38  · 39  · 40  · 41  · 42  · 43  · 44  · 45  · 46  · 47
@@ -73,7 +77,7 @@ Start with (from Day 3's log): _Build the sliding-window dataset and embedding l
 
 - `█░░░░░░░░░░░` Comprehensive Rust (Google) — 1/11 parts
 - `██████░░░░░░` Karpathy — Neural Networks: Zero to Hero — 2/4 parts
-- `█████████░░░` rustlings — 75/96 exercises
+- `██████████░░` rustlings — 80/94 exercises
 - `░░░░░░░░░░░░` Build a Reasoning Model (From Scratch) (Raschka) — 0/4 chapters
 - `░░░░░░░░░░░░` Build a Large Language Model (From Scratch) (Raschka) — 0/4 chapters
 - `░░░░░░░░░░░░` Introduction to Information Retrieval (Manning, Raghavan & Schütze) — 0/2 chapters

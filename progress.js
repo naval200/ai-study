@@ -1,17 +1,17 @@
 window.STUDY_PROGRESS = {
- "generated": "2026-10-23",
+ "generated": "2026-10-24",
  "timezone": "Asia/Kolkata",
  "curriculum": "AI Study Plan — Days 1–47",
  "start": "2026-10-19",
  "end": "2026-12-04",
- "dayNum": 5,
+ "dayNum": 6,
  "totalDays": 47,
- "pace": "🔴 Behind — 13 item(s) owed across 4 day(s)",
+ "pace": "🔴 Behind — 18 item(s) owed across 5 day(s)",
  "paceKind": "behind",
  "streak": 0,
- "missedRun": 1,
+ "missedRun": 2,
  "overall": {
-  "done": 15,
+  "done": 16,
   "total": 206
  },
  "exit": {
@@ -88,6 +88,11 @@ window.STUDY_PROGRESS = {
    "title": "Layered entity resolution (alias → fuzzy → LLM)",
    "next": "2026-10-18",
    "outcome": ""
+  },
+  {
+   "title": "self attention and causal mask",
+   "next": "2026-10-24",
+   "outcome": "misconception"
   }
  ],
  "weeks": {
@@ -126,8 +131,8 @@ window.STUDY_PROGRESS = {
   {
    "file": "courses/rustlings.md",
    "title": "rustlings",
-   "done": 75,
-   "total": 96,
+   "done": 80,
+   "total": 94,
    "unit": "exercises"
   },
   {
@@ -381,7 +386,7 @@ window.STUDY_PROGRESS = {
      "text": "**Rust:** rustlings 76–80.",
      "label": "Rust",
      "section": "Plan",
-     "state": "todo",
+     "state": "done",
      "optional": false
     },
     {
@@ -454,7 +459,7 @@ window.STUDY_PROGRESS = {
    "title": "Attention (2 of 2) · GPT (start)",
    "type": "core",
    "hours": 0,
-   "status": "today",
+   "status": "missed",
    "file": "days/day05.md",
    "log": {
     "done": "",
@@ -514,7 +519,7 @@ window.STUDY_PROGRESS = {
    "title": "Build the GPT",
    "type": "core",
    "hours": 0,
-   "status": "upcoming",
+   "status": "today",
    "file": "days/day06.md",
    "log": {
     "done": "",
