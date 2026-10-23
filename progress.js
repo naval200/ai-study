@@ -1,15 +1,15 @@
 window.STUDY_PROGRESS = {
- "generated": "2026-10-21",
+ "generated": "2026-10-23",
  "timezone": "Asia/Kolkata",
  "curriculum": "AI Study Plan — Days 1–47",
  "start": "2026-10-19",
  "end": "2026-12-04",
- "dayNum": 3,
+ "dayNum": 5,
  "totalDays": 47,
- "pace": "🔴 Behind — 5 item(s) owed across 2 day(s)",
+ "pace": "🔴 Behind — 13 item(s) owed across 4 day(s)",
  "paceKind": "behind",
- "streak": 4,
- "missedRun": 0,
+ "streak": 0,
+ "missedRun": 1,
  "overall": {
   "done": 15,
   "total": 206
@@ -355,7 +355,7 @@ window.STUDY_PROGRESS = {
    "title": "Finish Day 2: text data and embeddings",
    "type": "core",
    "hours": 0,
-   "status": "today",
+   "status": "partial",
    "file": "days/day03.md",
    "log": {
     "done": "Learn — Raschka ch. 2, Working with Text Data.",
@@ -408,7 +408,7 @@ window.STUDY_PROGRESS = {
    "title": "Attention (1 of 2)",
    "type": "core",
    "hours": 0,
-   "status": "upcoming",
+   "status": "missed",
    "file": "days/day04.md",
    "log": {
     "done": "",
@@ -454,7 +454,7 @@ window.STUDY_PROGRESS = {
    "title": "Attention (2 of 2) · GPT (start)",
    "type": "core",
    "hours": 0,
-   "status": "upcoming",
+   "status": "today",
    "file": "days/day05.md",
    "log": {
     "done": "",
