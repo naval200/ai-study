@@ -1,17 +1,17 @@
 window.STUDY_PROGRESS = {
- "generated": "2026-10-24",
+ "generated": "2026-10-26",
  "timezone": "Asia/Kolkata",
  "curriculum": "AI Study Plan — Days 1–47",
  "start": "2026-10-19",
  "end": "2026-12-04",
- "dayNum": 6,
+ "dayNum": 8,
  "totalDays": 47,
- "pace": "🔴 Behind — 18 item(s) owed across 5 day(s)",
+ "pace": "🔴 Behind — 22 item(s) owed across 6 day(s)",
  "paceKind": "behind",
  "streak": 0,
- "missedRun": 2,
+ "missedRun": 4,
  "overall": {
-  "done": 16,
+  "done": 18,
   "total": 206
  },
  "exit": {
@@ -363,9 +363,9 @@ window.STUDY_PROGRESS = {
    "status": "partial",
    "file": "days/day03.md",
    "log": {
-    "done": "Learn — Raschka ch. 2, Working with Text Data.",
-    "blocked": "The Build part (sliding-window dataset, embedding layer) is open. The notebook in the repo has no such code yet. Rust items are open.",
-    "next": "Build the sliding-window dataset and embedding layer. Save the code in `projects/w1-gpt/text-data/`."
+    "done": "Learn — Raschka ch. 2. Build — sliding-window dataset, DataLoader and token plus position embedding, in `projects/w1-gpt/text-data/ch02_text_data.ipynb`. The notebook tests pass (sliding window, dataloader, embedding). Rust — rustlings 76–80 (80/94).",
+    "blocked": "Comprehensive Rust Day 1 afternoon is open.",
+    "next": "Run the self-attention review. Then start Day 4 Build: scaled dot-product attention with a causal mask. Print `scores.shape`."
    },
    "items": [
     {
@@ -379,7 +379,7 @@ window.STUDY_PROGRESS = {
      "text": "**Build:** the sliding-window dataset and embedding layer from ch. 2.",
      "label": "Build",
      "section": "Plan",
-     "state": "todo",
+     "state": "done",
      "optional": false
     },
     {
@@ -400,7 +400,7 @@ window.STUDY_PROGRESS = {
      "text": "the sliding-window loader yields (input, target) pairs shifted by one token.",
      "label": "Done when",
      "section": "Done when",
-     "state": "todo",
+     "state": "done",
      "optional": false
     }
    ]
@@ -519,7 +519,7 @@ window.STUDY_PROGRESS = {
    "title": "Build the GPT",
    "type": "core",
    "hours": 0,
-   "status": "today",
+   "status": "missed",
    "file": "days/day06.md",
    "log": {
     "done": "",
@@ -579,7 +579,7 @@ window.STUDY_PROGRESS = {
    "title": "Catch-up (light day)",
    "type": "light",
    "hours": 0,
-   "status": "upcoming",
+   "status": "missed",
    "file": "days/day07.md",
    "log": {
     "done": "",
@@ -618,7 +618,7 @@ window.STUDY_PROGRESS = {
    "title": "Pretraining (1 of 2)",
    "type": "core",
    "hours": 0,
-   "status": "upcoming",
+   "status": "today",
    "file": "days/day08.md",
    "log": {
     "done": "",
