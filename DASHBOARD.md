@@ -55,7 +55,7 @@ Start with (from Day 3's log): _Run the self-attention review. Then start Day 4 
 
 | Week | Days done | Logged | Items | Hours (target 30-35) | Posts | Commits |
 |---|---|---|---|---|---|---|
-| 1 | 1/12 | 3 | 14/53 | 0 | 0 | 29 |
+| 1 | 1/12 | 3 | 14/53 | 0 | 0 | 30 |
 | 2 | 0/11 | 0 | 0/47 | 0 | 0 | – |
 | 3 | 0/10 | 0 | 0/45 | 0 | 0 | – |
 | 4 | 0/14 | 0 | 0/54 | 0 | 0 | – |
