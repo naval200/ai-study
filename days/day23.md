@@ -1,13 +1,13 @@
 ---
 day: 23
-date: 2026-11-10
+date: 2026-11-14
 week: 3
 title: Lexical search (1 of 2)
 type: core
 hours: 0
 ---
 
-# Day 23 · Tue 10 Nov — Lexical search (1 of 2)
+# Day 23 · Sat 14 Nov — Lexical search (1 of 2)
 
 ## Plan
 - [ ] **Learn:** Introduction to IR ch. 6 (tf-idf and the vector space model).

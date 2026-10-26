@@ -1,13 +1,13 @@
 ---
 day: 19
-date: 2026-11-06
+date: 2026-11-10
 week: 2
 title: Speed tricks and cost
 type: core
 hours: 0
 ---
 
-# Day 19 · Fri 6 Nov — Speed tricks and cost
+# Day 19 · Tue 10 Nov — Speed tricks and cost
 
 ## Plan
 - [ ] **Learn:** Speculative decoding paper: abstract, figure 1, section 3.

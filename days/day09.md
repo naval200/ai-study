@@ -1,13 +1,13 @@
 ---
 day: 9
-date: 2026-10-27
+date: 2026-10-31
 week: 1
 title: Sampling · KV cache (start)
 type: core
 hours: 0
 ---
 
-# Day 9 · Tue 27 Oct — Sampling · KV cache (start)
+# Day 9 · Sat 31 Oct — Sampling · KV cache (start)
 
 ## Plan
 - [ ] **Learn:** Build a Reasoning Model ch. 2, Generating Text with a Pre-trained LLM.

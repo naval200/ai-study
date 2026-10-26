@@ -1,13 +1,13 @@
 ---
 day: 4
-date: 2026-10-22
+date: 2026-10-26
 week: 1
 title: Attention (1 of 2)
 type: core
 hours: 0
 ---
 
-# Day 4 · Thu 22 Oct — Attention (1 of 2)
+# Day 4 · Mon 26 Oct — Attention (1 of 2)
 
 ## Plan
 - [x] **Learn:** Jay Alammar, The Illustrated Transformer.

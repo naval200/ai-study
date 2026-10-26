@@ -1,13 +1,13 @@
 ---
 day: 39
-date: 2026-11-26
+date: 2026-11-30
 week: 4
 title: The product UI
 type: core
 hours: 0
 ---
 
-# Day 39 · Thu 26 Nov — The product UI
+# Day 39 · Mon 30 Nov — The product UI
 
 ## Plan
 - [ ] **Build:** a Next.js front end: question box, streamed answer, clickable citations that open the source post.

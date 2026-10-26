@@ -2,7 +2,7 @@
 
 Oct 2, 2026 · @Naval
 
-Run-sheet and rules: see `../STUDY.md`. Each weekday is 4 hours of core AI work plus 1.5 hours of Rust. Day 47 ends with "Ask FiQA" deployed; Days 1–107 run Mon 5 Oct to Tue 2 Feb.
+Run-sheet and rules: see `../STUDY.md`. Each weekday is 4 hours of core AI work plus 1.5 hours of Rust. Day 47 ends with "Ask FiQA" deployed; Days 1–107 run Mon 5 Oct to Sat 6 Feb.
 
 ## Starting point assumed
 
@@ -46,13 +46,13 @@ Replan 2026-10-07: from Day 3, each pair of old days became three days (about 2/
 - **Rust:** Comprehensive Rust Day 1 afternoon.
 - **Done when:** the sliding-window loader yields (input, target) pairs shifted by one token.
 
-### Day 4 · Thu 22 Oct — Attention (1 of 2)
+### Day 4 · Mon 26 Oct — Attention (1 of 2)
 - **Learn:** Jay Alammar, The Illustrated Transformer.
 - **Learn:** Raschka ch. 3, Coding Attention Mechanisms.
 - **Build:** scaled dot-product attention with a causal mask, with shape asserts in a test file.
 - **Rust:** rustlings 81–85.
 
-### Day 5 · Fri 23 Oct — Attention (2 of 2) · GPT (start)
+### Day 5 · Tue 27 Oct — Attention (2 of 2) · GPT (start)
 - **Learn:** Paper: Attention Is All You Need, section 3 only.
 - **Learn:** Karpathy, Let's build GPT (1h56m).
 - **Build:** multi-head attention, with shape asserts in the test file.
@@ -60,7 +60,7 @@ Replan 2026-10-07: from Day 3, each pair of old days became three days (about 2/
 - **Post:** "Q, K, V explained with a library-search analogy."
 - **Done when:** your multi-head attention matches torch.nn.functional.scaled_dot_product_attention within 1e-5.
 
-### Day 6 · Sat 24 Oct — Build the GPT
+### Day 6 · Wed 28 Oct — Build the GPT
 - **Learn:** Raschka ch. 4, Implementing a GPT Model from Scratch.
 - **Build:** a full GPT (embeddings, blocks, LayerNorm, residuals).
 - **Build:** train it on Tiny Shakespeare on MPS. Hold out 10% and print the validation loss.
@@ -68,24 +68,24 @@ Replan 2026-10-07: from Day 3, each pair of old days became three days (about 2/
 - **Post:** "I trained a GPT on my MacBook. Here's what it wrote."
 - **Done when:** validation loss below about 2.0 and the samples look like play dialogue.
 
-### Day 7 · Sun 25 Oct — Catch-up (light day)
+### Day 7 · Thu 29 Oct — Catch-up (light day)
 - **Catch-up (if behind):** the dashboard catch-up queue, Builds first.
 - **Review (stretch):** the concept reviews that are due.
 - **Rust (if behind):** catch-up only if behind.
 
-### Day 8 · Mon 26 Oct — Pretraining (1 of 2)
+### Day 8 · Fri 30 Oct — Pretraining (1 of 2)
 - **Learn:** Raschka ch. 5, Pretraining on Unlabeled Data (loss curves, temperature, top-k).
 - **Build:** switch the data to TinyStories (a 50–100 MB subset) and train a ~10M-parameter model.
 - **Rust:** Comprehensive Rust Day 2 afternoon.
 
-### Day 9 · Tue 27 Oct — Sampling · KV cache (start)
+### Day 9 · Sat 31 Oct — Sampling · KV cache (start)
 - **Learn:** Build a Reasoning Model ch. 2, Generating Text with a Pre-trained LLM.
 - **Build:** temperature, top-k and top-p sampling, and a sampling comparison table.
 - **Rust:** rustlings 91–96 (done).
 - **Post:** "Temperature, top-k, top-p: same model, three personalities."
 - **Done when:** the model writes coherent three-sentence stories, and you have a sampling comparison table.
 
-### Day 10 · Wed 28 Oct — KV cache and a real modern model
+### Day 10 · Sun 1 Nov — KV cache and a real modern model
 - **Learn:** Build a Reasoning Model appendix C (Qwen3 source code). Note how RoPE, RMSNorm and grouped-query attention differ from your GPT.
 - **Build:** add a KV cache to your GPT and measure tokens/sec with and without it.
 - **Build:** run the book's from-scratch Qwen3 0.6B on MPS and time it the same way.
@@ -93,7 +93,7 @@ Replan 2026-10-07: from Day 3, each pair of old days became three days (about 2/
 - **Post:** "The KV cache made my model N× faster. Here's why."
 - **Done when:** you have both speedup numbers and can say why decode time grows without the cache.
 
-### Day 11 · Thu 29 Oct — Tokenizers
+### Day 11 · Mon 2 Nov — Tokenizers
 - **Learn:** Karpathy, Let's build the GPT Tokenizer (2h13m, at 1.5×).
 - **Learn:** Play with Tiktokenizer.
 - **Build (stretch):** BPE train/encode/decode following minbpe.
@@ -107,26 +107,26 @@ By Day 28 you can say, with your own numbers, what a model costs per million tok
 
 Rent GPU time only on Days 16–18, about 3 hours in total; terminate the pod each time.
 
-### Day 12 · Fri 30 Oct — Calling models like an engineer (1 of 2)
+### Day 12 · Tue 3 Nov — Calling models like an engineer (1 of 2)
 - **Learn:** OpenTelemetry semantic conventions for generative AI (the gen_ai.* span attributes).
 - **Learn:** Claude tool use overview.
 - **Learn:** 15-min refresher only: `concepts/structured-outputs.md` (known from Forksome).
 - **Build:** w2-inference/llm.py — one client function with streaming and Pydantic structured output.
 - **Rust:** Comprehensive Rust Day 4 morning.
 
-### Day 13 · Sat 31 Oct — Calling models (2 of 2) · Local inference (start)
+### Day 13 · Wed 4 Nov — Calling models (2 of 2) · Local inference (start)
 - **Learn:** kipply, Transformer Inference Arithmetic (KV cache and memory-bandwidth sections).
 - **Build:** a JSONL log in llm.py: model, tokens in/out, time to first token (TTFT), tokens/sec and cost. Use the gen_ai.* names for the log fields.
 - **Post:** "Every LLM call has four numbers: TTFT, tokens/sec, tokens, cost."
 - **Done when:** 20 calls are logged with gen_ai.* field names, and one structured extraction validates against its schema.
 
-### Day 14 · Sun 1 Nov — Week 1 write-up (light day)
+### Day 14 · Thu 5 Nov — Week 1 write-up (light day)
 - **Write:** blog post #1, "Building a GPT from scratch on an M1", with the loss curve and the KV-cache numbers.
 - **Review:** fill the scorecard; tidy w1-gpt/ with a README.
 - **Rust (if behind):** catch-up only if behind.
 - **Done when:** the post is published and the repo is public.
 
-### Day 15 · Mon 2 Nov — Local inference on the M1
+### Day 15 · Fri 6 Nov — Local inference on the M1
 - **Learn:** The quantization section of the llama.cpp README.
 - **Build:** run one 3B instruct model through Ollama at Q4_K_M and Q8_0, and through MLX LM at 4-bit. Record TTFT, tokens/sec and peak RAM.
 - **Build:** point llm.py at Ollama's OpenAI-compatible endpoint.
@@ -134,7 +134,7 @@ Rent GPU time only on Days 16–18, about 3 hours in total; terminate the pod ea
 - **Post:** "My M1 runs a 3B model at X tokens/sec. Here's the memory math."
 - **Done when:** a table of at least four configs, and your predicted decode speed (memory bandwidth ÷ model size in bytes) lands within 2× of measured.
 
-### Day 16 · Tue 3 Nov — Serving theory and the first GPU
+### Day 16 · Sat 7 Nov — Serving theory and the first GPU
 - **Learn:** PagedAttention / vLLM paper, sections 1–4.
 - **Learn:** Anyscale, continuous batching.
 - **Build:** rent one 24 GB GPU (RTX 4090, L4 or A10). Follow the vLLM quickstart: vllm serve Qwen/Qwen2.5-7B-Instruct. Call it from llm.py.
@@ -142,20 +142,20 @@ Rent GPU time only on Days 16–18, about 3 hours in total; terminate the pod ea
 - **Post:** "Serving 1 user and 50 users are different problems."
 - **Done when:** the server answers and you've logged single-request TTFT and tokens/sec. Pod terminated.
 
-### Day 17 · Wed 4 Nov — Benchmark day (1 of 2)
+### Day 17 · Sun 8 Nov — Benchmark day (1 of 2)
 - **Learn:** vLLM Benchmark CLI docs.
 - **Learn:** Build a Reasoning Model appendix E, Batching and Throughput-Oriented Execution.
 - **Build:** vllm bench serve at concurrency 1, 4, 16 and 64 for the FP16 model. Record throughput, p50/p95 TTFT, inter-token latency and GPU memory. Terminate the pod.
 - **Rust:** Comprehensive Rust Concurrency, afternoon (async/await).
 
-### Day 18 · Thu 5 Nov — Benchmark (2 of 2) · Speed and cost (start)
+### Day 18 · Mon 9 Nov — Benchmark (2 of 2) · Speed and cost (start)
 - **Learn:** LLM Engineer's Handbook ch. 8, Inference Optimization.
 - **Build:** the same benchmark for an AWQ 4-bit version; save all results as CSV.
 - **Rust:** Tokio tutorial, first three sections.
 - **Post:** "Throughput goes up, latency goes up: the concurrency curve."
 - **Done when:** results are saved as CSV and the pod is terminated.
 
-### Day 19 · Fri 6 Nov — Speed tricks and cost
+### Day 19 · Tue 10 Nov — Speed tricks and cost
 - **Learn:** Speculative decoding paper: abstract, figure 1, section 3.
 - **Build:** a cost notebook — dollars per 1M output tokens for the M1, the rented GPU (hourly price ÷ measured throughput) and two API models; break-even requests/day for self-hosting.
 - **Build (stretch):** speculative decoding in MLX LM with a small draft model.
@@ -163,18 +163,18 @@ Rent GPU time only on Days 16–18, about 3 hours in total; terminate the pod ea
 - **Post:** "When does self-hosting beat the API? My break-even math."
 - **Done when:** one chart comparing cost per 1M tokens across the three options.
 
-### Day 20 · Sat 7 Nov — Mini SLM router (1 of 2)
+### Day 20 · Wed 11 Nov — Mini SLM router (1 of 2)
 - **Learn:** RouteLLM paper, sections 1–3.
 - **Build:** a 60-prompt test set (20 factual, 20 extraction, 20 reasoning).
 - **Build:** a router (rules + the local 3B model as a cheap classifier) that sends each prompt to the local model or an API model.
 - **Rust:** loadgen v2 — p50/p95 latency, clap CLI.
 
-### Day 21 · Sun 8 Nov — Catch-up (light day)
+### Day 21 · Thu 12 Nov — Catch-up (light day)
 - **Catch-up (if behind):** the dashboard catch-up queue, Builds first.
 - **Review (stretch):** the concept reviews that are due.
 - **Rust (if behind):** catch-up only if behind.
 
-### Day 22 · Mon 9 Nov — Mini SLM router (2 of 2)
+### Day 22 · Fri 13 Nov — Mini SLM router (2 of 2)
 - **Build:** score the answers with an LLM judge.
 - **Build (stretch):** add a fourth config, the Forksome cascade: cheap model first, escalate to the strong model only when schema validation fails.
 - **Rust:** run loadgen against local Ollama and an API. Read vLLM's Rust client vllm-bench for ideas.
@@ -189,65 +189,65 @@ By Day 35 you have a measured hybrid search engine over FiQA (57,638 finance for
 
 Core texts this week: Manning, Raghavan & Schütze, Introduction to Information Retrieval (free online), Qdrant's Hybrid Queries docs, and LLM Engineer's Handbook ch. 4 (re-skim) and ch. 9. Everything runs on the M1; Qdrant runs in Docker.
 
-### Day 23 · Tue 10 Nov — Lexical search (1 of 2)
+### Day 23 · Sat 14 Nov — Lexical search (1 of 2)
 - **Learn:** Introduction to IR ch. 6 (tf-idf and the vector space model).
 - **Learn:** Introduction to IR ch. 11, the Okapi BM25 section.
 - **Build:** w3-retrieval/ — load FiQA and run a BM25 baseline with bm25s.
 - **Rust:** start a BM25 scorer in Rust (tokenize, IDF).
 
-### Day 24 · Wed 11 Nov — Lexical search (2 of 2) · Dense (start)
+### Day 24 · Sun 15 Nov — Lexical search (2 of 2) · Dense (start)
 - **Learn:** Sentence Transformers docs on semantic search and bi-encoders. Browse the MTEB leaderboard to pick models.
 - **Build:** score the baseline: nDCG@10, Recall@100 and MRR@10 with ranx.
 - **Rust:** the Rust BM25 scorer scores 1,000 FiQA docs.
 - **Post:** "BM25 is 30 years old and still hard to beat."
 - **Done when:** baseline numbers are in results.csv.
 
-### Day 25 · Thu 12 Nov — Dense retrieval
+### Day 25 · Mon 16 Nov — Dense retrieval
 - **Build:** embed the corpus on MPS with two small models (e.g. BAAI/bge-small-en-v1.5 and all-MiniLM-L6-v2). Note embedding time per 1,000 docs.
 - **Build:** exact search in NumPy; evaluate.
 - **Rust:** finish the BM25 scorer; check its top-10 matches bm25s on 20 queries.
 - **Post:** "Keyword search vs meaning search: where each one fails."
 - **Done when:** dense numbers sit next to BM25 in results.csv, with 10 queries where they disagree.
 
-### Day 26 · Fri 13 Nov — Qdrant (1 of 2)
+### Day 26 · Tue 17 Nov — Qdrant (1 of 2)
 - **Learn:** Qdrant Hybrid Queries docs.
 - **Learn:** re-skim LLM Engineer's Handbook ch. 4, RAG Feature Pipeline, for how it uses Qdrant.
 - **Build:** Qdrant in Docker; one collection with a named dense vector and a sparse BM25 vector (via FastEmbed).
 - **Rust:** an ingest tool using the Qdrant Rust client that upserts from JSONL.
 
-### Day 27 · Sat 14 Nov — Qdrant (2 of 2) · Fusion (start)
+### Day 27 · Wed 18 Nov — Qdrant (2 of 2) · Fusion (start)
 - **Learn:** the original Reciprocal Rank Fusion paper (two pages).
 - **Build:** upsert the full corpus; query each vector type separately.
 - **Rust:** time your Rust ingest against the Python one.
 - **Post:** "Running a vector database on my laptop."
 - **Done when:** both query types return the same top-10 as Days 23–25 (or you can explain why not).
 
-### Day 28 · Sun 15 Nov — Week 2 write-up (light day)
+### Day 28 · Thu 19 Nov — Week 2 write-up (light day)
 - **Write:** blog post #2, "LLM inference on an M1 vs a rented GPU: real numbers".
 - **Review:** scorecard; README for w2-inference/.
 - **Rust:** loadgen README; publish the repo.
 - **Done when:** the post is published and loadgen is public.
 
-### Day 29 · Mon 16 Nov — Fusion
+### Day 29 · Fri 20 Nov — Fusion
 - **Build:** hybrid search using Qdrant's prefetch + RRF.
 - **Build:** weighted and CombSUM fusion with ranx. Add p50 latency per method.
 - **Rust:** Rust ingest: batch size and concurrency sweep.
 - **Post:** "Reciprocal Rank Fusion in one formula."
 - **Done when:** a results table with BM25, dense, hybrid-RRF and hybrid-weighted (nDCG@10, Recall@100, p50 ms).
 
-### Day 30 · Tue 17 Nov — Error analysis (1 of 2)
+### Day 30 · Sat 21 Nov — Error analysis (1 of 2)
 - **Learn:** Hamel Husain, Your AI Product Needs Evals (the error-analysis parts).
 - **Build:** read 30 queries where hybrid misses; tag each failure (vocabulary gap, multi-part question, label noise, etc.) and count them.
 - **Rust:** start rust/gateway with axum: a health route.
 
-### Day 31 · Wed 18 Nov — Error analysis (2 of 2) · Answers (start)
+### Day 31 · Sun 22 Nov — Error analysis (2 of 2) · Answers (start)
 - **Learn:** LLM Engineer's Handbook ch. 9, RAG Inference Pipeline.
 - **Build:** add a payload field (e.g. a document length bucket) and try a filtered query.
 - **Rust:** gateway: a /search route that calls Qdrant through the Rust client.
 - **Post:** "I read 30 search failures by hand. Here's what broke."
 - **Done when:** a failure taxonomy with counts, and one fix tried with its before/after number.
 
-### Day 32 · Thu 19 Nov — From search to answers
+### Day 32 · Mon 23 Nov — From search to answers
 - **Learn:** Anthropic, Contextual Retrieval.
 - **Build:** a FastAPI /ask endpoint — hybrid top-10, a prompt with numbered sources, a streamed answer with [1][2] citations via llm.py.
 - **Build:** let your Week 2 router choose local or API.
@@ -261,24 +261,24 @@ Core texts this week: Manning, Raghavan & Schütze, Introduction to Information 
 
 By Day 47, "Ask FiQA" is live at a public URL: hybrid search, reranking, cited answers, and an eval page showing what each stage bought you. A Rust gateway in front of the app handles caching, rate limits and latency metrics. If the gateway slips, Python does those jobs and the gateway moves to month 2.
 
-### Day 33 · Fri 20 Nov — Cross-encoder reranking (1 of 2)
+### Day 33 · Tue 24 Nov — Cross-encoder reranking (1 of 2)
 - **Learn:** Sentence Transformers cross-encoder usage and Retrieve & Re-Rank.
 - **Build:** rerank hybrid top-50 → top-10 with cross-encoder/ms-marco-MiniLM-L6-v2 on MPS.
 - **Rust:** port your nDCG@10 and MRR scorer to Rust.
 
-### Day 34 · Sat 21 Nov — Reranking (2 of 2) · ColBERT (start)
+### Day 34 · Wed 25 Nov — Reranking (2 of 2) · ColBERT (start)
 - **Learn:** ColBERT paper, sections 1–3.
 - **Build:** the same with BAAI/bge-reranker-base. Record the nDCG@10 gain and added latency of both.
 - **Post:** "Reranking: run the slow, smart model on only the top 50."
 - **Done when:** two new rows in results.csv.
 
-### Day 35 · Sun 22 Nov — Week 3 write-up (light day)
+### Day 35 · Thu 26 Nov — Week 3 write-up (light day)
 - **Write:** blog post #3, "BM25 vs dense vs hybrid on FiQA: what actually helped".
 - **Review:** scorecard; README for w3-retrieval/.
 - **Rust (if behind):** catch-up only if behind.
 - **Done when:** the post is published.
 
-### Day 36 · Mon 23 Nov — Late interaction (ColBERT)
+### Day 36 · Fri 27 Nov — Late interaction (ColBERT)
 - **Learn:** Qdrant tutorials: Multivectors and Late Interaction, and Hybrid Search with Reranking.
 - **Build:** a ColBERT rescoring stage inside one Qdrant query (hybrid prefetch 50 → ColBERT top 10) using FastEmbed's ColBERT.
 - **Build:** compare with the cross-encoder on quality, latency and index size.
@@ -286,67 +286,67 @@ By Day 47, "Ask FiQA" is live at a public URL: hybrid search, reranking, cited a
 - **Post:** "Cross-encoder vs ColBERT: speed vs quality, measured."
 - **Done when:** the results table has every retrieval config you've tried, sorted by nDCG@10.
 
-### Day 37 · Tue 24 Nov — Evaluating answers (1 of 2)
+### Day 37 · Sat 28 Nov — Evaluating answers (1 of 2)
 - **Learn:** LLM Engineer's Handbook ch. 7, Evaluating LLMs.
 - **Learn:** Ragas available metrics.
 - **Build:** a 40-question golden set from FiQA test queries.
 - **Rust:** publish the scorer as a small CLI.
 
-### Day 38 · Wed 25 Nov — Evaluating answers (2 of 2) · UI (start)
+### Day 38 · Sun 29 Nov — Evaluating answers (2 of 2) · UI (start)
 - **Learn:** LLM Engineer's Handbook ch. 10, Inference Pipeline Deployment (first half).
 - **Build:** a make eval command that scores faithfulness, response relevancy and context precision for three configs and writes eval_report.json.
 - **Post:** "How I grade an AI's answers automatically, and where the judge lies."
 - **Done when:** one command runs the full eval in under 10 minutes.
 
-### Day 39 · Thu 26 Nov — The product UI
+### Day 39 · Mon 30 Nov — The product UI
 - **Build:** a Next.js front end: question box, streamed answer, clickable citations that open the source post.
 - **Build:** a mode switch (BM25 / hybrid / hybrid + rerank), and per-stage latency and cost under each answer.
 - **Rust:** gateway adds an in-memory cache for repeat questions and a token-bucket rate limit.
 - **Post:** a 60-second screen recording of the app answering a real question.
 - **Done when:** the full flow works locally end to end, through the gateway.
 
-### Day 40 · Fri 27 Nov — Eval page and guardrails (1 of 2)
+### Day 40 · Tue 1 Dec — Eval page and guardrails (1 of 2)
 - **Learn:** LLM Engineer's Handbook ch. 10 (second half).
 - **Build:** an /evals page that renders results.csv and eval_report.json as charts.
 - **Rust:** gateway records p50/p95 latency per route at /metrics.
 
-### Day 41 · Sat 28 Nov — Guardrails (2 of 2) · Deploy (start)
+### Day 41 · Wed 2 Dec — Guardrails (2 of 2) · Deploy (start)
 - **Build:** in Python: max-token caps and a "no good source found" reply when the top retrieval score is low.
 - **Build:** show the gateway /metrics on the evals page.
 - **Build:** index into Qdrant Cloud's free tier (1 GB RAM, enough for FiQA with a small embedding model).
 - **Post:** "The page that proves my RAG works."
 - **Done when:** a weak question gets the fallback reply, not a made-up answer.
 
-### Day 42 · Sun 29 Nov — Catch-up (light day)
+### Day 42 · Thu 3 Dec — Catch-up (light day)
 - **Catch-up (if behind):** the dashboard catch-up queue, Builds first.
 - **Review (stretch):** the concept reviews that are due.
 - **Rust (if behind):** catch-up only if behind.
 
-### Day 43 · Mon 30 Nov — Deploy
+### Day 43 · Fri 4 Dec — Deploy
 - **Build:** gateway and backend on Fly.io or Render; front end on Vercel; spend caps on every API key.
 - **Build:** a README with an architecture diagram, the results table and local setup steps.
 - **Rust:** gateway deployed in front of the backend (part of the Build today).
 - **Post:** "Ask FiQA is live. Try to break it."
 - **Done when:** the public URL works from your phone.
 
-### Day 44 · Tue 1 Dec — Ask FiQA write-up (light day)
+### Day 44 · Sat 5 Dec — Ask FiQA write-up (light day)
 - **Write:** blog post #4, "Building Ask FiQA: a measured RAG system end to end".
 - **Write:** a 3–5 minute YouTube walkthrough.
 - **Review:** scorecard.
 - **Done when:** both are published.
 
-### Day 45 · Wed 2 Dec — Portfolio and profile (1 of 2)
+### Day 45 · Sun 6 Dec — Portfolio and profile (1 of 2)
 - **Build:** personal site with /projects (4 entries) and /blog (4 posts).
 - **Build:** GitHub profile README with pinned repos.
 - **Build:** LinkedIn headline along the lines of "Senior product engineer building LLM systems: RAG, inference, evals".
 - **Rust:** gateway README.
 
-### Day 46 · Thu 3 Dec — Portfolio and profile (2 of 2)
+### Day 46 · Mon 7 Dec — Portfolio and profile (2 of 2)
 - **Research:** read 10 remote LLM / AI engineer job posts at your target level; list the skills they ask for that you can't yet show. That gap list feeds Days 48–77.
 - **Rust:** a post: "Why I put a Rust gateway in front of my Python RAG".
 - **Done when:** site live, profiles updated, gap list written.
 
-### Day 47 · Fri 4 Dec — Exit test and next plan
+### Day 47 · Tue 8 Dec — Exit test and next plan
 - **Exit test:** run the exit test (`exit-test.md`) and score it honestly.
 - **Review:** the parking lot: keep, drop or schedule each item.
 - **Plan:** draft Days 48–77: tool calling, your own agent loop, a durable runtime (Redis/Postgres), an MCP server (a Rust MCP server is a natural fit), and Handbook ch. 5–6 for fine-tuning. Applications start at Day 62.
@@ -356,55 +356,55 @@ By Day 47, "Ask FiQA" is live at a public URL: hybrid search, reranking, cited a
 
 ## Days 48–129 roadmap
 
-Days 48–129 (Sat 5 Dec to Wed 24 Feb) cover Weeks 5–16 of your LLM / Agent Engineer plan. Two changes: the agent loop comes before agentic RAG, and fine-tuning is added. At each checkpoint (Days 47, 77, 107), expand the next block into daily entries in the same format as Days 1–47. The run-sheet and rules stay the same.
+Days 48–129 (Wed 9 Dec to Sun 28 Feb) cover Weeks 5–16 of your LLM / Agent Engineer plan. Two changes: the agent loop comes before agentic RAG, and fine-tuning is added. At each checkpoint (Days 47, 77, 107), expand the next block into daily entries in the same format as Days 1–47. The run-sheet and rules stay the same.
 
 | Day | Date | Checkpoint |
 |---|---|---|
-| 47 | Fri 4 Dec | Ask FiQA live (Portfolio #1) |
-| 61 | Fri 18 Dec | Tool-using agent live (Portfolio #2); applications start on Day 62 |
-| 77 | Sun 3 Jan | Plan review; expand Days 78–107 |
-| 89 | Fri 15 Jan | Durable agent runtime (Portfolio #3) |
-| 107 | Tue 2 Feb | Plan review |
-| 117 | Fri 12 Feb | Secure execution environment (Portfolio #4) |
-| 129 | Mon 22 Feb | Capstone: financial research agent |
+| 47 | Tue 8 Dec | Ask FiQA live (Portfolio #1) |
+| 61 | Tue 22 Dec | Tool-using agent live (Portfolio #2); applications start on Day 62 |
+| 77 | Thu 7 Jan | Plan review; expand Days 78–107 |
+| 89 | Tue 19 Jan | Durable agent runtime (Portfolio #3) |
+| 107 | Sat 6 Feb | Plan review |
+| 117 | Tue 16 Feb | Secure execution environment (Portfolio #4) |
+| 129 | Fri 26 Feb | Capstone: financial research agent |
 
-### Days 48–61 · 5 Dec–18 Dec — Tool calling and your own agent loop (your Weeks 7–8)
+### Days 48–61 · 9 Dec–22 Dec — Tool calling and your own agent loop (your Weeks 7–8)
 - **Learn:** function calling, JSON Schema, argument validation, tool errors and retries; ReAct, planning, reflection, stopping conditions, agents as state machines. Anthropic, Building Effective AI Agents; ReAct paper.
 - **Build:** a lightweight agent runtime without LangChain. It needs a tool registry with schema validation, retries with backoff, a step budget, stopping rules and a trace log per run. Tools: search (Ask FiQA retrieval), database (Postgres), calculator, python, and one market-data API.
 - **Rust:** the tool-argument validator in Rust (serde + JSON Schema).
 - **Deliverable (Portfolio #2):** a finance agent that answers multi-step questions with its tools, with a trace viewer in the UI.
 - **Job track from Day 62:** five targeted applications a week, plus 2 hours a week of LLM system-design interview prep.
 
-### Days 62–75 · 19 Dec–1 Jan — Agentic RAG and fine-tuning (your Weeks 5–6, reshaped)
+### Days 62–75 · 23 Dec–5 Jan — Agentic RAG and fine-tuning (your Weeks 5–6, reshaped)
 - **Learn:** query rewriting, decomposition, multi-hop retrieval, retrieval confidence, answer verification. Papers: Self-RAG, CRAG, GraphRAG (skim). LLM Engineer's Handbook ch. 5–6 (SFT, preference alignment).
 - **Build, Days 62–68:** wire the agent loop into Ask FiQA — plan, search, judge the retrieval, search again, answer, verify. Measure against the Day 47 baseline on multi-hop questions. GraphRAG gets a 3-day experiment and stays only if it beats hybrid on multi-hop.
 - **Build, Days 69–75:** LoRA fine-tune of a 0.5–1.5B model (MLX LM on the M1, or a rented GPU) for one narrow job, such as query rewriting or the router classifier. Compare it with the prompted base model and an API model.
 - **Rust:** gateway v2 — API keys and per-key budgets.
 - **Deliverable:** two posts — "Agentic RAG vs plain RAG on multi-hop finance questions" and "Fine-tuning a 1B model to replace an API call".
 
-### Days 76–89 · 2 Jan–15 Jan — Durable agent runtime (your Weeks 9–10)
+### Days 76–89 · 6 Jan–19 Jan — Durable agent runtime (your Weeks 9–10)
 - **Learn:** stateless services, session state in Redis, durable state in Postgres, checkpoints, event sourcing, idempotency keys. Designing Data-Intensive Applications (Kleppmann): the chapters on transactions and on stream processing.
 - **Build:** each agent run stored as an event log in Postgres, with Redis for hot session state. Add pause, resume, cancel, timeout and retry, with idempotent tool calls. Kill the container mid-run and it resumes.
 - **Rust:** a worker that claims runs from Postgres (FOR UPDATE SKIP LOCKED) and enforces timeouts.
 - **Deliverable (Portfolio #3):** Durable Agent Runtime, with a demo video of a kill -9 mid-run followed by a clean resume.
 - **Note:** this block spans the holidays. Lighter days are fine; the calendar rule still holds.
 
-### Days 90–103 · 16–29 Jan — MCP and multi-agent (your Weeks 11–12)
+### Days 90–103 · 16–2 Feb — MCP and multi-agent (your Weeks 11–12)
 - **Learn:** the MCP specification (hosts, clients, servers; tools, resources, prompts; capability negotiation; auth). Multi-agent patterns: orchestrator-workers, supervisor, evaluator-optimizer.
 - **Build:** an MCP server exposing market_data, database, filesystem (read-only), python and search. Connect it to an existing MCP host and to your own runtime. Then build an orchestrator with research, coding and reviewer agents: shared state, isolation, and handling for a stalled agent.
 - **Rust:** write the MCP server in Rust with the official SDK, rmcp.
 
-### Days 104–117 · 30 Jan–12 Feb — Sandboxing and agent security (your Weeks 13–14)
+### Days 104–117 · 3 Feb–16 Feb — Sandboxing and agent security (your Weeks 13–14)
 - **Learn:** Docker isolation, microVMs (Firecracker), filesystem and network isolation, resource limits, timeouts. E2B docs. OWASP Top 10 for LLM Applications: prompt injection, excessive agency, improper output handling, unbounded consumption.
 - **Build:** the python tool runs in a sandbox — Docker first, then E2B for comparison — with no network and CPU, memory and time limits. Add a permission engine with allow/approve/deny policies (READ allow, PYTHON approve, TRANSFER deny). Write a red-team set of 30 prompt-injection and tool-poisoning attacks and report pass rates.
 - **Rust:** the permission engine and sandbox runner in Rust, with a policy file and an audit log.
 - **Deliverable (Portfolio #4):** Secure Execution Environment plus an attack report. This doubles as your Coding-Agent Safety Evaluator idea.
 
-### Days 118–124 · 13–19 Feb — Evaluation and observability (your Week 15)
+### Days 118–124 · 13–23 Feb — Evaluation and observability (your Week 15)
 - **Learn:** Ragas agent metrics (tool-call accuracy, agent goal accuracy); trace-based evaluation; OpenTelemetry basics.
 - **Build:** golden datasets for each system; a regression suite in CI; traces with per-step latency, cost, tool accuracy and safety flags; one dashboard across all four portfolio projects.
 
-### Days 125–129 · 20–24 Feb — Capstone: financial research agent (your Week 16)
+### Days 125–129 · 20–28 Feb — Capstone: financial research agent (your Week 16)
 - **Build:** orchestrator → research agent (MCP + hybrid RAG + reranking), coding agent (sandbox), reviewer agent (evaluator). It runs on Redis + Postgres state, under the permission system, with evals and tracing. Add one crypto/DeFi data source.
 - **Deliverable:** a live demo, a 5-minute video and a write-up.
 

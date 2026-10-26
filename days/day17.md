@@ -1,13 +1,13 @@
 ---
 day: 17
-date: 2026-11-04
+date: 2026-11-08
 week: 2
 title: Benchmark day (1 of 2)
 type: core
 hours: 0
 ---
 
-# Day 17 · Wed 4 Nov — Benchmark day (1 of 2)
+# Day 17 · Sun 8 Nov — Benchmark day (1 of 2)
 
 ## Plan
 - [ ] **Learn:** vLLM Benchmark CLI docs.

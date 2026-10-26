@@ -1,13 +1,13 @@
 ---
 day: 29
-date: 2026-11-16
+date: 2026-11-20
 week: 3
 title: Fusion
 type: core
 hours: 0
 ---
 
-# Day 29 · Mon 16 Nov — Fusion
+# Day 29 · Fri 20 Nov — Fusion
 
 ## Plan
 - [ ] **Build:** hybrid search using Qdrant's prefetch + RRF.

@@ -1,13 +1,13 @@
 ---
 day: 13
-date: 2026-10-31
+date: 2026-11-04
 week: 2
 title: Calling models (2 of 2) · Local inference (start)
 type: core
 hours: 0
 ---
 
-# Day 13 · Sat 31 Oct — Calling models (2 of 2) · Local inference (start)
+# Day 13 · Wed 4 Nov — Calling models (2 of 2) · Local inference (start)
 
 ## Plan
 - [ ] **Learn:** kipply, Transformer Inference Arithmetic (KV cache and memory-bandwidth sections).

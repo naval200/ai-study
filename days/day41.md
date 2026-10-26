@@ -1,13 +1,13 @@
 ---
 day: 41
-date: 2026-11-28
+date: 2026-12-02
 week: 4
 title: Guardrails (2 of 2) · Deploy (start)
 type: core
 hours: 0
 ---
 
-# Day 41 · Sat 28 Nov — Guardrails (2 of 2) · Deploy (start)
+# Day 41 · Wed 2 Dec — Guardrails (2 of 2) · Deploy (start)
 
 ## Plan
 - [ ] **Build:** in Python: max-token caps and a "no good source found" reply when the top retrieval score is low.

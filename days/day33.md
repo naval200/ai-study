@@ -1,13 +1,13 @@
 ---
 day: 33
-date: 2026-11-20
+date: 2026-11-24
 week: 4
 title: Cross-encoder reranking (1 of 2)
 type: core
 hours: 0
 ---
 
-# Day 33 · Fri 20 Nov — Cross-encoder reranking (1 of 2)
+# Day 33 · Tue 24 Nov — Cross-encoder reranking (1 of 2)
 
 ## Plan
 - [ ] **Learn:** Sentence Transformers cross-encoder usage and Retrieve & Re-Rank.
