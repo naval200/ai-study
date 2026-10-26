@@ -1,11 +1,11 @@
 ---
 title: self attention and causal mask
 target: explain
-level: aware
-last_check: misconception
-last_checked: 2026-10-23
+level: explain
+last_check: fragile
+last_checked: 2026-10-26
 review_step: 0
-next_review: 2026-10-24
+next_review: 2026-10-27
 ---
 
 # self-attention-and-causal-mask

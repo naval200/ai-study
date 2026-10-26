@@ -6,12 +6,12 @@ window.STUDY_PROGRESS = {
  "end": "2026-12-04",
  "dayNum": 8,
  "totalDays": 47,
- "pace": "🔴 Behind — 22 item(s) owed across 6 day(s)",
+ "pace": "🔴 Behind — 21 item(s) owed across 6 day(s)",
  "paceKind": "behind",
  "streak": 0,
- "missedRun": 4,
+ "missedRun": 3,
  "overall": {
-  "done": 18,
+  "done": 19,
   "total": 206
  },
  "exit": {
@@ -88,11 +88,6 @@ window.STUDY_PROGRESS = {
    "title": "Layered entity resolution (alias → fuzzy → LLM)",
    "next": "2026-10-18",
    "outcome": ""
-  },
-  {
-   "title": "self attention and causal mask",
-   "next": "2026-10-24",
-   "outcome": "misconception"
   }
  ],
  "weeks": {
@@ -413,7 +408,7 @@ window.STUDY_PROGRESS = {
    "title": "Attention (1 of 2)",
    "type": "core",
    "hours": 0,
-   "status": "missed",
+   "status": "partial",
    "file": "days/day04.md",
    "log": {
     "done": "",
@@ -425,7 +420,7 @@ window.STUDY_PROGRESS = {
      "text": "**Learn:** Jay Alammar, The Illustrated Transformer.",
      "label": "Learn",
      "section": "Plan",
-     "state": "todo",
+     "state": "done",
      "optional": false
     },
     {
