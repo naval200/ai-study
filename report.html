@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Report Card</title>
+<meta name="description" content="Concept scorecard and weekly report card for a 47-day LLM engineering plan, learning in public.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' rx='3' fill='%232a6fdb'/><path d='M4 8.5l2.5 2.5L12 5.5' stroke='white' stroke-width='2' fill='none'/></svg>">
+<style>
+:root {
+  --bg: #f6f6f4; --surface: #fcfcfb; --surface-2: #f0f0ed; --line: #e2e2dd;
+  --ink: #1a1a19; --ink-2: #55554f; --ink-3: #8a8a83;
+  --accent: #2a6fdb; --accent-soft: #e6eefb;
+  --good: #0ca30c; --good-ink: #006300; --good-soft: #e3f4e3;
+  --warn: #fab219; --warn-ink: #7a5300; --warn-soft: #fdf1d6;
+  --crit: #d03b3b; --crit-ink: #8f1f1f; --crit-soft: #f8e1e1;
+  --track: #e6e6e1;
+  --radius: 10px;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121211; --surface: #1a1a19; --surface-2: #232321; --line: #2f2f2c;
+    --ink: #ededea; --ink-2: #b4b4ad; --ink-3: #85857e;
+    --accent: #6ea2f5; --accent-soft: #1d2a40;
+    --good-ink: #5fd35f; --good-soft: #15301a; --warn-ink: #f0c15a; --warn-soft: #3a2f12;
+    --crit-ink: #f08a8a; --crit-soft: #3a1a1a;
+    --track: #2c2c29; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #121211; --surface: #1a1a19; --surface-2: #232321; --line: #2f2f2c;
+  --ink: #ededea; --ink-2: #b4b4ad; --ink-3: #85857e;
+  --accent: #6ea2f5; --accent-soft: #1d2a40;
+  --good-ink: #5fd35f; --good-soft: #15301a; --warn-ink: #f0c15a; --warn-soft: #3a2f12;
+  --crit-ink: #f08a8a; --crit-soft: #3a1a1a;
+  --track: #2c2c29; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 ui-sans-serif, -apple-system, "Segoe UI", system-ui, sans-serif; padding-bottom: 48px; }
+.wrap { max-width: 920px; margin: 0 auto; padding: 0 16px; }
+header { padding: 28px 0 8px; display: flex; gap: 12px; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; }
+h1 { font-size: 22px; margin: 0 0 4px; letter-spacing: -0.01em; }
+h2 { font-size: 16px; margin: 0; }
+.sub { color: var(--ink-2); margin: 0; }
+.muted { color: var(--ink-3); font-size: 13px; }
+a { color: var(--accent); }
+.back { display: inline-block; margin-bottom: 8px; font-size: 14px; text-decoration: none; }
+.back:hover { text-decoration: underline; }
+button { font: inherit; color: inherit; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 6px 12px; cursor: pointer; }
+button:hover { border-color: var(--ink-3); }
+
+.tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 16px 0; }
+.tile { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 14px; }
+.tile .k { font-size: 12px; color: var(--ink-3); text-transform: uppercase; letter-spacing: .04em; }
+.tile .v { font-size: 26px; font-weight: 650; font-variant-numeric: tabular-nums; line-height: 1.2; margin: 2px 0; }
+.tile .v small { font-size: 14px; color: var(--ink-3); font-weight: 500; }
+
+section.block { margin-top: 32px; }
+.head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 8px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; margin: 10px 0; }
+
+.group { margin: 14px 0 4px; display: flex; align-items: center; gap: 8px; }
+.gtag { font-size: 12px; font-weight: 600; padding: 2px 10px; border-radius: 999px; border: 1px solid var(--line); }
+.g-reliable { background: var(--good-soft); border-color: var(--good); color: var(--good-ink); }
+.g-building { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+.g-fragile { background: var(--warn-soft); border-color: var(--warn); color: var(--warn-ink); }
+.g-fix { background: var(--crit-soft); border-color: var(--crit); color: var(--crit-ink); }
+.g-untested { background: var(--surface-2); color: var(--ink-2); }
+.gnote { font-size: 13px; color: var(--ink-3); }
+
+.crow { display: grid; grid-template-columns: 1fr 150px 130px; gap: 12px; align-items: center; padding: 10px 0; border-top: 1px solid var(--line); }
+.crow:first-child { border-top: 0; }
+.ctitle { font-weight: 550; }
+.cmiss { font-size: 13px; color: var(--crit-ink); margin-top: 2px; }
+.pips { display: flex; gap: 3px; align-items: center; }
+.pip { width: 22px; height: 8px; border-radius: 3px; background: var(--track); }
+.pip.on { background: var(--accent); }
+.pip.tgt { outline: 1.5px solid var(--ink-3); outline-offset: 1px; }
+.plabel { font-size: 12px; color: var(--ink-2); margin-top: 3px; }
+.cnext { font-size: 13px; color: var(--ink-2); text-align: right; font-variant-numeric: tabular-nums; }
+.cnext.over { color: var(--crit-ink); font-weight: 600; }
+
+.week { border-left: 4px solid var(--line); }
+.week.current { border-left-color: var(--accent); }
+.week.upcoming { opacity: .7; }
+.wtop { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.wtitle { font-weight: 600; }
+.wstate { font-size: 12px; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--ink-2); }
+.week.current .wstate { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+.wgoal { color: var(--ink-2); font-size: 14px; margin: 6px 0 10px; }
+.wstats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.ws .k { font-size: 12px; color: var(--ink-3); text-transform: uppercase; letter-spacing: .04em; }
+.ws .v { font-weight: 650; font-size: 18px; font-variant-numeric: tabular-nums; }
+.bar { height: 6px; background: var(--track); border-radius: 4px; overflow: hidden; margin-top: 4px; }
+.bar i { display: block; height: 100%; background: var(--good); }
+.rev { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line); font-size: 14px; }
+.rev h3 { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--ink-3); margin: 8px 0 2px; font-weight: 600; }
+.rev ul { margin: 0; padding-left: 18px; }
+.norev { margin-top: 12px; font-size: 13px; color: var(--ink-3); }
+footer { margin: 40px 0 0; color: var(--ink-3); font-size: 13px; }
+
+@media (max-width: 640px) {
+  .tiles { grid-template-columns: repeat(2, 1fr); }
+  .crow { grid-template-columns: 1fr; gap: 6px; }
+  .cnext { text-align: left; }
+  .wstats { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <a class="back" href="index.html">← Back to progress</a>
+      <h1>Report card</h1>
+      <p class="sub" id="sub"></p>
+    </div>
+    <button id="theme" aria-label="Toggle theme" title="Toggle theme">◐</button>
+  </header>
+
+  <section class="tiles" id="tiles"></section>
+
+  <section class="block">
+    <div class="head"><h2>Concept scorecard</h2><span class="muted" id="csum"></span></div>
+    <p class="muted" style="margin:0 0 4px">Grades come from short checks with no hints. A tick on a day does not count here. Pips show the level reached; the outlined pip is the target.</p>
+    <div id="concepts"></div>
+  </section>
+
+  <section class="block">
+    <div class="head"><h2>Weekly report card</h2><span class="muted" id="wsum"></span></div>
+    <div id="weeks"></div>
+  </section>
+
+  <footer>
+    <p>Generated from the markdown in this repo on <span id="gen"></span>. Plan weeks follow the plan, so two weeks can overlap by a day or two.</p>
+  </footer>
+</div>
+
+<script src="progress.js"></script>
+<script src="report-data.js"></script>
+<script>
+(function () {
+  var P = window.STUDY_PROGRESS || {}, R = window.STUDY_REPORT || { concepts: [], weeks: [] };
+  var $ = function (id) { return document.getElementById(id); };
+  var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); };
+  // Allow `code` spans only, after escaping.
+  var fmt = function (s) { return esc(s).replace(/`([^`]+)`/g, "<code>$1</code>"); };
+  var LEVELS = ["aware", "explain", "apply", "teach"];
+
+  // theme toggle (same behaviour as the progress page)
+  try { var t = localStorage.getItem("theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+  $("theme").addEventListener("click", function () {
+    var cur = document.documentElement.getAttribute("data-theme") ||
+      (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    var next = cur === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", next);
+    try { localStorage.setItem("theme", next); } catch (e) {}
+  });
+
+  $("sub").textContent = (P.curriculum || "Study plan") + (P.dayNum ? " · Day " + P.dayNum + " of " + P.totalDays : "");
+  $("gen").textContent = R.generated || P.generated || "";
+
+  var C = R.concepts || [];
+  var count = function (g) { return C.filter(function (c) { return c.group === g; }).length; };
+  var overdue = C.filter(function (c) { return c.overdue; }).length;
+  var repeat = C.reduce(function (n, c) { return n + c.misses.filter(function (m) { return m.count >= 2; }).length; }, 0);
+  var W = R.weeks || [];
+  var reported = W.filter(function (w) { return w.review; }).length;
+  var tile = function (k, v, small) { return '<div class="tile"><div class="k">' + k + '</div><div class="v">' + v + (small ? " <small>" + small + "</small>" : "") + "</div></div>"; };
+  $("tiles").innerHTML =
+    tile("Reliable", count("reliable"), "of " + C.length) +
+    tile("Needs work", count("fragile") + count("fix"), "fragile or wrong") +
+    tile("Reviews overdue", overdue) +
+    tile("Repeat misses", repeat, reported + "/" + W.length + " weeks reviewed");
+
+  // ---- concept scorecard ----
+  var GROUPS = [
+    ["fix", "Fix first", "Confident but wrong, or a gap, at the last check."],
+    ["fragile", "Fragile", "Right answer, but unsure or shaky."],
+    ["building", "Building", "Solid so far, below the target level."],
+    ["reliable", "Reliable", "Solid at the target level."],
+    ["untested", "Untested", "No check yet."]
+  ];
+  var cHtml = "";
+  GROUPS.forEach(function (g) {
+    var rows = C.filter(function (c) { return c.group === g[0]; });
+    if (!rows.length) return;
+    cHtml += '<div class="group"><span class="gtag g-' + g[0] + '">' + g[1] + " · " + rows.length + '</span><span class="gnote">' + g[2] + "</span></div>";
+    cHtml += '<div class="card">' + rows.map(function (c) {
+      var lv = LEVELS.indexOf(c.level), tg = LEVELS.indexOf(c.target);
+      var pips = LEVELS.map(function (_, i) { return '<span class="pip' + (i <= lv ? " on" : "") + (i === tg ? " tgt" : "") + '"></span>'; }).join("");
+      var miss = c.misses.map(function (m) { return '<div class="cmiss">Miss' + (m.count > 1 ? " ×" + m.count : "") + ": " + fmt(m.note) + "</div>"; }).join("");
+      var next = c.next ? (c.overdue ? "Review overdue · " : "Next review · ") + esc(c.next) : "No review set";
+      return '<div class="crow"><div><div class="ctitle">' + esc(c.title) + "</div>" + miss + "</div>" +
+        '<div><div class="pips" role="img" aria-label="Level ' + esc(c.level) + ", target " + esc(c.target) + '">' + pips + '</div><div class="plabel">' +
+        esc(c.level) + " → " + esc(c.target) + (c.last ? " · last: " + esc(c.last) : "") + "</div></div>" +
+        '<div class="cnext' + (c.overdue ? " over" : "") + '">' + next + "</div></div>";
+    }).join("") + "</div>";
+  });
+  $("concepts").innerHTML = cHtml || '<div class="card muted">No concepts yet.</div>';
+  $("csum").textContent = C.length + " concepts";
+
+  // ---- weekly report card ----
+  var STATE = { current: "This week", past: "Closed", upcoming: "Upcoming" };
+  var list = function (title, arr) { return arr && arr.length ? "<h3>" + title + "</h3><ul>" + arr.map(function (x) { return "<li>" + fmt(x) + "</li>"; }).join("") + "</ul>" : ""; };
+  $("weeks").innerHTML = W.map(function (w) {
+    var pct = w.items ? Math.round(100 * w.itemsDone / w.items) : 0;
+    var rev = w.review
+      ? '<div class="rev">' + list("What worked", w.review.worked) + list("What did not", w.review.didnt) + list("Catch-up decisions", w.review.catchup) + list("One change for next week", w.review.change) + "</div>"
+      : '<div class="norev">' + (w.state === "upcoming" ? "Not started." : "Week review not written yet. It is written at the weekly review (run <code>/study-coach review</code>).") + "</div>";
+    return '<div class="card week ' + esc(w.state) + '"><div class="wtop"><span class="wtitle">Week ' + w.week + (w.title ? " · " + esc(w.title) : "") +
+      '</span><span class="wstate">' + (STATE[w.state] || "") + " · " + esc(w.start) + " – " + esc(w.end) + "</span></div>" +
+      (w.goal ? '<div class="wgoal"><b>Deliverable:</b> ' + fmt(w.goal) + "</div>" : "") +
+      '<div class="wstats"><div class="ws"><div class="k">Items done</div><div class="v">' + w.itemsDone + " / " + w.items + '</div><div class="bar"><i style="width:' + pct + '%"></i></div></div>' +
+      '<div class="ws"><div class="k">Days done</div><div class="v">' + w.daysDone + " / " + w.days + '</div></div>' +
+      '<div class="ws"><div class="k">Days logged</div><div class="v">' + w.daysLogged + " / " + w.days + "</div></div></div>" + rev + "</div>";
+  }).join("") || '<div class="card muted">No weeks yet.</div>';
+  $("wsum").textContent = reported + " of " + W.length + " weeks reviewed";
+})();
+</script>
+</body>
+</html>

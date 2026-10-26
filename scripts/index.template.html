@@ -44,6 +44,8 @@ h2 { font-size: 16px; margin: 0; }
 .muted { color: var(--ink-3); font-size: 13px; }
 button { font: inherit; color: inherit; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 6px 12px; cursor: pointer; }
 button:hover { border-color: var(--ink-3); }
+a.btnlink { font-size: 13px; text-decoration: none; color: var(--accent); background: var(--accent-soft); border: 1px solid var(--accent); border-radius: 8px; padding: 5px 12px; white-space: nowrap; }
+a.btnlink:hover { filter: brightness(.97); }
 button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
 .pill { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; padding: 3px 10px; border-radius: 999px; background: var(--surface-2); color: var(--ink-2); border: 1px solid var(--line); }
 
@@ -142,6 +144,7 @@ a { color: var(--accent); }
     </div>
     <div style="display:flex;gap:8px;align-items:center">
       <span class="pill" id="pace"></span>
+      <a class="btnlink" href="report.html">Report card →</a>
       <button id="theme" aria-label="Toggle theme" title="Toggle theme">◐</button>
     </div>
   </header>
