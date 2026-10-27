@@ -15,6 +15,7 @@ checkpoints: 47, 77, 107
 goal_cooldown_days: 7
 max_swaps_per_week: 2
 progress_js: progress.js
+report_page: true
 sync: auto           # auto | ask | off — save and publish after each log
 sync_include: projects, report.html, report-data.js, scripts, package.json
 remote: origin

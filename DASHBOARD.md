@@ -1,13 +1,13 @@
 # Dashboard — AI Study Plan — Days 1–47
 
-> Generated 2026-10-26 by study-coach. Don't edit by hand — run `/study-coach status`.
+> Generated 2026-10-27 by study-coach. Don't edit by hand — run `/study-coach status`.
 
 ## Where you are
 
-- **Day 4 of 47** · Mon 2026-10-26 · Week 1: Attention (1 of 2)
+- **Day 5 of 47** · Tue 2026-10-27 · Week 1: Attention (2 of 2) · GPT (start)
 - **Overall:** ██░░░░░░░░░░░░░░░░░░ 9% (19/206 required items)
-- **Pace:** 🔴 **Behind** — 6 item(s) owed across 3 day(s)
-- **Streak:** 4 day(s) logged in a row
+- **Pace:** 🔴 **Behind** — 9 item(s) owed across 4 day(s)
+- **Streak:** 0 day(s) logged in a row
 - **Exit test:** 0/9 (pass ≥ 7)
 - **Online:** https://naval200.github.io/ai-study/
 
@@ -19,18 +19,21 @@
 - 🔁 Model cascades and routing — due 2026-10-11
 - 🔁 Structured outputs and tool schemas — due 2026-10-12
 - 🔁 Layered entity resolution (alias → fuzzy → LLM) — due 2026-10-18
+- 🔁 self attention and causal mask — due 2026-10-27 (last: fragile)
 - 👀 Repeat miss: self-attention-and-causal-mask — Said the attention score matrix is vocab-sized and not tied to input length. Real shape: seq_len × seq_len per head. Vocab size is the output logits. Mask idea (no peeking at future tokens in training) was right. (×2)
 
 ## Today
 
-**Attention (1 of 2)** — `days/day04.md`
+**Attention (2 of 2) · GPT (start)** — `days/day05.md`
 
 Start with (from Day 3's log): _Run the self-attention review. Then start Day 4 Build: scaled dot-product attention with a causal mask. Print `scores.shape`._
 
-- [x] **Learn:** Jay Alammar, The Illustrated Transformer.
-- [ ] **Learn:** Raschka ch. 3, Coding Attention Mechanisms.
-- [ ] **Build:** scaled dot-product attention with a causal mask, with shape asserts in a test file.
-- [ ] **Rust:** rustlings 81–85.
+- [ ] **Learn:** Paper: Attention Is All You Need, section 3 only.
+- [ ] **Learn:** Karpathy, Let's build GPT (1h56m).
+- [ ] **Build:** multi-head attention, with shape asserts in the test file.
+- [ ] **Rust:** Comprehensive Rust Day 2 morning.
+- [ ] **Post:** "Q, K, V explained with a library-search analogy."
+- [ ] your multi-head attention matches torch.nn.functional.scaled_dot_product_attention within 1e-5.
 
 ## Catch-up queue (goes to Sunday)
 
@@ -40,22 +43,25 @@ Start with (from Day 3's log): _Run the self-attention review. Then start Day 4 
 - Day 2 · **Post:** "An LLM is a next-token probability table. Here's the smallest one."
 - Day 2 · your bigram model samples name-like strings, and you can explain why cross-entropy is the loss.
 - Day 3 · **Rust:** Comprehensive Rust Day 1 afternoon.
+- Day 4 · **Learn:** Raschka ch. 3, Coding Attention Mechanisms.
+- Day 4 · **Build:** scaled dot-product attention with a causal mask, with shape asserts in a test file.
+- Day 4 · **Rust:** rustlings 81–85.
 
 ## Weekly scorecard
 
 | Week | Days done | Logged | Items | Hours (target 30-35) | Posts | Commits |
 |---|---|---|---|---|---|---|
-| 1 | 1/12 | 3 | 15/53 | 0 | 0 | 34 |
+| 1 | 1/12 | 3 | 15/53 | 0 | 0 | 35 |
 | 2 | 0/11 | 0 | 0/47 | 0 | 0 | – |
 | 3 | 0/10 | 0 | 0/45 | 0 | 0 | – |
 | 4 | 0/14 | 0 | 0/54 | 0 | 0 | – |
 
 ## Calendar
 
-✅ done · 🟡 partial · ❌ missed · 👉 today · · upcoming
+✅ done · 🟡 partial · ❌ missed · 👉 today · · upcoming · +N extended
 
 - **Setup:** 🟡 0
-- **Week 1:** ✅ 1  🟡 2  🟡 3  👉 4  · 5  · 6  · 7  · 8  · 9  · 10  · 11  · 14
+- **Week 1:** ✅ 1  🟡 2  🟡 3  🟡 4  👉 5  · 6  · 7  · 8  · 9  · 10  · 11  · 14
 - **Week 2:** · 12  · 13  · 15  · 16  · 17  · 18  · 19  · 20  · 21  · 22  · 28
 - **Week 3:** · 23  · 24  · 25  · 26  · 27  · 29  · 30  · 31  · 32  · 35
 - **Week 4:** · 33  · 34  · 36  · 37  · 38  · 39  · 40  · 41  · 42  · 43  · 44  · 45  · 46  · 47

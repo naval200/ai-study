@@ -1,15 +1,20 @@
 window.STUDY_PROGRESS = {
- "generated": "2026-10-26",
+ "generated": "2026-10-27",
  "timezone": "Asia/Kolkata",
  "curriculum": "AI Study Plan — Days 1–47",
  "start": "2026-10-23",
  "end": "2026-12-08",
- "dayNum": 4,
+ "dayNum": 5,
  "totalDays": 47,
- "pace": "🔴 Behind — 6 item(s) owed across 3 day(s)",
+ "pace": "🔴 Behind — 9 item(s) owed across 4 day(s)",
  "paceKind": "behind",
- "streak": 4,
+ "streak": 0,
  "missedRun": 0,
+ "extensions": {
+  "times": 0,
+  "days": 0,
+  "list": []
+ },
  "overall": {
   "done": 19,
   "total": 206
@@ -88,6 +93,11 @@ window.STUDY_PROGRESS = {
    "title": "Layered entity resolution (alias → fuzzy → LLM)",
    "next": "2026-10-18",
    "outcome": ""
+  },
+  {
+   "title": "self attention and causal mask",
+   "next": "2026-10-27",
+   "outcome": "fragile"
   }
  ],
  "weeks": {
@@ -111,7 +121,7 @@ window.STUDY_PROGRESS = {
  "weekStats": {
   "1": {
    "posts": 0,
-   "commits": 34
+   "commits": 35
   },
   "2": {
    "posts": 0,
@@ -181,6 +191,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 0,
    "date": "2026-10-04",
+   "until": "2026-10-04",
+   "extended": 0,
    "weekday": "Sun",
    "week": 0,
    "title": "Setup (weekend before Day 1, ~3 hrs)",
@@ -248,6 +260,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 1,
    "date": "2026-10-05",
+   "until": "2026-10-05",
+   "extended": 0,
    "weekday": "Mon",
    "week": 1,
    "title": "Backprop from scratch",
@@ -301,6 +315,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 2,
    "date": "2026-10-06",
+   "until": "2026-10-06",
+   "extended": 0,
    "weekday": "Tue",
    "week": 1,
    "title": "What a language model predicts",
@@ -368,6 +384,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 3,
    "date": "2026-10-21",
+   "until": "2026-10-21",
+   "extended": 0,
    "weekday": "Wed",
    "week": 1,
    "title": "Finish Day 2: text data and embeddings",
@@ -421,12 +439,14 @@ window.STUDY_PROGRESS = {
   {
    "day": 4,
    "date": "2026-10-26",
+   "until": "2026-10-26",
+   "extended": 0,
    "weekday": "Mon",
    "week": 1,
    "title": "Attention (1 of 2)",
    "type": "core",
    "hours": 0,
-   "status": "today",
+   "status": "partial",
    "file": "days/day04.md",
    "log": {
     "done": "",
@@ -467,12 +487,14 @@ window.STUDY_PROGRESS = {
   {
    "day": 5,
    "date": "2026-10-27",
+   "until": "2026-10-27",
+   "extended": 0,
    "weekday": "Tue",
    "week": 1,
    "title": "Attention (2 of 2) · GPT (start)",
    "type": "core",
    "hours": 0,
-   "status": "upcoming",
+   "status": "today",
    "file": "days/day05.md",
    "log": {
     "done": "",
@@ -527,6 +549,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 6,
    "date": "2026-10-28",
+   "until": "2026-10-28",
+   "extended": 0,
    "weekday": "Wed",
    "week": 1,
    "title": "Build the GPT",
@@ -587,6 +611,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 7,
    "date": "2026-10-29",
+   "until": "2026-10-29",
+   "extended": 0,
    "weekday": "Thu",
    "week": 1,
    "title": "Catch-up (light day)",
@@ -626,6 +652,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 8,
    "date": "2026-10-30",
+   "until": "2026-10-30",
+   "extended": 0,
    "weekday": "Fri",
    "week": 1,
    "title": "Pretraining (1 of 2)",
@@ -665,6 +693,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 9,
    "date": "2026-10-31",
+   "until": "2026-10-31",
+   "extended": 0,
    "weekday": "Sat",
    "week": 1,
    "title": "Sampling · KV cache (start)",
@@ -718,6 +748,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 10,
    "date": "2026-11-01",
+   "until": "2026-11-01",
+   "extended": 0,
    "weekday": "Sun",
    "week": 1,
    "title": "KV cache and a real modern model",
@@ -778,6 +810,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 11,
    "date": "2026-11-02",
+   "until": "2026-11-02",
+   "extended": 0,
    "weekday": "Mon",
    "week": 1,
    "title": "Tokenizers",
@@ -824,6 +858,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 12,
    "date": "2026-11-03",
+   "until": "2026-11-03",
+   "extended": 0,
    "weekday": "Tue",
    "week": 2,
    "title": "Calling models like an engineer (1 of 2)",
@@ -877,6 +913,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 13,
    "date": "2026-11-04",
+   "until": "2026-11-04",
+   "extended": 0,
    "weekday": "Wed",
    "week": 2,
    "title": "Calling models (2 of 2) · Local inference (start)",
@@ -923,6 +961,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 14,
    "date": "2026-11-05",
+   "until": "2026-11-05",
+   "extended": 0,
    "weekday": "Thu",
    "week": 1,
    "title": "Week 1 write-up (light day)",
@@ -969,6 +1009,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 15,
    "date": "2026-11-06",
+   "until": "2026-11-06",
+   "extended": 0,
    "weekday": "Fri",
    "week": 2,
    "title": "Local inference on the M1",
@@ -1029,6 +1071,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 16,
    "date": "2026-11-07",
+   "until": "2026-11-07",
+   "extended": 0,
    "weekday": "Sat",
    "week": 2,
    "title": "Serving theory and the first GPU",
@@ -1089,6 +1133,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 17,
    "date": "2026-11-08",
+   "until": "2026-11-08",
+   "extended": 0,
    "weekday": "Sun",
    "week": 2,
    "title": "Benchmark day (1 of 2)",
@@ -1135,6 +1181,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 18,
    "date": "2026-11-09",
+   "until": "2026-11-09",
+   "extended": 0,
    "weekday": "Mon",
    "week": 2,
    "title": "Benchmark (2 of 2) · Speed and cost (start)",
@@ -1188,6 +1236,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 19,
    "date": "2026-11-10",
+   "until": "2026-11-10",
+   "extended": 0,
    "weekday": "Tue",
    "week": 2,
    "title": "Speed tricks and cost",
@@ -1248,6 +1298,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 20,
    "date": "2026-11-11",
+   "until": "2026-11-11",
+   "extended": 0,
    "weekday": "Wed",
    "week": 2,
    "title": "Mini SLM router (1 of 2)",
@@ -1294,6 +1346,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 21,
    "date": "2026-11-12",
+   "until": "2026-11-12",
+   "extended": 0,
    "weekday": "Thu",
    "week": 2,
    "title": "Catch-up (light day)",
@@ -1333,6 +1387,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 22,
    "date": "2026-11-13",
+   "until": "2026-11-13",
+   "extended": 0,
    "weekday": "Fri",
    "week": 2,
    "title": "Mini SLM router (2 of 2)",
@@ -1386,6 +1442,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 23,
    "date": "2026-11-14",
+   "until": "2026-11-14",
+   "extended": 0,
    "weekday": "Sat",
    "week": 3,
    "title": "Lexical search (1 of 2)",
@@ -1432,6 +1490,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 24,
    "date": "2026-11-15",
+   "until": "2026-11-15",
+   "extended": 0,
    "weekday": "Sun",
    "week": 3,
    "title": "Lexical search (2 of 2) · Dense (start)",
@@ -1485,6 +1545,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 25,
    "date": "2026-11-16",
+   "until": "2026-11-16",
+   "extended": 0,
    "weekday": "Mon",
    "week": 3,
    "title": "Dense retrieval",
@@ -1538,6 +1600,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 26,
    "date": "2026-11-17",
+   "until": "2026-11-17",
+   "extended": 0,
    "weekday": "Tue",
    "week": 3,
    "title": "Qdrant (1 of 2)",
@@ -1584,6 +1648,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 27,
    "date": "2026-11-18",
+   "until": "2026-11-18",
+   "extended": 0,
    "weekday": "Wed",
    "week": 3,
    "title": "Qdrant (2 of 2) · Fusion (start)",
@@ -1637,6 +1703,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 28,
    "date": "2026-11-19",
+   "until": "2026-11-19",
+   "extended": 0,
    "weekday": "Thu",
    "week": 2,
    "title": "Week 2 write-up (light day)",
@@ -1683,6 +1751,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 29,
    "date": "2026-11-20",
+   "until": "2026-11-20",
+   "extended": 0,
    "weekday": "Fri",
    "week": 3,
    "title": "Fusion",
@@ -1736,6 +1806,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 30,
    "date": "2026-11-21",
+   "until": "2026-11-21",
+   "extended": 0,
    "weekday": "Sat",
    "week": 3,
    "title": "Error analysis (1 of 2)",
@@ -1775,6 +1847,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 31,
    "date": "2026-11-22",
+   "until": "2026-11-22",
+   "extended": 0,
    "weekday": "Sun",
    "week": 3,
    "title": "Error analysis (2 of 2) · Answers (start)",
@@ -1828,6 +1902,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 32,
    "date": "2026-11-23",
+   "until": "2026-11-23",
+   "extended": 0,
    "weekday": "Mon",
    "week": 3,
    "title": "From search to answers",
@@ -1888,6 +1964,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 33,
    "date": "2026-11-24",
+   "until": "2026-11-24",
+   "extended": 0,
    "weekday": "Tue",
    "week": 4,
    "title": "Cross-encoder reranking (1 of 2)",
@@ -1927,6 +2005,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 34,
    "date": "2026-11-25",
+   "until": "2026-11-25",
+   "extended": 0,
    "weekday": "Wed",
    "week": 4,
    "title": "Reranking (2 of 2) · ColBERT (start)",
@@ -1973,6 +2053,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 35,
    "date": "2026-11-26",
+   "until": "2026-11-26",
+   "extended": 0,
    "weekday": "Thu",
    "week": 3,
    "title": "Week 3 write-up (light day)",
@@ -2019,6 +2101,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 36,
    "date": "2026-11-27",
+   "until": "2026-11-27",
+   "extended": 0,
    "weekday": "Fri",
    "week": 4,
    "title": "Late interaction (ColBERT)",
@@ -2079,6 +2163,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 37,
    "date": "2026-11-28",
+   "until": "2026-11-28",
+   "extended": 0,
    "weekday": "Sat",
    "week": 4,
    "title": "Evaluating answers (1 of 2)",
@@ -2125,6 +2211,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 38,
    "date": "2026-11-29",
+   "until": "2026-11-29",
+   "extended": 0,
    "weekday": "Sun",
    "week": 4,
    "title": "Evaluating answers (2 of 2) · UI (start)",
@@ -2171,6 +2259,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 39,
    "date": "2026-11-30",
+   "until": "2026-11-30",
+   "extended": 0,
    "weekday": "Mon",
    "week": 4,
    "title": "The product UI",
@@ -2224,6 +2314,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 40,
    "date": "2026-12-01",
+   "until": "2026-12-01",
+   "extended": 0,
    "weekday": "Tue",
    "week": 4,
    "title": "Eval page and guardrails (1 of 2)",
@@ -2263,6 +2355,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 41,
    "date": "2026-12-02",
+   "until": "2026-12-02",
+   "extended": 0,
    "weekday": "Wed",
    "week": 4,
    "title": "Guardrails (2 of 2) · Deploy (start)",
@@ -2316,6 +2410,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 42,
    "date": "2026-12-03",
+   "until": "2026-12-03",
+   "extended": 0,
    "weekday": "Thu",
    "week": 4,
    "title": "Catch-up (light day)",
@@ -2355,6 +2451,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 43,
    "date": "2026-12-04",
+   "until": "2026-12-04",
+   "extended": 0,
    "weekday": "Fri",
    "week": 4,
    "title": "Deploy",
@@ -2408,6 +2506,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 44,
    "date": "2026-12-05",
+   "until": "2026-12-05",
+   "extended": 0,
    "weekday": "Sat",
    "week": 4,
    "title": "Ask FiQA write-up (light day)",
@@ -2454,6 +2554,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 45,
    "date": "2026-12-06",
+   "until": "2026-12-06",
+   "extended": 0,
    "weekday": "Sun",
    "week": 4,
    "title": "Portfolio and profile (1 of 2)",
@@ -2500,6 +2602,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 46,
    "date": "2026-12-07",
+   "until": "2026-12-07",
+   "extended": 0,
    "weekday": "Mon",
    "week": 4,
    "title": "Portfolio and profile (2 of 2)",
@@ -2539,6 +2643,8 @@ window.STUDY_PROGRESS = {
   {
    "day": 47,
    "date": "2026-12-08",
+   "until": "2026-12-08",
+   "extended": 0,
    "weekday": "Tue",
    "week": 4,
    "title": "Exit test and next plan",

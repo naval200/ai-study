@@ -44,12 +44,13 @@ h2 { font-size: 16px; margin: 0; }
 .muted { color: var(--ink-3); font-size: 13px; }
 button { font: inherit; color: inherit; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 6px 12px; cursor: pointer; }
 button:hover { border-color: var(--ink-3); }
+button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
 a.btnlink { font-size: 13px; text-decoration: none; color: var(--accent); background: var(--accent-soft); border: 1px solid var(--accent); border-radius: 8px; padding: 5px 12px; white-space: nowrap; }
 a.btnlink:hover { filter: brightness(.97); }
-button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.hright { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
 .pill { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; padding: 3px 10px; border-radius: 999px; background: var(--surface-2); color: var(--ink-2); border: 1px solid var(--line); }
 
-.tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 16px 0; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 16px 0; }
 .tile { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 14px; }
 .tile .k { font-size: 12px; color: var(--ink-3); text-transform: uppercase; letter-spacing: .04em; }
 .tile .v { font-size: 26px; font-weight: 650; font-variant-numeric: tabular-nums; line-height: 1.2; margin: 2px 0; }
@@ -70,6 +71,7 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 .cell.s-partial { background: var(--warn-soft); border-color: var(--warn); color: var(--ink); }
 .cell.s-missed { background: var(--crit-soft); border-color: var(--crit); color: var(--ink); }
 .cell.s-today { outline: 2px solid var(--accent); outline-offset: 1px; color: var(--ink); font-weight: 650; }
+.cell .xt { position: absolute; bottom: 0; left: 3px; font-size: 9px; font-weight: 650; }
 .cell.has-pend::after { content: ""; position: absolute; inset: 3px; border: 1.5px dashed var(--accent); border-radius: 4px; }
 .legend { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 10px; font-size: 12px; color: var(--ink-2); }
 .legend span { display: inline-flex; align-items: center; gap: 5px; }
@@ -78,10 +80,10 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 .week { margin-top: 28px; }
 .weekhead { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
 .weekgoal { color: var(--ink-2); font-size: 14px; margin: 6px 0 8px; }
-details.day { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); margin: 8px 0; scroll-margin-top: 16px; }
+details.day { position: relative; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); margin: 8px 0; scroll-margin-top: 16px; }
 details.day[open] { border-color: var(--ink-3); }
 details.day.is-today { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
-summary { list-style: none; cursor: pointer; padding: 12px 14px; display: grid; grid-template-columns: 52px 1fr auto; gap: 10px; align-items: center; }
+summary { list-style: none; cursor: pointer; padding: 12px 14px; display: grid; grid-template-columns: 52px 1fr auto auto; gap: 10px; align-items: center; }
 summary::-webkit-details-marker { display: none; }
 .dnum { font-weight: 650; font-variant-numeric: tabular-nums; }
 .dnum small { display: block; font-weight: 400; color: var(--ink-3); font-size: 12px; }
@@ -94,6 +96,19 @@ summary::-webkit-details-marker { display: none; }
 .status.s-missed { background: var(--crit-soft); border-color: var(--crit); }
 .status.s-today { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
 .daybody { padding: 0 14px 14px 76px; }
+button.more { padding: 0; width: 28px; height: 28px; border-color: transparent; background: none; font-size: 18px; line-height: 1; color: var(--ink-2); display: none; }
+button.more:hover, button.more[aria-expanded="true"] { border-color: var(--line); background: var(--surface-2); }
+details.day[open] button.more { display: block; }
+.ext { font-size: 11px; font-weight: 600; color: var(--accent); background: var(--accent-soft); border: 1px solid var(--accent); border-radius: 4px; padding: 0 5px; margin-left: 6px; white-space: nowrap; vertical-align: 1px; }
+.ext.pend { border-style: dashed; }
+.extnote { font-size: 13px; color: var(--ink-2); margin-top: 8px; }
+.menu { position: absolute; top: 48px; right: 10px; z-index: 5; min-width: 200px; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 6px 20px rgba(0,0,0,.12); padding: 6px; display: none; }
+.menu.open { display: block; }
+.menu .mh { font-size: 12px; color: var(--ink-3); text-transform: uppercase; letter-spacing: .04em; padding: 4px 8px; }
+.menu button { display: block; width: 100%; text-align: left; border: 0; background: none; padding: 6px 8px; border-radius: 6px; font-size: 14px; }
+.menu button:hover { background: var(--surface-2); }
+.menu hr { border: 0; border-top: 1px solid var(--line); margin: 4px 0; }
+.menu .mf { font-size: 12px; color: var(--ink-3); padding: 4px 8px; max-width: 220px; }
 .sec { font-size: 12px; color: var(--ink-3); text-transform: uppercase; letter-spacing: .04em; margin: 10px 0 4px; }
 ul.items { list-style: none; margin: 0; padding: 0; }
 ul.items li { display: flex; gap: 10px; padding: 5px 0; align-items: flex-start; }
@@ -124,8 +139,9 @@ a { color: var(--accent); }
 
 @media (max-width: 640px) {
   .tiles { grid-template-columns: repeat(2, 1fr); }
-  summary { grid-template-columns: 44px 1fr; }
-  summary .dmeta { grid-column: 2; }
+  summary { grid-template-columns: 44px 1fr auto; }
+  summary .dmeta { grid-column: 2 / -1; }
+  summary .more { grid-column: 3; grid-row: 1; }
   .daybody { padding-left: 14px; }
   .trow { grid-template-columns: 1fr 64px; }
   .trow .bar { grid-column: 1 / -1; grid-row: 2; }
@@ -142,7 +158,7 @@ a { color: var(--accent); }
       <h1 id="title">AI Study Plan</h1>
       <p class="sub" id="where"></p>
     </div>
-    <div style="display:flex;gap:8px;align-items:center">
+    <div class="hright">
       <span class="pill" id="pace"></span>
       <a class="btnlink" href="report.html">Report card →</a>
       <button id="theme" aria-label="Toggle theme" title="Toggle theme">◐</button>
@@ -159,6 +175,7 @@ a { color: var(--accent); }
       <span><i class="sw" style="background:var(--crit-soft);border-color:var(--crit)"></i>✕ missed</span>
       <span><i class="sw" style="outline:2px solid var(--accent)"></i>today</span>
       <span><i class="sw" style="border:1.5px dashed var(--accent)"></i>ticked here, not logged yet</span>
+      <span><b style="font-size:11px;color:var(--accent)">+N</b> extended by N day(s)</span>
     </div>
   </section>
 
@@ -175,7 +192,7 @@ a { color: var(--accent); }
   </section>
 
   <footer>
-    <p>Generated from the markdown in this repo by <a href="https://github.com/naval200/study-coach">study-coach</a> on <span id="gen"></span>. Ticks you make on this page stay in this browser until you copy them to the coach.</p>
+    <p>Generated from the markdown in this repo by <a href="https://github.com/naval200/study-coach">study-coach</a> on <span id="gen"></span>. Ticks, notes and extensions you make on this page stay in this browser until you copy them to the coach.</p>
   </footer>
 </div>
 
@@ -197,15 +214,18 @@ a { color: var(--accent); }
   const $ = (id) => document.getElementById(id);
   if (!P) { $("where").textContent = "No progress yet. Run `npm run init` to build your plan, then `npm run dashboard`."; return; }
 
-  // ---- local state (per browser): ticked items, notes, hours ----
+  // ---- local state (per browser): ticked items, notes, hours, extensions ----
   const KEY = "study-progress-local-v1";
-  let local = { ticks: {}, notes: {}, hours: {} };
+  const EMPTY = () => ({ ticks: {}, notes: {}, hours: {}, extend: {} });
+  let local = EMPTY();
   try { local = Object.assign(local, JSON.parse(localStorage.getItem(KEY) || "{}")); } catch (e) {}
   const save = () => { try { localStorage.setItem(KEY, JSON.stringify(local)); } catch (e) {} };
   const itemId = (d, i) => `d${d.day}-${i}`;
 
   // Drop local ticks the repo already has as done/dropped.
   for (const d of P.days) d.items.forEach((it, i) => { if (it.state !== "todo") delete local.ticks[itemId(d, i)]; });
+  // Drop local extensions the repo already has (its `extended` grew past the value we saw).
+  for (const d of P.days) { const x = local.extend[d.day]; if (x && (d.extended || 0) > x.base) delete local.extend[d.day]; }
   save();
 
   // ---- today in the plan's timezone (the data file may be older than today) ----
@@ -213,12 +233,28 @@ a { color: var(--accent); }
   const toUTC = (s) => { const [y, m, d] = s.split("-").map(Number); return Date.UTC(y, m - 1, d); };
   const between = (a, b) => Math.round((toUTC(b) - toUTC(a)) / 864e5);
   const fmtDate = (s) => new Date(toUTC(s)).toLocaleDateString("en-GB", { day: "numeric", month: "short", timeZone: "UTC" });
+  const addDays = (s, n) => new Date(toUTC(s) + n * 864e5).toISOString().slice(0, 10);
+  const wkday = (s) => ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"][new Date(toUTC(s)).getUTCDay()];
+
+  // Days as shown: the repo's dates, with this browser's extensions applied.
+  // An extended day runs date … until; every later day moves by the extra days.
+  let D = [];
+  function effectiveDays() {
+    let shift = 0;
+    return P.days.map((d) => {
+      const add = (local.extend[d.day] || {}).by || 0;
+      const date = shift ? addDays(d.date, shift) : d.date;
+      const extended = (d.extended || 0) + add;
+      shift += add;
+      return { ...d, date, weekday: wkday(date), extended, pendExt: add, until: addDays(date, extended) };
+    });
+  }
 
   function statusOf(d) {
     const req = d.items.filter((i) => !i.optional);
     if (req.length && req.every((i) => i.state !== "todo")) return "done";
     if (d.date > today) return "upcoming";
-    if (d.date === today) return "today";
+    if (d.until >= today) return "today";
     return d.items.some((i) => i.state === "done") ? "partial" : "missed";
   }
   const pendingOf = (d) => d.items.filter((it, i) => local.ticks[itemId(d, i)]).length;
@@ -238,32 +274,40 @@ a { color: var(--accent); }
   // ---- header + tiles ----
   function renderTop() {
     $("title").textContent = P.curriculum || "Study plan";
-    const n = between(P.start, today) + 1;
+    const end = D.length ? D.at(-1).until : P.end;
+    const td = D.find((d) => d.date <= today && d.until >= today);
+    const n = td ? td.day : between(P.start, today) + 1;
     $("where").textContent = today < P.start
       ? `Day 1 starts ${fmtDate(P.start)} — in ${between(today, P.start)} day(s).`
-      : today > P.end ? `Finished ${fmtDate(P.end)}.` : `Day ${n} of ${P.totalDays} · ${fmtDate(today)}`;
+      : today > end ? `Finished ${fmtDate(end)}.` : `Day ${n} of ${P.totalDays} · ${fmtDate(today)}${td && td.extended ? ` · extended to ${fmtDate(td.until)}` : ""}`;
     $("pace").textContent = P.pace;
     $("gen").textContent = P.generated;
 
-    const req = P.days.flatMap((d) => d.items.map((it, i) => ({ it, id: itemId(d, i) }))).filter((x) => !x.it.optional);
+    const req = D.flatMap((d) => d.items.map((it, i) => ({ it, id: itemId(d, i) }))).filter((x) => !x.it.optional);
     const pend = req.filter((x) => local.ticks[x.id]).length;
     const pct = P.overall.total ? Math.round((P.overall.done / P.overall.total) * 100) : 0;
     const postGoal = 20;
+    const X = P.extensions || { times: 0, days: 0 };
+    const pendX = Object.values(local.extend).filter((x) => x.by);
+    const xTimes = X.times + pendX.length, xDays = X.days + pendX.reduce((k, x) => k + x.by, 0);
+    const xNote = pendX.length ? `${pendX.length} not in the repo yet` : xDays ? `plan ends ${fmtDate(D.at(-1).until)}` : "none so far";
     $("tiles").innerHTML = [
       `<div class="tile"><div class="k">Overall</div><div class="v">${pct}%<small> ${P.overall.done}/${P.overall.total}</small></div>${bar(P.overall.done, pend, P.overall.total)}</div>`,
       `<div class="tile"><div class="k">Streak</div><div class="v">${P.streak}<small> day(s)</small></div><div class="muted">logged in a row</div></div>`,
       `<div class="tile"><div class="k">Posts</div><div class="v">${P.posts}<small> / ${postGoal}</small></div>${bar(Math.min(P.posts, postGoal), 0, postGoal)}</div>`,
+      `<div class="tile"><div class="k">Extensions</div><div class="v">${xTimes}<small> taken · +${xDays} day(s)</small></div><div class="muted">${xNote}</div></div>`,
       P.exit ? `<div class="tile"><div class="k">Exit test</div><div class="v">${P.exit.done}<small> / ${P.exit.total} · pass ${P.exit.pass}</small></div>${bar(P.exit.done, 0, P.exit.total)}</div>` : "",
     ].join("");
   }
 
   // ---- calendar ----
   function renderCal() {
-    const weeks = [...new Set(P.days.map((d) => d.week))];
+    const weeks = [...new Set(D.map((d) => d.week))];
     $("cal").innerHTML = weeks.map((w) => {
-      const cells = P.days.filter((d) => d.week === w).map((d) => {
-        const s = statusOf(d), pend = pendingOf(d);
-        return `<button class="cell s-${s}${pend ? " has-pend" : ""}" data-day="${d.day}" title="Day ${d.day} · ${d.weekday} ${fmtDate(d.date)} — ${esc(d.title)}${LABEL[s] ? ` (${LABEL[s]})` : ""}">${d.day}${ICON[s] ? `<span class="ic">${ICON[s]}</span>` : ""}</button>`;
+      const cells = D.filter((d) => d.week === w).map((d) => {
+        const s = statusOf(d), pend = pendingOf(d) || d.pendExt;
+        const span = d.extended ? `–${fmtDate(d.until)}, extended +${d.extended}` : "";
+        return `<button class="cell s-${s}${pend ? " has-pend" : ""}" data-day="${d.day}" title="Day ${d.day} · ${d.weekday} ${fmtDate(d.date)}${span} — ${esc(d.title)}${LABEL[s] ? ` (${LABEL[s]})` : ""}">${d.day}${ICON[s] ? `<span class="ic">${ICON[s]}</span>` : ""}${d.extended ? `<span class="xt">+${d.extended}</span>` : ""}</button>`;
       }).join("");
       return `<div class="calrow"><span class="wk">${w === 0 ? "Setup" : "Week " + w}</span><div class="cells">${cells}</div></div>`;
     }).join("");
@@ -289,13 +333,25 @@ a { color: var(--accent); }
     const logged = L.done || L.blocked || L.next;
     const logHtml = logged ? `<div class="logbox">${L.done ? `<div><b>Done:</b> ${esc(L.done)}</div>` : ""}${L.blocked ? `<div><b>Blocked:</b> ${esc(L.blocked)}</div>` : ""}${L.next ? `<div><b>Next:</b> ${esc(L.next)}</div>` : ""}</div>` : "";
     const open = s === "today" || (today < P.start && d.day === 0);
+    const base = d.extended - d.pendExt;
+    const ext = d.extended ? `<span class="ext${d.pendExt ? " pend" : ""}" title="Extended by ${d.extended} day(s)${d.pendExt ? `, ${d.pendExt} not in the repo yet` : ""}">+${d.extended}d</span>` : "";
+    const extNote = d.extended ? `<div class="extnote">Extended by ${d.extended} day(s): runs ${d.weekday} ${fmtDate(d.date)} – ${wkday(d.until)} ${fmtDate(d.until)}.${d.pendExt ? ` ${base ? `${d.pendExt} of these day(s) are` : "This is"} not in the repo yet.` : ""}</div>` : "";
+    const menu = `<div class="menu" id="menu-${d.day}" role="menu">
+        <div class="mh">Extend this day</div>
+        ${[1, 2, 3].map((n) => `<button role="menuitem" data-extend="${d.day}" data-by="${n}">+${n} day${n > 1 ? "s" : ""}</button>`).join("")}
+        <button role="menuitem" data-extend="${d.day}" data-by="ask">Other…</button>
+        ${d.pendExt ? `<hr><button role="menuitem" data-extend="${d.day}" data-by="undo">Undo +${d.pendExt} (not saved yet)</button>` : ""}
+        <div class="mf">Later days move by the same number of days.</div>
+      </div>`;
     return `<details class="day${s === "today" ? " is-today" : ""}" id="day-${d.day}" ${open ? "open" : ""}>
       <summary>
         <span class="dnum">${d.day === 0 ? "Setup" : "Day " + d.day}<small>${d.weekday} ${fmtDate(d.date)}</small></span>
-        <span class="dtitle">${esc(d.title)}</span>
+        <span class="dtitle">${esc(d.title)}${ext}</span>
         <span class="dmeta">${LABEL[s] ? `<span class="status s-${s}">${LABEL[s]}</span>` : ""}${bar(done, pend, req.length)}<span>${done}/${req.length}</span></span>
+        <button class="more" data-more="${d.day}" aria-label="Day ${d.day} options" aria-haspopup="menu" aria-expanded="false">⋮</button>
       </summary>
-      <div class="daybody">${sections}${logHtml}
+      ${menu}
+      <div class="daybody">${extNote}${sections}${logHtml}
         <div class="mine">
           <textarea data-note="${d.day}" placeholder="Notes for the coach: what you did, what blocked you…">${esc(local.notes[d.day] || "")}</textarea>
           <input data-hours="${d.day}" type="number" min="0" step="0.5" placeholder="hours" value="${esc(local.hours[d.day] || "")}" aria-label="Hours">
@@ -306,15 +362,15 @@ a { color: var(--accent); }
   }
 
   function renderWeeks() {
-    const weeks = [...new Set(P.days.map((d) => d.week))];
+    const weeks = [...new Set(D.map((d) => d.week))];
     $("weeks").innerHTML = weeks.map((w) => {
-      const wd = P.days.filter((d) => d.week === w);
+      const wd = D.filter((d) => d.week === w);
       const req = wd.flatMap((d) => d.items.filter((i) => !i.optional));
       const done = req.filter((i) => i.state !== "todo").length;
       const info = (P.weeks || {})[w];
       const name = w === 0 ? "Setup" : `Week ${w}${info ? " — " + esc(info.title) : ""}`;
       return `<section class="week">
-        <div class="weekhead"><h2>${name}</h2><span class="muted">${done}/${req.length} items · ${fmtDate(wd[0].date)}–${fmtDate(wd.at(-1).date)}</span></div>
+        <div class="weekhead"><h2>${name}</h2><span class="muted">${done}/${req.length} items · ${fmtDate(wd[0].date)}–${fmtDate(wd.at(-1).until)}</span></div>
         ${info ? `<p class="weekgoal">${esc(info.goal)}</p>` : ""}
         ${wd.map(dayCard).join("")}
       </section>`;
@@ -333,23 +389,29 @@ a { color: var(--accent); }
 
   // ---- pending dock + export ----
   function pendingDays() {
-    return P.days.map((d) => ({
+    return D.map((d) => ({
       d,
       ticked: d.items.filter((it, i) => local.ticks[itemId(d, i)]),
       note: (local.notes[d.day] || "").trim(),
       hours: local.hours[d.day] || "",
-    })).filter((x) => x.ticked.length || x.note || x.hours);
+      ext: d.pendExt,
+    })).filter((x) => x.ticked.length || x.note || x.hours || x.ext);
   }
   function renderDock() {
     const pd = pendingDays();
     const n = pd.reduce((k, x) => k + x.ticked.length, 0);
     $("dock").classList.toggle("show", pd.length > 0);
-    $("pendsum").textContent = `${n} item(s) ticked${pd.some((x) => x.note || x.hours) ? " + notes" : ""} on ${pd.length} day(s) — not in the repo yet`;
+    const nx = pd.filter((x) => x.ext).length;
+    const parts = [n || !nx ? `${n} item(s) ticked` : "", pd.some((x) => x.note || x.hours) ? "notes" : "", nx ? `${nx} extension(s)` : ""].filter(Boolean);
+    $("pendsum").textContent = `${parts.join(" + ")} on ${pd.length} day(s) — not in the repo yet`;
   }
   function exportText() {
-    const lines = [`/study-coach log`, ``, `From my progress page (${today}). Please tick these in the day files, fill the logs, and refresh the dashboard:`];
-    for (const { d, ticked, note, hours } of pendingDays()) {
-      lines.push(``, `Day ${d.day} (${d.date}) — ${d.title}`);
+    const pd = pendingDays();
+    const lines = [`/study-coach log`, ``, `From my progress page (${today}). Please tick these in the day files, fill the logs,${pd.some((x) => x.ext) ? " apply the extensions," : ""} and refresh the dashboard:`];
+    for (const { d, ticked, note, hours, ext } of pd) {
+      const repoDate = P.days.find((x) => x.day === d.day).date;
+      lines.push(``, `Day ${d.day} (${repoDate}) — ${d.title}`);
+      if (ext) lines.push(`- extend: +${ext} day(s). Set \`extended: ${d.extended}\` (runs ${d.date} to ${d.until}). Move every later day ${ext} day(s) later.`);
       for (const it of ticked) lines.push(`- [x] ${it.text}`);
       if (hours) lines.push(`- hours: ${hours}`);
       if (note) lines.push(`- notes: ${note.replace(/\n+/g, " / ")}`);
@@ -358,7 +420,13 @@ a { color: var(--accent); }
   }
   function toast(msg) { const t = $("toast"); t.textContent = msg; t.classList.add("show"); setTimeout(() => t.classList.remove("show"), 1800); }
 
-  function renderAll() { renderTop(); renderCal(); renderWeeks(); renderSide(); renderDock(); }
+  function renderAll() { D = effectiveDays(); renderTop(); renderCal(); renderWeeks(); renderSide(); renderDock(); }
+  // Re-render and keep the open day cards open.
+  function rerender() {
+    const open = [...document.querySelectorAll("details.day[open]")].map((x) => x.id);
+    renderAll();
+    for (const o of open) { const el = $(o); if (el) el.open = true; }
+  }
   renderAll();
 
   // ---- events ----
@@ -366,11 +434,43 @@ a { color: var(--accent); }
     const id = e.target.dataset && e.target.dataset.id;
     if (!id) return;
     if (e.target.checked) local.ticks[id] = today; else delete local.ticks[id];
-    save();
-    const open = [...document.querySelectorAll("details.day[open]")].map((x) => x.id);
-    renderAll();
-    for (const o of open) { const el = $(o); if (el) el.open = true; }
+    save(); rerender();
   });
+
+  // ---- ⋮ menu: extend a day ----
+  function closeMenus() {
+    document.querySelectorAll(".menu.open").forEach((m) => m.classList.remove("open"));
+    document.querySelectorAll("button.more[aria-expanded=true]").forEach((b) => b.setAttribute("aria-expanded", "false"));
+  }
+  document.addEventListener("click", (e) => {
+    const more = e.target.closest("button.more");
+    if (more) {
+      e.preventDefault(); // inside <summary>: do not fold the day
+      const m = $("menu-" + more.dataset.more), wasOpen = m.classList.contains("open");
+      closeMenus();
+      if (!wasOpen) { m.classList.add("open"); more.setAttribute("aria-expanded", "true"); }
+      return;
+    }
+    const opt = e.target.closest("[data-extend]");
+    if (opt) {
+      const day = Number(opt.dataset.extend), d = P.days.find((x) => x.day === day);
+      const cur = local.extend[day] || { by: 0, base: d.extended || 0 };
+      let by = opt.dataset.by;
+      if (by === "undo") by = -cur.by;
+      else if (by === "ask") {
+        const v = window.prompt(`Extend Day ${day} by how many days?`, "1");
+        by = Math.round(Number(v));
+        if (!v || !(by >= 1 && by <= 30)) { closeMenus(); return; }
+      } else by = Number(by);
+      cur.by += by;
+      if (cur.by > 0) local.extend[day] = cur; else delete local.extend[day];
+      save(); rerender();
+      toast(by > 0 ? `Day ${day} extended by ${by} day(s). Later days moved.` : `Extension on Day ${day} removed.`);
+      return;
+    }
+    if (!e.target.closest(".menu")) closeMenus();
+  });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeMenus(); });
   document.addEventListener("input", (e) => {
     const ds = e.target.dataset || {};
     if (ds.note !== undefined) local.notes[ds.note] = e.target.value;
@@ -388,8 +488,8 @@ a { color: var(--accent); }
     catch (e) { window.prompt("Copy this and paste it into Claude Code:", text); }
   });
   $("clear").addEventListener("click", () => {
-    if (!confirm("Clear the ticks and notes saved in this browser? (The repo isn't affected.)")) return;
-    local = { ticks: {}, notes: {}, hours: {} }; save(); renderAll();
+    if (!confirm("Clear the ticks, notes and extensions saved in this browser? (The repo isn't affected.)")) return;
+    local = EMPTY(); save(); renderAll();
   });
   $("theme").addEventListener("click", () => {
     const r = document.documentElement;
@@ -399,7 +499,7 @@ a { color: var(--accent); }
   });
   try { const t = localStorage.getItem("study-theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
 
-  const td = P.days.find((d) => d.date === today);
+  const td = D.find((d) => d.date <= today && d.until >= today);
   if (td) setTimeout(() => $("day-" + td.day).scrollIntoView({ block: "start" }), 50);
 })();
 </script>
