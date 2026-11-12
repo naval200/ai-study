@@ -1,5 +1,5 @@
 window.STUDY_REPORT = {
- "generated": "2026-10-27",
+ "generated": "2026-11-12",
  "posts": 0,
  "concepts": [
   {
@@ -90,7 +90,7 @@ window.STUDY_REPORT = {
     }
    ],
    "group": "fragile",
-   "overdue": false
+   "overdue": true
   },
   {
    "slug": "structured-outputs",
@@ -114,7 +114,7 @@ window.STUDY_REPORT = {
    "end": "2026-11-05",
    "dayFrom": 1,
    "dayTo": 14,
-   "state": "current",
+   "state": "past",
    "days": 12,
    "daysDone": 1,
    "daysLogged": 3,
@@ -122,7 +122,7 @@ window.STUDY_REPORT = {
    "itemsDone": 11,
    "hours": null,
    "posts": 0,
-   "commits": 35,
+   "commits": 36,
    "review": null
   },
   {
@@ -133,15 +133,15 @@ window.STUDY_REPORT = {
    "end": "2026-11-19",
    "dayFrom": 12,
    "dayTo": 28,
-   "state": "upcoming",
+   "state": "current",
    "days": 11,
    "daysDone": 0,
    "daysLogged": 0,
    "items": 47,
    "itemsDone": 0,
    "hours": null,
-   "posts": null,
-   "commits": null,
+   "posts": 0,
+   "commits": 0,
    "review": null
   },
   {

@@ -1,13 +1,14 @@
 # Dashboard — AI Study Plan — Days 1–47
 
-> Generated 2026-10-27 by study-coach. Don't edit by hand — run `/study-coach status`.
+> Generated 2026-11-12 by study-coach. Don't edit by hand — run `/study-coach status`.
 
 ## Where you are
 
-- **Day 5 of 47** · Tue 2026-10-27 · Week 1: Attention (2 of 2) · GPT (start)
+- **Day 21 of 47** · Thu 2026-11-12 · Week 2: Catch-up (light day)
 - **Overall:** ██░░░░░░░░░░░░░░░░░░ 9% (19/206 required items)
-- **Pace:** 🔴 **Behind** — 9 item(s) owed across 4 day(s)
+- **Pace:** 🔴 **Behind** — 80 item(s) owed across 19 day(s)
 - **Streak:** 0 day(s) logged in a row
+- ⚠️ **16 days missed in a row** — plan rule: cut scope, don't add hours.
 - **Exit test:** 0/9 (pass ≥ 7)
 - **Online:** https://naval200.github.io/ai-study/
 
@@ -24,16 +25,13 @@
 
 ## Today
 
-**Attention (2 of 2) · GPT (start)** — `days/day05.md`
+**Catch-up (light day)** — `days/day21.md`
 
 Start with (from Day 3's log): _Run the self-attention review. Then start Day 4 Build: scaled dot-product attention with a causal mask. Print `scores.shape`._
 
-- [ ] **Learn:** Paper: Attention Is All You Need, section 3 only.
-- [ ] **Learn:** Karpathy, Let's build GPT (1h56m).
-- [ ] **Build:** multi-head attention, with shape asserts in the test file.
-- [ ] **Rust:** Comprehensive Rust Day 2 morning.
-- [ ] **Post:** "Q, K, V explained with a library-search analogy."
-- [ ] your multi-head attention matches torch.nn.functional.scaled_dot_product_attention within 1e-5.
+- [ ] **Catch-up (if behind):** the dashboard catch-up queue, Builds first. _(optional)_
+- [ ] **Review (stretch):** the concept reviews that are due. _(optional)_
+- [ ] **Rust (if behind):** catch-up only if behind. _(optional)_
 
 ## Catch-up queue (goes to Sunday)
 
@@ -46,13 +44,20 @@ Start with (from Day 3's log): _Run the self-attention review. Then start Day 4 
 - Day 4 · **Learn:** Raschka ch. 3, Coding Attention Mechanisms.
 - Day 4 · **Build:** scaled dot-product attention with a causal mask, with shape asserts in a test file.
 - Day 4 · **Rust:** rustlings 81–85.
+- Day 5 · **Learn:** Paper: Attention Is All You Need, section 3 only.
+- Day 5 · **Learn:** Karpathy, Let's build GPT (1h56m).
+- Day 5 · **Build:** multi-head attention, with shape asserts in the test file.
+- Day 5 · **Rust:** Comprehensive Rust Day 2 morning.
+- Day 5 · **Post:** "Q, K, V explained with a library-search analogy."
+- Day 5 · your multi-head attention matches torch.nn.functional.scaled_dot_product_attention within 1e-5.
+- …and 65 more
 
 ## Weekly scorecard
 
 | Week | Days done | Logged | Items | Hours (target 30-35) | Posts | Commits |
 |---|---|---|---|---|---|---|
-| 1 | 1/12 | 3 | 15/53 | 0 | 0 | 35 |
-| 2 | 0/11 | 0 | 0/47 | 0 | 0 | – |
+| 1 | 1/12 | 3 | 15/53 | 0 | 0 | 36 |
+| 2 | 0/11 | 0 | 0/47 | 0 | 0 | 0 |
 | 3 | 0/10 | 0 | 0/45 | 0 | 0 | – |
 | 4 | 0/14 | 0 | 0/54 | 0 | 0 | – |
 
@@ -61,8 +66,8 @@ Start with (from Day 3's log): _Run the self-attention review. Then start Day 4 
 ✅ done · 🟡 partial · ❌ missed · 👉 today · · upcoming · +N extended
 
 - **Setup:** 🟡 0
-- **Week 1:** ✅ 1  🟡 2  🟡 3  🟡 4  👉 5  · 6  · 7  · 8  · 9  · 10  · 11  · 14
-- **Week 2:** · 12  · 13  · 15  · 16  · 17  · 18  · 19  · 20  · 21  · 22  · 28
+- **Week 1:** ✅ 1  🟡 2  🟡 3  🟡 4  ❌ 5  ❌ 6  ❌ 7  ❌ 8  ❌ 9  ❌ 10  ❌ 11  ❌ 14
+- **Week 2:** ❌ 12  ❌ 13  ❌ 15  ❌ 16  ❌ 17  ❌ 18  ❌ 19  ❌ 20  👉 21  · 22  · 28
 - **Week 3:** · 23  · 24  · 25  · 26  · 27  · 29  · 30  · 31  · 32  · 35
 - **Week 4:** · 33  · 34  · 36  · 37  · 38  · 39  · 40  · 41  · 42  · 43  · 44  · 45  · 46  · 47
 
@@ -101,4 +106,4 @@ Start with (from Day 3's log): _Run the self-attention review. Then start Day 4 
 
 ## Collected
 
-- Ideas in inbox: 0 · Parking lot: 12 · Articles/papers noted: 1 · Concepts checked: 7 · Misses logged: 3
+- Ideas in inbox: 0 · Parking lot: 13 · Articles/papers noted: 1 · Concepts checked: 7 · Misses logged: 3

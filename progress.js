@@ -1,15 +1,15 @@
 window.STUDY_PROGRESS = {
- "generated": "2026-10-27",
+ "generated": "2026-11-12",
  "timezone": "Asia/Kolkata",
  "curriculum": "AI Study Plan — Days 1–47",
  "start": "2026-10-23",
  "end": "2026-12-08",
- "dayNum": 5,
+ "dayNum": 21,
  "totalDays": 47,
- "pace": "🔴 Behind — 9 item(s) owed across 4 day(s)",
+ "pace": "🔴 Behind — 80 item(s) owed across 19 day(s)",
  "paceKind": "behind",
  "streak": 0,
- "missedRun": 0,
+ "missedRun": 16,
  "extensions": {
   "times": 0,
   "days": 0,
@@ -121,11 +121,11 @@ window.STUDY_PROGRESS = {
  "weekStats": {
   "1": {
    "posts": 0,
-   "commits": 35
+   "commits": 36
   },
   "2": {
    "posts": 0,
-   "commits": "–"
+   "commits": 0
   },
   "3": {
    "posts": 0,
@@ -494,7 +494,7 @@ window.STUDY_PROGRESS = {
    "title": "Attention (2 of 2) · GPT (start)",
    "type": "core",
    "hours": 0,
-   "status": "today",
+   "status": "missed",
    "file": "days/day05.md",
    "log": {
     "done": "",
@@ -556,7 +556,7 @@ window.STUDY_PROGRESS = {
    "title": "Build the GPT",
    "type": "core",
    "hours": 0,
-   "status": "upcoming",
+   "status": "missed",
    "file": "days/day06.md",
    "log": {
     "done": "",
@@ -618,7 +618,7 @@ window.STUDY_PROGRESS = {
    "title": "Catch-up (light day)",
    "type": "light",
    "hours": 0,
-   "status": "upcoming",
+   "status": "missed",
    "file": "days/day07.md",
    "log": {
     "done": "",
@@ -659,7 +659,7 @@ window.STUDY_PROGRESS = {
    "title": "Pretraining (1 of 2)",
    "type": "core",
    "hours": 0,
-   "status": "upcoming",
+   "status": "missed",
    "file": "days/day08.md",
    "log": {
     "done": "",
@@ -700,7 +700,7 @@ window.STUDY_PROGRESS = {
    "title": "Sampling · KV cache (start)",
    "type": "core",
    "hours": 0,
-   "status": "upcoming",
+   "status": "missed",
    "file": "days/day09.md",
    "log": {
     "done": "",
@@ -755,7 +755,7 @@ window.STUDY_PROGRESS = {
    "title": "KV cache and a real modern model",
    "type": "core",
    "hours": 0,
-   "status": "upcoming",
+   "status": "missed",
    "file": "days/day10.md",
    "log": {
     "done": "",
@@ -817,7 +817,7 @@ window.STUDY_PROGRESS = {
    "title": "Tokenizers",
    "type": "core",
    "hours": 0,
-   "status": "upcoming",
+   "status": "missed",
    "file": "days/day11.md",
    "log": {
     "done": "",
@@ -865,7 +865,7 @@ window.STUDY_PROGRESS = {
    "title": "Calling models like an engineer (1 of 2)",
    "type": "core",
    "hours": 0,
-   "status": "upcoming",
+   "status": "missed",
    "file": "days/day12.md",
    "log": {
     "done": "",
@@ -920,7 +920,7 @@ window.STUDY_PROGRESS = {
    "title": "Calling models (2 of 2) · Local inference (start)",
    "type": "core",
    "hours": 0,
-   "status": "upcoming",
+   "status": "missed",
    "file": "days/day13.md",
    "log": {
     "done": "",
@@ -968,7 +968,7 @@ window.STUDY_PROGRESS = {
    "title": "Week 1 write-up (light day)",
    "type": "light",
    "hours": 0,
-   "status": "upcoming",
+   "status": "missed",
    "file": "days/day14.md",
    "log": {
     "done": "",
@@ -1016,7 +1016,7 @@ window.STUDY_PROGRESS = {
    "title": "Local inference on the M1",
    "type": "core",
    "hours": 0,
-   "status": "upcoming",
+   "status": "missed",
    "file": "days/day15.md",
    "log": {
     "done": "",
@@ -1078,7 +1078,7 @@ window.STUDY_PROGRESS = {
    "title": "Serving theory and the first GPU",
    "type": "core",
    "hours": 0,
-   "status": "upcoming",
+   "status": "missed",
    "file": "days/day16.md",
    "log": {
     "done": "",
@@ -1140,7 +1140,7 @@ window.STUDY_PROGRESS = {
    "title": "Benchmark day (1 of 2)",
    "type": "core",
    "hours": 0,
-   "status": "upcoming",
+   "status": "missed",
    "file": "days/day17.md",
    "log": {
     "done": "",
@@ -1188,7 +1188,7 @@ window.STUDY_PROGRESS = {
    "title": "Benchmark (2 of 2) · Speed and cost (start)",
    "type": "core",
    "hours": 0,
-   "status": "upcoming",
+   "status": "missed",
    "file": "days/day18.md",
    "log": {
     "done": "",
@@ -1243,7 +1243,7 @@ window.STUDY_PROGRESS = {
    "title": "Speed tricks and cost",
    "type": "core",
    "hours": 0,
-   "status": "upcoming",
+   "status": "missed",
    "file": "days/day19.md",
    "log": {
     "done": "",
@@ -1305,7 +1305,7 @@ window.STUDY_PROGRESS = {
    "title": "Mini SLM router (1 of 2)",
    "type": "core",
    "hours": 0,
-   "status": "upcoming",
+   "status": "missed",
    "file": "days/day20.md",
    "log": {
     "done": "",
@@ -1353,7 +1353,7 @@ window.STUDY_PROGRESS = {
    "title": "Catch-up (light day)",
    "type": "light",
    "hours": 0,
-   "status": "upcoming",
+   "status": "today",
    "file": "days/day21.md",
    "log": {
     "done": "",
