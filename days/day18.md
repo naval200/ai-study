@@ -1,13 +1,13 @@
 ---
 day: 18
-date: 2026-11-09
+date: 2026-12-09
 week: 2
 title: Benchmark (2 of 2) · Speed and cost (start)
 type: core
 hours: 0
 ---
 
-# Day 18 · Mon 9 Nov — Benchmark (2 of 2) · Speed and cost (start)
+# Day 18 · Wed 9 Dec — Benchmark (2 of 2) · Speed and cost (start)
 
 ## Plan
 - [ ] **Learn:** LLM Engineer's Handbook ch. 8, Inference Optimization.

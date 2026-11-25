@@ -1,13 +1,13 @@
 ---
 day: 38
-date: 2026-11-29
+date: 2026-12-29
 week: 4
 title: Evaluating answers (2 of 2) · UI (start)
 type: core
 hours: 0
 ---
 
-# Day 38 · Sun 29 Nov — Evaluating answers (2 of 2) · UI (start)
+# Day 38 · Tue 29 Dec — Evaluating answers (2 of 2) · UI (start)
 
 ## Plan
 - [ ] **Learn:** LLM Engineer's Handbook ch. 10, Inference Pipeline Deployment (first half).

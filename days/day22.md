@@ -1,13 +1,13 @@
 ---
 day: 22
-date: 2026-11-13
+date: 2026-12-13
 week: 2
 title: Mini SLM router (2 of 2)
 type: core
 hours: 0
 ---
 
-# Day 22 · Fri 13 Nov — Mini SLM router (2 of 2)
+# Day 22 · Sun 13 Dec — Mini SLM router (2 of 2)
 
 ## Plan
 - [ ] **Build:** score the answers with an LLM judge.

@@ -1,13 +1,13 @@
 ---
 day: 32
-date: 2026-11-23
+date: 2026-12-23
 week: 3
 title: From search to answers
 type: core
 hours: 0
 ---
 
-# Day 32 · Mon 23 Nov — From search to answers
+# Day 32 · Wed 23 Dec — From search to answers
 
 ## Plan
 - [ ] **Learn:** Anthropic, Contextual Retrieval.

@@ -1,13 +1,13 @@
 ---
 day: 24
-date: 2026-11-15
+date: 2026-12-15
 week: 3
 title: Lexical search (2 of 2) · Dense (start)
 type: core
 hours: 0
 ---
 
-# Day 24 · Sun 15 Nov — Lexical search (2 of 2) · Dense (start)
+# Day 24 · Tue 15 Dec — Lexical search (2 of 2) · Dense (start)
 
 ## Plan
 - [ ] **Learn:** Sentence Transformers docs on semantic search and bi-encoders. Browse the MTEB leaderboard to pick models.

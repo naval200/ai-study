@@ -1,13 +1,13 @@
 ---
 day: 46
-date: 2026-12-07
+date: 2027-01-06
 week: 4
 title: Portfolio and profile (2 of 2)
 type: core
 hours: 0
 ---
 
-# Day 46 · Mon 7 Dec — Portfolio and profile (2 of 2)
+# Day 46 · Wed 6 Jan — Portfolio and profile (2 of 2)
 
 ## Plan
 - [ ] **Research:** read 10 remote LLM / AI engineer job posts at your target level; list the skills they ask for that you can't yet show. That gap list feeds Days 48–77.

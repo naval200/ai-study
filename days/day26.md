@@ -1,13 +1,13 @@
 ---
 day: 26
-date: 2026-11-17
+date: 2026-12-17
 week: 3
 title: Qdrant (1 of 2)
 type: core
 hours: 0
 ---
 
-# Day 26 · Tue 17 Nov — Qdrant (1 of 2)
+# Day 26 · Thu 17 Dec — Qdrant (1 of 2)
 
 ## Plan
 - [ ] **Learn:** Qdrant Hybrid Queries docs.
